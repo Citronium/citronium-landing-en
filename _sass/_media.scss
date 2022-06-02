@@ -36,10 +36,47 @@
             background-position: right 49px bottom 0px;
         }
     }
+    .why-we {
+        &__caption {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &__items {
+            grid-template-areas:
+                "item1"
+                "item2"
+                "item3";
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 24px;
+        }
+        &__item1 {
+            background-position: right bottom 35px;
+            background-size: 394px;
+            &-title {
+                max-width: 60%;
+            }
+        }
+        &__item2 {
+            background-position: right bottom 35px;
+            background-size: 394px;
+            &-title {
+                max-width: 60%;
+            }
+        }
+        &__item3 {
+            background-position: right bottom 35px;
+            background-size: 394px;
+            &-title {
+                max-width: 60%;
+                margin-top: 56px;
+            }
+        }
+    }
 }
 
 @media (max-width: 640px) {
-    .container{
+    .container {
         max-width: 640px;
         padding: 0 20px;
     }
@@ -113,10 +150,53 @@
             }
         }
     }
+    .why-we {
+        &__title {
+            font-size: 32px;
+            line-height: 40px;
+            margin-top: 30px;
+        }
+        &__items {
+            margin-top: 60px;
+        }
+        &__item1 {
+            height: 300px;
+            background-size: 206px;
+            &-title {
+                font-size: 24px;
+                line-height: 32px;
+                max-width: 55%;
+                margin-top: 40px;
+                margin-left: 40px;
+            }
+        }
+        &__item2 {
+            height: 300px;
+            background-size: 206px;
+            &-title {
+                font-size: 24px;
+                line-height: 32px;
+                max-width: 55%;
+                margin-top: 40px;
+                margin-left: 40px;
+            }
+        }
+        &__item3 {
+            height: 300px;
+            background-size: 206px;
+            &-title {
+                font-size: 24px;
+                line-height: 32px;
+                max-width: 55%;
+                margin-top: 40px;
+                margin-left: 40px;
+            }
+        }
+    }
 }
 
 @media (max-width: 390px) {
-    .container{
+    .container {
         max-width: 390px;
         padding: 0 16px;
     }
@@ -189,10 +269,68 @@
             }
         }
     }
+    .why-we {
+        padding-top: 80px;
+        &__caption {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__title {
+            font-size: 24px;
+            line-height: 28px;
+            margin-top: 20px;
+        }
+        &__items {
+            margin-top: 40px;
+        }
+        &__item1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 260px;
+            background-size: 140px;
+            background-position: center top 24px;
+
+            &-title {
+                font-size: 18px;
+                line-height: 24px;
+                max-width: 100%;
+                margin: 24px;
+            }
+        }
+        &__item2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 260px;
+            background-size: 140px;
+            background-position: center top 24px;
+            &-title {
+                font-size: 18px;
+                line-height: 24px;
+                max-width: 100%;
+                margin: 24px;
+            }
+        }
+        &__item3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 308px;
+            background-size: 140px;
+            background-position: center top 24px;
+            &-title {
+                font-size: 18px;
+                line-height: 24px;
+                max-width: 100%;
+                margin: 24px;
+            }
+        }
+    }
 }
 
 @media (max-width: 320px) {
-    .container{
+    .container {
         max-width: 320px;
         padding: 0 10px;
     }
@@ -224,5 +362,14 @@
                 max-width: 159px;
             }
         }
+    }
+    .why-we {
+        &__item1 {
+            height: 284px;
+        }
+        &__item2 {
+            height: 284px;
+        }
+        
     }
 }
