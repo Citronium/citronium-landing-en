@@ -20,6 +20,7 @@
     font-size: 24px;
     color: var(--color-primary);
 }
+
 .link:after {
     display: inline-block;
     content: "";
@@ -31,16 +32,47 @@
     margin-left: 9px;
 }
 
+.h4 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+    color: var(--color-dark);
+    opacity: 0.56;
+}
+
+.h2 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: var(--color-dark);
+}
+
+.h3 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.section-title {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hero {
     height: 100vh;
     min-height: 832px;
     width: 100%;
     background-color: var(--color-yellow);
-    &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     &__title {
         font-size: 72px;
         font-weight: 700;
@@ -63,15 +95,16 @@
         margin-top: 40px;
     }
     &__img {
-        max-width: 352px;
-        height: 264px;
+        //height: 264px;
+        //max-width: 354px;
+        height: 254px;
         display: flex;
         align-items: center;
         justify-content: center;
         img {
-            display: block;
-            height: 100%;
-            
+            //display: block;
+            //width: 100%;
+            height: 120%;
         }
     }
     &__btn {
@@ -80,30 +113,6 @@
 }
 
 .what-we-do {
-    &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    &__caption {
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 40px;
-        width: 100%;
-        text-align: center;
-        color: var(--color-dark);
-        opacity: 0.56;
-    }
-    &__title {
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 64px;
-        text-align: center;
-        letter-spacing: -0.5px;
-        color: var(--color-dark);
-        margin-top: 40px;
-        width: 100%;
-    }
     &__items {
         margin-top: 80px;
         width: 100%;
@@ -115,20 +124,17 @@
         grid-template-rows: 600px 600px;
         grid-gap: 24px;
     }
-    &__item1 {
-        grid-area: item1;
+    &__item {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        background-color: var(--color-purple);
         border-radius: 20px;
-        background-image: url(img/calc.png);
         background-repeat: no-repeat, repeat;
         background-position: right bottom;
+    }
+    &__item1 {
+        grid-area: item1;
+        background-color: var(--color-purple);
+        background-image: url(img/calc.png);
         &-title {
-            font-weight: 600;
-            font-size: 40px;
-            line-height: 48px;
             color: var(--color-white);
             max-width: 40%;
             margin-left: 56px;
@@ -137,18 +143,10 @@
     }
     &__item2 {
         grid-area: item2;
-        width: 100%;
-        display: flex;
         background-color: var(--color-primary);
-        border-radius: 20px;
         background-image: url(img/notebook.png);
-        background-repeat: no-repeat, repeat;
-        background-position: right bottom;
         background-size: 420px;
         &-title {
-            font-weight: 600;
-            font-size: 40px;
-            line-height: 48px;
             color: var(--color-white);
             max-width: 404px;
             margin-left: 56px;
@@ -157,19 +155,10 @@
     }
     &__item3 {
         grid-area: item3;
-        width: 100%;
-        //height: 600px;
-        display: flex;
         background-color: var(--color-white);
-        border-radius: 20px;
         background-image: url(img/doc.png);
-        background-repeat: no-repeat, repeat;
-        background-position: right bottom;
         background-size: 400px;
         &-title {
-            font-weight: 600;
-            font-size: 40px;
-            line-height: 48px;
             color: var(--color-dark);
             max-width: 404px;
             margin-left: 56px;
@@ -179,30 +168,6 @@
 }
 
 .why-we {
-    &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    &__caption {
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 40px;
-        width: 100%;
-        text-align: center;
-        color: var(--color-dark);
-        opacity: 0.56;
-    }
-    &__title {
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 64px;
-        text-align: center;
-        letter-spacing: -0.5px;
-        color: var(--color-dark);
-        margin-top: 40px;
-        width: 100%;
-    }
     &__items {
         margin-top: 80px;
         width: 100%;
@@ -214,21 +179,19 @@
         grid-template-rows: 1fr 1fr;
         grid-gap: 24px;
     }
-    &__item1 {
-        grid-area: item1;
+    &__item {
         width: 100%;
         height: 600px;
-        display: flex;
-        background-color: var(--color-white);
         border-radius: 20px;
-        background-image: url(img/search.png);
         background-repeat: no-repeat, repeat;
-        background-position: center bottom 22px;
         background-size: auto;
+    }
+    &__item1 {
+        grid-area: item1;
+        background-color: var(--color-white);
+        background-image: url(img/search.png);
+        background-position: center bottom 22px;
         &-title {
-            font-weight: 600;
-            font-size: 40px;
-            line-height: 48px;
             color: var(--color-dark);
             max-width: 100%;
             margin-left: 56px;
@@ -237,20 +200,10 @@
     }
     &__item2 {
         grid-area: item2;
-        width: 100%;
-        height: 600px;
-        display: flex;
         background-color: var(--color-blush);
-        border-radius: 20px;
         background-image: url(img/rocket.png);
-        background-repeat: no-repeat, repeat;
         background-position: center bottom 22px;
-
-        background-size: auto;
         &-title {
-            font-weight: 600;
-            font-size: 40px;
-            line-height: 48px;
             color: var(--color-white);
             max-width: 404px;
             margin-left: 56px;
@@ -259,19 +212,10 @@
     }
     &__item3 {
         grid-area: item3;
-        width: 100%;
-        height: 600px;
-        display: flex;
         background-color: var(--color-purple);
-        border-radius: 20px;
         background-image: url(img/calc.png);
-        background-repeat: no-repeat, repeat;
         background-position: right bottom 16px;
-        background-size: auto;
         &-title {
-            font-weight: 600;
-            font-size: 40px;
-            line-height: 48px;
             color: var(--color-white);
             max-width: 50%;
             margin-left: 56px;
@@ -281,30 +225,6 @@
 }
 
 .how-we-work {
-    &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    &__caption {
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 40px;
-        width: 100%;
-        text-align: center;
-        color: var(--color-dark);
-        opacity: 0.56;
-    }
-    &__title {
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 64px;
-        text-align: center;
-        letter-spacing: -0.5px;
-        color: var(--color-dark);
-        margin-top: 40px;
-        width: 100%;
-    }
     &__items {
         margin-top: 80px;
         width: 100%;
@@ -317,6 +237,7 @@
         border-radius: 20px;
         display: flex;
         flex-direction: row;
+        // padding: 88px 56px;
         &--reverse {
             flex-direction: row-reverse;
         }
@@ -324,10 +245,7 @@
             display: flex;
             flex-direction: column;
             width: 50%;
-            padding-top: 88px;
-            padding-left: 56px;
-            padding-right: 56px;
-            padding-bottom: 88px;
+            padding: 88px 56px;
         }
         &-center {
             display: flex;
@@ -354,66 +272,21 @@
             margin-top: 56px;
         }
         &-img {
-            width: 400px;
+            margin-top: 15px;
+            width: 100%;
+            max-width: 360px;
         }
     }
 }
 
 .our-approach {
-    &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    &__caption {
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 40px;
-        width: 100%;
-        text-align: center;
-        color: var(--color-dark);
-        opacity: 0.56;
-    }
-    &__title {
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 64px;
-        text-align: center;
-        letter-spacing: -0.5px;
-        color: var(--color-dark);
-        margin-top: 40px;
-        width: 100%;
-    }
     &__diagram {
         margin-top: 80px;
+        width: 100%;
     }
 }
 
 .about-team {
-    &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    &__caption {
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 40px;
-        width: 100%;
-        text-align: center;
-        color: var(--color-dark);
-        opacity: 0.56;
-    }
-    &__title {
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 64px;
-        text-align: center;
-        letter-spacing: -0.5px;
-        color: var(--color-dark);
-        margin-top: 40px;
-        width: 100%;
-    }
     &__items {
         margin-top: 80px;
         width: 100%;
@@ -459,4 +332,113 @@
     }
 }
 
+.trust-us {
+    &__items {
+        margin-top: 80px;
+        padding: 56px;
 
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            "item1 item2 item3"
+            "item4 item5 item6";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-radius: 20px;
+        background-color: var(--color-white);
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        background-repeat: no-repeat, repeat;
+        background-position: center;
+        &-1 {
+            grid-area: item1;
+            background-image: url(img/capital-group.png);
+            background-size: 80%;
+        }
+        &-2 {
+            grid-area: item2;
+            background-image: url(img/lukoil.png);
+            background-size: 50%;
+        }
+        &-3 {
+            grid-area: item3;
+            background-image: url(img/sber.png);
+            background-size: 40%;
+        }
+        &-4 {
+            grid-area: item4;
+            background-image: url(img/mrs.png);
+            background-size: 80%;
+        }
+        &-5 {
+            grid-area: item5;
+            background-image: url(img/supermarket.png);
+            background-size: 70%;
+        }
+        &-6 {
+            grid-area: item6;
+            background-image: url(img/cds.png);
+            background-size: 40%;
+        }
+    }
+}
+
+.our-awards {
+    &__items {
+        margin-top: 80px;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            "item1 item2"
+            "item3 item4";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 24px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--color-white);
+        border-radius: 20px;
+        padding: 56px;
+        & img {
+            max-width: 250px;
+            width: 100%;
+        }
+        &-title {
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 48px;
+            text-align: center;
+            color: var(--color-dark);
+            margin-top: 56px;
+            width: 100%;
+        }
+        &-desc {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            color: var(--color-dark);
+            opacity: 0.56;
+            margin-top: 24px;
+        }
+        &-1 {
+            grid-area: item1;
+        }
+        &-2 {
+            grid-area: item2;
+        }
+        &-3 {
+            grid-area: item3;
+        }
+        &-4 {
+            grid-area: item4;
+        }
+    }
+}
