@@ -1,0 +1,36 @@
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 40px;
+}
+.btn {
+    //padding: 18px 56px;
+    border-radius: 10px;
+
+    min-height: 60px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.btn--dark {
+    color: var(--color-white);
+    background-color: var(--color-dark);
+}
+
+.btn--dark:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.btn--white {
+    color: var(--color-dark);
+    background-color: var(--color-white);
+}
+
+.btn--white:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
