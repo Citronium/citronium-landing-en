@@ -66,6 +66,8 @@
     height: 100vh;
     min-height: 832px;
     width: 100%;
+    display: flex;
+    align-items: center;
     background-color: var(--color-yellow);
     &__title {
         font-size: 72px;
@@ -190,7 +192,7 @@
         grid-area: item1;
         background-color: var(--color-white);
         background-image: url(img/search.png);
-        background-position: center bottom 22px;
+        background-position: center bottom;
         &-title {
             color: var(--color-dark);
             max-width: 100%;
@@ -202,7 +204,7 @@
         grid-area: item2;
         background-color: var(--color-blush);
         background-image: url(img/rocket.png);
-        background-position: center bottom 22px;
+        background-position: center bottom;
         &-title {
             color: var(--color-white);
             max-width: 404px;
@@ -214,10 +216,10 @@
         grid-area: item3;
         background-color: var(--color-purple);
         background-image: url(img/calc.png);
-        background-position: right bottom 16px;
+        background-position: right bottom;
         &-title {
             color: var(--color-white);
-            max-width: 50%;
+            max-width: 42%;
             margin-left: 56px;
             margin-top: 88px;
         }
@@ -302,9 +304,9 @@
             padding-top: 56px;
             padding-left: 56px;
             padding-right: 56px;
-            font-weight: 600;
-            font-size: 40px;
-            line-height: 48px;
+            // font-weight: 600;
+            // font-size: 40px;
+            // line-height: 48px;
             color: var(--color-white);
         }
     }
@@ -319,9 +321,9 @@
             padding-top: 56px;
             padding-left: 56px;
             padding-right: 56px;
-            font-weight: 600;
-            font-size: 40px;
-            line-height: 48px;
+            // font-weight: 600;
+            // font-size: 40px;
+            // line-height: 48px;
             color: var(--color-dark);
         }
         &-img {
