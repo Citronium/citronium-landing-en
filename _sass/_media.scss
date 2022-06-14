@@ -97,6 +97,50 @@
             flex-direction: column;
         }
     }
+    .projects {
+        &__title {
+            font-size: 56px;
+            line-height: 56px;
+        }
+        &__item {
+            flex-direction: column;
+            flex-direction: column-reverse;
+            padding: 40px;
+            gap: 40px;
+            &-title {
+                margin-top: 0;
+            }
+            &-descr {
+                margin-top: 16px;
+            }
+            &-img {
+                &--center {
+                    height: 560px;
+                    width: 100%;
+                    & img {
+                        max-width: 414px;
+                    }
+                }
+                &--left {
+                    height: 560px;
+                    width: 100%;
+                    & img {
+                        right: 260px;
+                    }
+                }
+                &--right {
+                    height: 560px;
+                    width: 100%;
+                    & img {
+                        left: 260px;
+                    }
+                }
+            }
+            &-content {
+                width: 100%;
+            }
+        }
+    }
     .footer {
         &__title {
             font-size: 56px;
@@ -263,6 +307,9 @@
     .container {
         padding: 100px 20px;
     }
+    .link {
+        font-size: 18px;
+    }
     .link:after {
         background-size: 18px 10px;
         height: 10px;
@@ -329,7 +376,63 @@
             grid-template-columns: 1fr 1fr;
         }
     }
-    
+    .dropdown {
+        position: relative;
+        width: 260px;
+        &__options {
+            width: 100%;
+            position: fixed;
+            overflow-y: auto;
+            height: calc(100% - 400px);
+            top: 400px;
+        }
+    }
+    .projects {
+        &__title {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        &-filters {
+            justify-content: flex-end;
+            &-title {
+                display: none;
+            } 
+        }
+        &__item {
+            &-descr {
+                margin-top: 4px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &-link {
+                margin-top: 42px;
+            }
+            &-img {
+                &--center {
+                    height: 320px;
+                    & img {
+                        top: 40px;
+                        max-width: 262px;
+                    }
+                }
+                &--left {
+                    height: 320px;
+                    & img {
+                        top: 40px;
+                        right: 151px;
+                    }
+                }
+                &--right {
+                    height: 320px;
+                    & img {
+                        top: 40px;
+                        left: 151px;
+                    }
+                }
+            }
+        }
+    }
+
     .footer {
         &__title {
             font-size: 40px;
@@ -490,6 +593,9 @@
     .container {
         padding: 80px 16px;
     }
+    .link {
+        font-size: 16px;
+    }
     .hero {
         min-height: 612px;
         &__title {
@@ -512,8 +618,7 @@
             margin-top: 40px;
         }
     }
-    
-    
+
     .how-we-work {
         &__item {
             &-title {
@@ -576,7 +681,48 @@
             padding: 24px;
         }
     }
-    
+    .projects {
+        &__title {
+            font-size: 24px;
+            line-height: 28px;
+        }
+        &__item {
+            padding: 24px;
+            gap: 24px;
+            &-descr {
+                margin-top: 4px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+            &-link {
+                margin-top: 42px;
+            }
+            &-img {
+                &--center {
+                    height: 276px;
+                    & img {
+                        top: 24px;
+                        max-width: 206px;
+                    }
+                }
+                &--left {
+                    height: 276px;
+                    & img {
+                        top: 24px;
+                        right: 24px;
+                    }
+                }
+                &--right {
+                    height: 276px;
+                    & img {
+                        top: 24px;
+                        left: 24px;
+                    }
+                }
+            }
+        }
+    }
+
     .footer {
         &__title {
             font-size: 24px;
@@ -642,5 +788,4 @@
             padding: 24px;
         }
     }
-    
 }

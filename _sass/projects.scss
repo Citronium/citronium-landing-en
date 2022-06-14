@@ -1,0 +1,173 @@
+.projects {
+    width: 100%;
+    &__title {
+        font-size: 72px;
+        font-weight: 700;
+        text-align: center;
+        color: var(--color-dark);
+        line-height: 64px;
+        letter-spacing: -0.5px;
+        margin-top: 116px;
+    }
+    &__descr {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: var(--color-dark);
+        opacity: 0.56;
+        margin-top: 40px;
+        max-width: 671px;
+    }
+    &-filters {
+        margin-top: 216px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &-components {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+        }
+    }
+    &-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 40px;
+        gap: 24px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        background-color: var(--color-white);
+        min-height: 544px;
+        border-radius: 20px;
+        padding: 56px;
+        gap: 112px;
+        &--reverse {
+            flex-direction: row-reverse;
+        }
+        &-content {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        &-title {
+            margin-top: 56px;
+        }
+        &-descr {
+            margin-top: 24px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            color: var(--color-dark);
+            opacity: 0.56;
+        }
+        &-link {
+            margin-top: 56px;
+        }
+        &-img {
+            width: 50%;
+            border-radius: 10px;
+            overflow: hidden;
+            &--center {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                & img {
+                    position: absolute;
+                    top: 56px;
+                    max-width: 300px;
+                }
+            }
+            &--left {
+                position: relative;
+                & img {
+                    position: absolute;
+                    top: 56px;
+                    right: 56px;
+                    height: 100%;
+                    
+                }
+            }
+            &--right {
+                position: relative;
+                & img {
+                    position: absolute;
+                    top: 56px;
+                    left: 56px;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.dropdown {
+    position: relative;
+    
+    width: 300px;
+    height: 50px;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 2;
+        width: 8px;
+        height: 8px;
+        border: 2px solid #333;
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+        transform: rotate(-45deg);
+        transition: 0.5s;
+        pointer-events: none;
+    }
+    &.active::before {
+        top: 22px;
+        transform: rotate(-225deg);
+    }
+
+    &__input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        background: #fff;
+        border: none;
+        outline: none;
+        padding: 12px 20px;
+        border-radius: 10px;
+    }
+    &__options {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 9999;
+        &-item {
+            padding: 12px 20px;
+            cursor: pointer;
+            & :hover {
+                background-color: azure;
+                color: #fff;
+            }
+        }
+        &.active {
+            display: block;
+        }
+    }
+    
+}
