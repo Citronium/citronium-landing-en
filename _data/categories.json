@@ -1,0 +1,82 @@
+[
+    {
+        "en": "business-processes",
+        "ru": "Цифровизация бизнес-процессов",
+        "type": "spheres"
+    },
+    {
+        "en": "project-management",
+        "ru": "Системы управления проектами",
+        "type": "spheres"
+    },
+    {
+        "en": "electronic-document",
+        "ru": "Электронный документооборот",
+        "type": "spheres"
+    },
+    {
+        "en": "medical",
+        "ru": "Медицина",
+        "type": "spheres"
+    },
+    {
+        "en": "management",
+        "ru": "Менеджмент",
+        "type": "spheres"
+    },
+    {
+        "en": "e-learning",
+        "ru": "E-learning",
+        "type": "spheres"
+    },
+    {
+        "en": "logistics",
+        "ru": "Логистика",
+        "type": "spheres"
+    },
+    {
+        "en": "marketing",
+        "ru": "Маркетинг",
+        "type": "spheres"
+    },
+    {
+        "en": "state-sector",
+        "ru": "Госсектор",
+        "type": "spheres"
+    },
+    {
+        "en": "social-network",
+        "ru": "Соцсети",
+        "type": "spheres"
+    },
+    {
+        "en": "geolocation",
+        "ru": "Геолокация",
+        "type": "spheres"
+    },
+    {
+        "en": "android",
+        "ru": "Android",
+        "type": "technologies"
+    },
+    {
+        "en": "hybrid",
+        "ru": "Hybrid",
+        "type": "technologies"
+    },
+    {
+        "en": "iOS",
+        "ru": "iOS",
+        "type": "technologies"
+    },
+    {
+        "en": "native",
+        "ru": "Native",
+        "type": "technologies"
+    },
+    {
+        "en": "web",
+        "ru": "Web",
+        "type": "technologies"
+    }
+]

@@ -5,8 +5,7 @@ description: Чтобы научить людей пользоваться QR-к
 prev_image: "/assets/img/projects/prev/sber-qr-prev.png"
 prev_position: center
 prev_background: "#367CF4"
-categories:
-    - desktop
+category: 'mobile'
 ---
 
 ## Титул

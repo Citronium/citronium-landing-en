@@ -9,25 +9,26 @@ layout: default
             {%- include projects/top-content.html -%}
             {%- include projects/filters.html -%}
             <div class="projects-list">
-                {% for project in site.projects %} 
-                    {% assign mod = forloop.index | modulo: 2 %}                   
-                    {% if mod == 0 %}
-                        {% assign itemClass = "projects__item projects__item--reverse" %}
-                    {% else %}
-                        {% assign itemClass = "projects__item" %}
+                {% for project in site.projects %}
+                    {% if project.category %}
+                        {% assign mod = forloop.index | modulo: 2 %}                   
+                        {% if mod == 0 %}
+                            {% assign itemClass = "projects__item projects__item--reverse" %}
+                        {% else %}
+                            {% assign itemClass = "projects__item" %}
+                        {% endif %}
+                            <div class="{{ itemClass }}">
+                                <div class="projects__item-content ">
+                                    <h3 class="h3 projects__item-title"">{{ project.title }}</h3>
+                                    <p class="projects__item-descr">{{ project.description | markdownify | strip_html | truncate: 170 }}</p>
+                                    <a class="link projects__item-link" href="{{ project.url | relative_url }}">Посмотреть подробнее</a>
+                                </div>
+                                <div style="background-color: {{ project.prev_background }};"
+                                    class="projects__item-img projects__item-img--{{ project.prev_position}}">
+                                    <img src="{{site.baseuri}}{{project.prev_image }}" alt="">
+                                </div>
+                            </div>
                     {% endif %}
-                        <div class="{{ itemClass }}">
-                            <div class="projects__item-content ">
-                                <h3 class="h3 projects__item-title"">{{ project.title }}</h3>
-                                <p class="projects__item-descr">{{ project.description | markdownify | strip_html | truncate: 170 }}</p>
-                                <a class="link projects__item-link" href="{{ project.url | relative_url }}">Посмотреть подробнее</a>
-                            </div>
-                            
-                            <div style="background-color: {{ project.prev_background }};"
-                                class="projects__item-img projects__item-img--{{ project.prev_position}}">
-                                <img src="{{project.prev_image }}" alt="">
-                            </div>
-                        </div>
                 {% endfor %}
             </div>
         </div>

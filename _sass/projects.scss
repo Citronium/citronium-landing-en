@@ -152,12 +152,16 @@
         position: absolute;
         top: 70px;
         right: 0;
-        width: 100%;
+        
+        width: 400px;
+        max-height: 400px;
+        overflow: auto;
         background: #fff;
         border-radius: 10px;
-        overflow: hidden;
+        
         z-index: 9999;
         &-item {
+            display: block;
             padding: 12px 20px;
             cursor: pointer;
             & :hover {

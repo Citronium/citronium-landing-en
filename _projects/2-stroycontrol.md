@@ -7,6 +7,7 @@ description:
 prev_image: "/assets/img/projects/prev/stroycontrol-prev.png"
 prev_position: left
 prev_background: "#F3CA46"
+category: 'desktop'
 ---
 
 # Services that grow with your business

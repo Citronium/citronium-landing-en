@@ -54,3 +54,7 @@ document.querySelectorAll('.dropdown').forEach(e => {
         });
     });
 });
+
+// const pathArray = window.location.pathname.split('/');
+// console.log(pathArray);
+// document.querySelector(".dropdown__input").value = "Цифровизация бизнесс-процессов";
