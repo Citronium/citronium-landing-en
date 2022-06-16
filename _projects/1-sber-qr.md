@@ -16,7 +16,8 @@ technologies: 'hybrid'
 
 Сервис для учета рабочего времени сотрудников медицинских организаций США
 
-![image info]({{site.baseuri}}/assets/img/projects/sber-qr/cover1.png)
+<!-- ![image info](/assets/img/projects/sber-qr/cover1.png) -->
+<img src="{{ site.baseurl }}/assets/img/projects/sber-qr/cover1.png" alt="cover" />
 
 #### Цель и задачи
 
