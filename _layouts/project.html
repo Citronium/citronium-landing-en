@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {%- include head.html -%}
+  <main>
+    {%- include home/header.html -%}
+    <div class="project">
+        <div class="container">
+            <div class="project-content">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+    
+    {%- include footer.html -%}
+</main>
+  <!-- <script src="{{ site.baseurl | prepend: site.url }}/assets/js/script.js"></script> -->
+</html>
