@@ -16,7 +16,6 @@ technologies: 'hybrid'
 
 Сервис для учета рабочего времени сотрудников медицинских организаций США
 
-<!-- ![image info](/assets/img/projects/sber-qr/cover1.png) -->
 <img src="{{ site.baseurl }}/assets/img/projects/sber-qr/cover1.png" alt="cover" />
 
 #### Цель и задачи
@@ -37,13 +36,13 @@ technologies: 'hybrid'
 
 Наше решение — система, фиксирующая время работы медицинского персонала и виды услуг, оказываемых пациенту. Полученные данные сверяются с недельным планом, по нескольким параметрам ведётся систематизация и анализ.
 
-![image info]({{site.baseuri}}/assets/img/projects/sber-qr/cover2.png)
+<img src="{{ site.baseurl }}/assets/img/projects/sber-qr/cover2.png" alt="cover" />
 
 ### Доступность сервиса
 
 Учитывая бизнес-логику, доступ к информации предоставляется как медицинской организации, так и страховщику, с которым заключён договор у пациента. Предложенная нами система учёта времени по задаче заказчика доступна в браузере и в мобильных приложениях на устройствах iOS и Android.
 
-![image info]({{site.baseuri}}/assets/img/projects/sber-qr/cover3.png)
+<img src="{{ site.baseurl }}/assets/img/projects/sber-qr/cover3.png" alt="cover" />
 
 #### Время на разработку
 
