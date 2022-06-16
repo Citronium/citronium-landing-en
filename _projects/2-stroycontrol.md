@@ -1,5 +1,6 @@
 ---
-title: Стройконтроль
+id: 2
+title: Стройконтроль Pr-Ma Na
 layout: default
 description:
     Помогаем компании «Мобильные решения для строительства» развивать их флагманский продукт для осуществления контроля качества строительных работ
@@ -7,7 +8,8 @@ description:
 prev_image: "/assets/img/projects/prev/stroycontrol-prev.png"
 prev_position: left
 prev_background: "#F3CA46"
-category: 'desktop'
+spheres: 'project-management'
+technologies: 'native'
 ---
 
 # Services that grow with your business

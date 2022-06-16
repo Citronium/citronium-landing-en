@@ -1,5 +1,10 @@
 [
     {
+        "en": "all",
+        "ru": "Все сферы",
+        "type": "spheres"
+    },
+    {
         "en": "business-processes",
         "ru": "Цифровизация бизнес-процессов",
         "type": "spheres"
@@ -53,30 +58,5 @@
         "en": "geolocation",
         "ru": "Геолокация",
         "type": "spheres"
-    },
-    {
-        "en": "android",
-        "ru": "Android",
-        "type": "technologies"
-    },
-    {
-        "en": "hybrid",
-        "ru": "Hybrid",
-        "type": "technologies"
-    },
-    {
-        "en": "iOS",
-        "ru": "iOS",
-        "type": "technologies"
-    },
-    {
-        "en": "native",
-        "ru": "Native",
-        "type": "technologies"
-    },
-    {
-        "en": "web",
-        "ru": "Web",
-        "type": "technologies"
     }
 ]

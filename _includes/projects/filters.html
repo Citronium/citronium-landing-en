@@ -2,24 +2,109 @@
     <h4 class="h4 projects-filters-title">Фильтры</h4>
     <div class="projects-filters-components">
         <div class="dropdown" data-path="spheres">
-            <input type="text" class="dropdown__input" placeholder="Все сферы" readonly> 
+            <input id="spheres-input" type="text" class="dropdown__input" placeholder="Все сферы" readonly />
             <div class="dropdown__options" data-target="spheres">
-                {% for category in site.data.categories %}
-                    <a class="dropdown__options-item" href="{{site.baseuri}}/projects/{{category.en}}">{{category.ru}}</a>
+                {% for sphere in site.data.spheres %}
+                    <div class="dropdown__options-item" data-target="{{sphere.en}}">{{sphere.ru}}</div>
                 {% endfor %}
             </div>
         </div>
         <div class="dropdown" data-path="technologies">
-            <input type="text" class="dropdown__input" placeholder="Все технологии" readonly> 
-            <div class="dropdown__options" data-target="technologies">
-                <div class="dropdown__options-item">Android</div>
-                <div class="dropdown__options-item">Hybrid</div>
-                <div class="dropdown__options-item">iOS</div>
-                <div class="dropdown__options-item">Native</div>
-                <div class="dropdown__options-item">Web</div>
+            <input id="technologies-input" type="text" class="dropdown__input" placeholder="Все технологии" readonly />
+            <div class="dropdown__options">
+                {% for technologie in site.data.technologies %}     
+                    <div class="dropdown__options-item" data-target="{{technologie.en}}">{{technologie.ru}}</div>        
+                {% endfor %}
             </div>
         </div>
     </div>
-    
 </div>
 
+<script type="text/javascript">
+    let intervalId;
+
+    var spheres = [];
+    var technologies = [];
+
+    document.querySelectorAll('.dropdown').forEach(e => {
+        e.addEventListener('click', e => {
+            const targetDropDown = e.currentTarget.dataset.path;
+            const optionsItem = e.target.getAttribute("data-target");
+            if (optionsItem) {
+                if (targetDropDown === "spheres") {
+                    if (optionsItem === "all") {
+                        spheres = []
+                        document.getElementById("spheres-input").value = "Все сферы";
+                        return
+                    }
+
+                    const indexFilter = spheres.findIndex(item => item === optionsItem);
+                    if (indexFilter === -1) {
+                        spheres.push(optionsItem);
+                    } else {
+                        spheres = spheres.filter(item => item !== optionsItem);
+                    }
+                    const filtersText = spheres.length > 0 ? spheres.length : "Все"
+                    document.getElementById("spheres-input").value = filtersText + " сферы";
+                    
+                }
+                if (targetDropDown === "technologies") {
+                    const indexFilter = technologies.findIndex(item => item === optionsItem);
+                    if (indexFilter === -1) {
+                        technologies.push(optionsItem);
+                    } else {
+                        technologies = technologies.filter(item => item !== optionsItem);
+                    }
+                    const filtersText = technologies.length > 0 ? technologies.length : "Все"
+                    document.getElementById("technologies-input").value = filtersText + " технологии";
+                    
+                }
+
+                e.target.classList.toggle('active');
+                filterProjects(spheres, technologies)
+                return
+            }
+
+            const allDropDowns = document.querySelectorAll('.dropdown');
+            allDropDowns.forEach(element => {
+                if (element.dataset.path !== e.currentTarget.dataset.path) {
+                    element.classList.remove("active");
+                } else {
+                    element.classList.toggle("active");
+                }
+            })
+            window.onclick = e => {
+                if (e.target.classList.value.includes("dropdown") === false) {
+                    document.querySelectorAll('.dropdown').forEach(element => {
+                        element.classList.remove("active");
+                    })
+                }
+            }
+        });
+    });
+
+    function filterProjects(spheresArray, technologiesArray) {
+        {% for project in site.projects %}
+            var isShow = false;
+            var projectSpheres= {{ project.spheres | jsonify }};
+            var projectTechnologies= {{ project.technologies | jsonify }};
+            var id = {{ project.id | jsonify }};
+            var projectDiv = document.getElementById(id);
+
+            if (spheresArray.length === 0 && technologiesArray.length === 0) {
+                isShow = true
+            }
+    
+            var indexSphere = spheresArray.findIndex(item => item === projectSpheres)
+            if (spheresArray.length > 0 && indexSphere > -1) {
+                isShow = true
+            }
+
+            var indexTechnologies = technologiesArray.findIndex(item => item === projectTechnologies)
+            if (technologiesArray.length > 0 && indexTechnologies > -1) {
+                isShow = true
+            }
+            projectDiv.style.display = isShow ? 'flex' : 'none';
+        {% endfor %}
+    }
+</script>

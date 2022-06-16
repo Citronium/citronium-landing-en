@@ -1,0 +1,32 @@
+[
+    {
+        "en": "all",
+        "ru": "Все технологии",
+        "type": "technologies"
+    },
+    {
+        "en": "android",
+        "ru": "Android",
+        "type": "technologies"
+    },
+    {
+        "en": "hybrid",
+        "ru": "Hybrid",
+        "type": "technologies"
+    },
+    {
+        "en": "iOS",
+        "ru": "iOS",
+        "type": "technologies"
+    },
+    {
+        "en": "native",
+        "ru": "Native",
+        "type": "technologies"
+    },
+    {
+        "en": "web",
+        "ru": "Web",
+        "type": "technologies"
+    }
+]

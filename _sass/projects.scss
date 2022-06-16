@@ -92,7 +92,6 @@
                     top: 56px;
                     right: 56px;
                     height: 100%;
-                    
                 }
             }
             &--right {
@@ -110,15 +109,13 @@
 
 .dropdown {
     position: relative;
-    
-    width: 300px;
-    height: 50px;
-    
+    width: 258px;
+    height: 72px;
     &::before {
         content: "";
         position: absolute;
         right: 20px;
-        top: 20px;
+        top: 30px;
         z-index: 2;
         width: 8px;
         height: 8px;
@@ -130,8 +127,11 @@
         pointer-events: none;
     }
     &.active::before {
-        top: 22px;
+        top: 30px;
         transform: rotate(-225deg);
+    }
+    &.active &__options {
+        display: block;
     }
 
     &__input {
@@ -140,38 +140,43 @@
         left: 0;
         width: 100%;
         height: 100%;
-        cursor: pointer;
         background: #fff;
+        color: var(--color-dark56);
         border: none;
         outline: none;
         padding: 12px 20px;
         border-radius: 10px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        cursor: pointer;
     }
     &__options {
         display: none;
         position: absolute;
-        top: 70px;
+        top: 80px;
         right: 0;
-        
-        width: 400px;
-        max-height: 400px;
+        width: 600px;
+        padding: 25px;
+        max-height: 600px;
         overflow: auto;
         background: #fff;
         border-radius: 10px;
-        
         z-index: 9999;
         &-item {
             display: block;
             padding: 12px 20px;
             cursor: pointer;
-            & :hover {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            color: var(--color-dark56);
+            &:hover {
                 background-color: azure;
-                color: #fff;
+            }
+            &.active {
+                color: #367cf4;
             }
         }
-        &.active {
-            display: block;
-        }
     }
-    
 }

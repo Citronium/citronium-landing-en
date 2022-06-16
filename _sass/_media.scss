@@ -97,6 +97,11 @@
             flex-direction: column;
         }
     }
+    .dropdown {
+        &__options {
+            width: 450px;
+        }
+    }
     .projects {
         &__title {
             font-size: 56px;
@@ -290,6 +295,37 @@
             }
         }
     }
+    .dropdown {
+        position: relative;
+        width: 250px;
+        &__input {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__options {
+            width: 100%;
+            position: fixed;
+            overflow-y: auto;
+            height: calc(100% - 400px);
+            max-height: none;
+            top: 400px;
+            &-item {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    .projects {
+        &-filters {
+            justify-content: flex-end;
+            &-title {
+                display: none;
+            }
+            &-components {
+                gap: 8px;
+            }
+        }
+    }
 }
 
 @media (max-width: 640px) {
@@ -376,28 +412,18 @@
             grid-template-columns: 1fr 1fr;
         }
     }
-    .dropdown {
-        position: relative;
-        width: 260px;
-        &__options {
-            width: 100%;
-            position: fixed;
-            overflow-y: auto;
-            height: calc(100% - 400px);
-            top: 400px;
-        }
-    }
+
     .projects {
         &__title {
             font-size: 40px;
             line-height: 40px;
         }
-        &-filters {
-            justify-content: flex-end;
-            &-title {
-                display: none;
-            } 
-        }
+        // &-filters {
+        //     justify-content: flex-end;
+        //     &-title {
+        //         display: none;
+        //     }
+        // }
         &__item {
             &-descr {
                 margin-top: 4px;
@@ -572,6 +598,9 @@
             }
         }
     }
+    .dropdown {
+        width: 170px;
+    }
 }
 
 @media (max-width: 390px) {
@@ -740,6 +769,14 @@
             margin: 100px 16px 40px 16px;
         }
     }
+    .dropdown {
+        &__options {
+            &-item {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
 }
 
 @media (max-width: 320px) {
@@ -787,5 +824,8 @@
         &__items {
             padding: 24px;
         }
+    }
+    .dropdown {
+        width: 130px;
     }
 }
