@@ -17,7 +17,7 @@ technologies: 'native'
 
 Сервис для учета рабочего времени сотрудников медицинских организаций США
 
-![image info](/assets/img/projects/sber-qr/cover1.png)
+![image info]({{site.baseuri}}/assets/img/projects/sber-qr/cover1.png)
 
 #### Цель и задачи
 
@@ -37,13 +37,13 @@ technologies: 'native'
 
 Наше решение — система, фиксирующая время работы медицинского персонала и виды услуг, оказываемых пациенту. Полученные данные сверяются с недельным планом, по нескольким параметрам ведётся систематизация и анализ.
 
-![image info](/assets/img/projects/sber-qr/cover2.png)
+![image info]({{site.baseuri}}/assets/img/projects/sber-qr/cover2.png)
 
 ### Доступность сервиса
 
 Учитывая бизнес-логику, доступ к информации предоставляется как медицинской организации, так и страховщику, с которым заключён договор у пациента. Предложенная нами система учёта времени по задаче заказчика доступна в браузере и в мобильных приложениях на устройствах iOS и Android.
 
-![image info](/assets/img/projects/sber-qr/cover3.png)
+![image info]({{site.baseuri}}/assets/img/projects/sber-qr/cover3.png)
 
 #### Время на разработку
 
