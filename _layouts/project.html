@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {%- include head.html -%}
-  <main>
+  <body>
     {%- include home/header.html -%}
     <div class="project">
         <div class="container">
@@ -10,8 +10,8 @@
             </div>
         </div>
     </div>
+    <script src="{{ site.baseurl | prepend: site.url }}/assets/js/script.js"></script>
+  </body>
     
     {%- include footer.html -%}
-</main>
-  <!-- <script src="{{ site.baseurl | prepend: site.url }}/assets/js/script.js"></script> -->
 </html>

@@ -3,6 +3,9 @@
   {%- include head.html -%}
   <body>
     {{ content }}
+    
   </body>
-  <!-- <script src="{{ site.baseurl | prepend: site.url }}/assets/js/script.js"></script> -->
+  
+  {%- include feedback-form.html -%}
+  <script src="{{ site.baseurl | prepend: site.url }}/assets/js/script.js"></script>
 </html>
