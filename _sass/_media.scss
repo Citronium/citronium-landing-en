@@ -473,6 +473,14 @@
         }
     }
 
+    .feedback {
+        &__body {
+            height: 100vh;
+            border-radius: 0;
+            width: 100%;
+        }
+    }
+
     .footer {
         &__title {
             font-size: 40px;
@@ -789,6 +797,35 @@
             }
         }
     }
+    .feedback {
+        &__body {
+            padding: 48px 40px 40px 40px;
+            &-title {
+                font-size: 18px;
+                line-height: 24px;
+            }
+            &-item {
+                margin-top: 32px;
+            }
+            &-input {
+                font-size: 16px;
+                line-height: 20px;
+            }
+            &-label {
+                font-size: 16px;
+                line-height: 20px;
+            }
+            &-btn {
+                font-size: 16px;
+                line-height: 24px;
+                margin-top: 24px;
+            }
+            &-personal {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
 }
 
 @media (max-width: 320px) {
@@ -839,5 +876,10 @@
     }
     .dropdown {
         width: 130px;
+    }
+    .feedback {
+        &__body {
+            padding: 48px 10px 10px 10px;
+        }
     }
 }

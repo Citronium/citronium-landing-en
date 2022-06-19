@@ -1,16 +1,21 @@
-<div id="feedback-form" class="feedback-form">
-    <div class="feedback-form__container">
-        <div class="feedback-form__body">
-            <div class="feedback-form__body-top">
-                <p class="feedback-form__body-title">Запись на консультацию</p>
-                <div id="feedback-close" class="feedback-form__body-close">&#10006</div>
+<div id="feedback-form" class="feedback">
+    <div class="feedback__container">
+        <div class="feedback__body">
+            <div class="feedback__body-top">
+                <p class="feedback__body-title">Запись на консультацию</p>
+                <div id="feedback-close" class="feedback__body-close">&#10005</div>
             </div>
-            
-
             <form action="">
-                <input class="feedback-form__body-name" type="text" placeholder="Введите имя">
-                <input class="feedback-form__body-phone type="text" placeholder="+7">
-                <button class="btn btn--dark feedback-form__body-btn">Оставить заявку</button>
+                <div class="feedback__body-item">
+                    <label class="feedback__body-label">Имя</label>
+                    <input class="feedback__body-input" type="text" placeholder="Введите имя">
+                </div>
+                <div class="feedback__body-item">
+                    <label class="feedback__body-label">Телефон</label>
+                    <input class="feedback__body-input type="text" placeholder="+7">
+                </div>
+                <button class="btn btn--dark feedback__body-btn">Начать проект</button>
+                <p class="feedback__body-personal">Нажимая на кнопку вы даёте согласие <u>на обработку персональных данных</u></p>
             </form>
             
         </div>
