@@ -11,7 +11,7 @@
             line-height: 64px;
         }
         & > h2 {
-            margin-top: 48px;
+            margin-top: 40px;
             font-weight: 700;
             font-size: 48px;
             line-height: 56px;
@@ -20,7 +20,7 @@
             color: var(--color-dark);
         }
         & > h3 {
-            margin-top: 93px;
+            margin-top: 80px;
             font-weight: 600;
             font-size: 32px;
             line-height: 40px;
@@ -44,13 +44,14 @@
             font-weight: 500;
             font-size: 24px;
             line-height: 32px;
-            text-align: center;
+            //text-align: center;
             color: var(--color-dark56);
         }
 
-        & ol {
+        & > ol {
             counter-reset: myCounter;
             padding: 0;
+            margin-top: 40px;
             & li {
                 font-weight: 600;
                 font-size: 24px;
@@ -59,7 +60,7 @@
                 color: var(--color-dark);
                 list-style: none;
                 max-width: 700px;
-                padding-top: 80px;
+                padding-top: 40px;
 
                 & :before {
                     counter-increment: myCounter;
@@ -78,6 +79,12 @@
                     justify-content: center;
                 }
             }
+        }
+
+        &-item-half{
+            width: 50%;
+            align-self: flex-end;
+            text-align: left;
         }
 
         &-time {
@@ -138,7 +145,7 @@
             background-color: var(--color-white);
             border-radius: 20px;
             padding: 56px;
-            min-height: 484px;
+            //min-height: 484px;
             &__left {
                 width: 50%;
             }

@@ -30,37 +30,41 @@
         e.addEventListener('click', e => {
             const targetDropDown = e.currentTarget.dataset.path;
             const optionsItem = e.target.getAttribute("data-target");
+            
             if (optionsItem) {
                 if (targetDropDown === "spheres") {
                     if (optionsItem === "all") {
                         spheres = []
                         document.getElementById("spheres-input").value = "Все сферы";
-                        return
-                    }
-
-                    const indexFilter = spheres.findIndex(item => item === optionsItem);
-                    if (indexFilter === -1) {
-                        spheres.push(optionsItem);
                     } else {
-                        spheres = spheres.filter(item => item !== optionsItem);
+                        const indexFilter = spheres.findIndex(item => item === optionsItem);
+                        if (indexFilter === -1) {
+                            spheres.push(optionsItem);
+                        } else {
+                            spheres = spheres.filter(item => item !== optionsItem);
+                        }
+                        const filtersText = spheres.length > 0 ? spheres.length : "Все"
+                        document.getElementById("spheres-input").value = filtersText + " сферы";
                     }
-                    const filtersText = spheres.length > 0 ? spheres.length : "Все"
-                    document.getElementById("spheres-input").value = filtersText + " сферы";
-                    
                 }
                 if (targetDropDown === "technologies") {
-                    const indexFilter = technologies.findIndex(item => item === optionsItem);
-                    if (indexFilter === -1) {
-                        technologies.push(optionsItem);
+                    if (optionsItem === "all") {
+                        technologies = []
+                        document.getElementById("technologies-input").value = "Все технологии";
                     } else {
-                        technologies = technologies.filter(item => item !== optionsItem);
+                        const indexFilter = technologies.findIndex(item => item === optionsItem);
+                        if (indexFilter === -1) {
+                            technologies.push(optionsItem);
+                        } else {
+                            technologies = technologies.filter(item => item !== optionsItem);
+                        }
+                        const filtersText = technologies.length > 0 ? technologies.length : "Все"
+                        document.getElementById("technologies-input").value = filtersText + " технологии";
                     }
-                    const filtersText = technologies.length > 0 ? technologies.length : "Все"
-                    document.getElementById("technologies-input").value = filtersText + " технологии";
-                    
                 }
 
                 e.target.classList.toggle('active');
+                
                 filterProjects(spheres, technologies)
                 return
             }

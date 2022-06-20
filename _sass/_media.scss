@@ -145,18 +145,16 @@
     }
     .project {
         &-content {
-            margin-top: 80px;
-            & > h1 {
-                font-size: 56px;
-                line-height: 56px;
-            }
-            & > h2 {
-                font-size: 48px;
-                line-height: 56px;
-            }
-            & > h4 {
-                font-size: 24px;
-                line-height: 32px;
+            &-video {
+                flex-direction: column;
+                padding: 40px;
+                gap: 40px;
+                &__left {
+                    width: 100%;
+                }
+                &__right {
+                    width: 100%;
+                }
             }
         }
     }
@@ -467,6 +465,76 @@
                     & img {
                         top: 40px;
                         left: 151px;
+                    }
+                }
+            }
+        }
+    }
+
+    .project {
+        &-content {
+            & > h1 {
+                font-size: 40px;
+                line-height: 40px;
+            }
+            & > h2 {
+                font-size: 32px;
+                line-height: 40px;
+                margin-top: 30px;
+            }
+            & > ol {
+                margin-top: 30px;
+                & li {
+                    padding-top: 30px;
+                }
+            }
+            & > h3 {
+                margin-top: 60px;
+                font-size: 24px;
+                line-height: 32px;
+            }
+            & > h4 {
+                margin-top: 180px;
+            }
+            & > p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &-time {
+                margin-top: 60px;
+                gap: 16px;
+                &__left {
+                    &-title {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                    &-month {
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
+                }
+                &__right {
+                    &-title {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                    &-month {
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
+                }
+            }
+            &-video {
+                margin-top: 60px;
+                &__right {
+                    &-title {
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
+                    &-descr {
+                        font-size: 16px;
+                        line-height: 24px;
+                        margin-top: 8px;
                     }
                 }
             }
@@ -823,6 +891,79 @@
             &-personal {
                 font-size: 14px;
                 line-height: 20px;
+            }
+        }
+    }
+
+    .project {
+        &-content {
+            & > h1 {
+                font-size: 24px;
+                line-height: 28px;
+            }
+            & > h2 {
+                font-size: 24px;
+                line-height: 28px;
+                margin-top: 20px;
+            }
+            & > h3 {
+                margin-top: 40px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            & > h4 {
+                font-size: 16px;
+                line-height: 24px;
+                margin-top: 120px;
+            }
+            & > p {
+                font-size: 14px;
+                line-height: 20px;
+                margin-top: 20px;
+            }
+            & img {
+                margin-top: 40px;
+            }
+
+            & > ol {
+                margin-top: 20px;
+                & li {
+                    padding-top: 20px;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+
+            &-item-half {
+                width: 70%;
+            }
+            &-time {
+                flex-direction: column;
+                margin-top: 40px;
+                &__left {
+                    width: 100%;
+                    padding: 16px;
+                    border-radius: 10px;
+                }
+                &__right {
+                    width: 100%;
+                    padding: 16px;
+                    border-radius: 10px;
+                }
+            }
+            &-video {
+                gap: 16px;
+                padding: 16px;
+                &__right {
+                    &-title {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                    &__descr {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
             }
         }
     }
