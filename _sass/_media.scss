@@ -1,37 +1,11 @@
 @media (max-width: 960px) {
-    .h4 {
-        font-size: 24px;
-        line-height: 32px;
-    }
-    .h2 {
-        font-size: 48px;
-        line-height: 56px;
-    }
     .hero {
         min-height: 816px;
         &__title {
-            font-size: 56px;
-            line-height: 56px;
             max-width: 880px;
         }
         &__descr {
             max-width: 880px;
-        }
-    }
-    .what-we-do {
-        &__item1 {
-            background-position: right 0px bottom 20px;
-        }
-        &__item2 {
-            background-size: 434px;
-            background-position: right -10px bottom -20px;
-            &-title {
-                max-width: 242px;
-            }
-        }
-        &__item3 {
-            background-size: 352px;
-            background-position: right 49px bottom 0px;
         }
     }
     .why-we {
@@ -46,31 +20,44 @@
         }
         &__item1 {
             background-position: right bottom 35px;
-            background-size: 394px;
+            background-size: 300px;
             &-title {
                 max-width: 60%;
             }
         }
         &__item2 {
             background-position: right bottom 35px;
-            background-size: 394px;
+            background-size: 300px;
             &-title {
                 max-width: 60%;
             }
         }
         &__item3 {
             background-position: right bottom 35px;
-            background-size: 394px;
+            background-size: 300px;
             &-title {
                 max-width: 60%;
-                margin-top: 56px;
             }
         }
     }
     .how-we-work {
         &__item {
+            flex-direction: column-reverse;
             &-col {
-                padding-right: 5px;
+                width: 100%;
+                height: 60%;
+                padding: 56px;
+            }
+            &-center {
+                height: 40%;
+                width: 100%;
+            }
+            &-desc {
+                margin-top: 24px;
+            }
+            &-img {
+                margin-top: 45px;
+                max-width: 320px;
             }
         }
     }
@@ -80,13 +67,9 @@
         }
         &__item1 {
             width: 100%;
-            min-height: 512px;
         }
         &__item2 {
             width: 100%;
-            &-img {
-                margin-top: 44px;
-            }
         }
     }
     .trust-us {
@@ -172,14 +155,6 @@
 }
 
 @media (max-width: 800px) {
-    .h2 {
-        font-size: 32px;
-        line-height: 40px;
-    }
-    .h3 {
-        font-size: 24px;
-        line-height: 32px;
-    }
     .section-title {
         margin-top: 30px;
     }
@@ -192,34 +167,31 @@
                 "item3";
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr;
-            grid-gap: 16px;
+            grid-gap: 24px;
         }
         &__item {
             height: 300px;
         }
         &__item1 {
             background-size: 255px;
-            background-position: right 0px bottom 0px;
+            background-position: right bottom;
             &-title {
-                max-width: 233px;
                 margin-left: 40px;
                 margin-top: 40px;
             }
         }
         &__item2 {
             background-size: 272px;
-            background-position: right 0px bottom 0px;
+            background-position: right bottom;
             &-title {
-                max-width: 265px;
                 margin-left: 40px;
                 margin-top: 40px;
             }
         }
         &__item3 {
             background-size: 244px;
-            background-position: right 0px bottom 0px;
+            background-position: right bottom;
             &-title {
-                max-width: 353px;
                 margin-left: 40px;
                 margin-top: 40px;
             }
@@ -254,37 +226,6 @@
                 max-width: 55%;
                 margin-top: 40px;
                 margin-left: 40px;
-            }
-        }
-    }
-    .how-we-work {
-        &__item {
-            flex-direction: column-reverse;
-            &-col {
-                width: 100%;
-                height: 60%;
-                padding: 20px 40px 40px 40px;
-            }
-            &-center {
-                height: 40%;
-                width: 100%;
-            }
-            &-title {
-                font-size: 24px;
-                line-height: 32px;
-            }
-            &-desc {
-                font-size: 16px;
-                line-height: 24px;
-                margin-top: 16px;
-            }
-            &-link {
-                margin-top: 34px;
-                font-size: 18px;
-                line-height: 24px;
-            }
-            &-img {
-                max-width: 174px;
             }
         }
     }
@@ -379,6 +320,17 @@
         &__btn {
             margin-top: 60px;
         }
+    }
+    .how-we-work {
+        &__item {
+            &-col {
+                padding: 40px;
+            }
+            &-img {
+                max-width: 174px;
+            }
+        }
+        
     }
     .our-approach {
         &__diagram {
@@ -591,6 +543,7 @@
     .why-we {
         &__items {
             margin-top: 40px;
+            gap: 16px;
         }
         &__item1 {
             display: flex;
@@ -659,6 +612,7 @@
     .what-we-do {
         &__items {
             margin-top: 40px;
+            gap: 16px;
         }
         &__item {
             height: 200px;
@@ -722,11 +676,6 @@
             line-height: 28px;
             max-width: 358px;
         }
-        &__img {
-            & img {
-                height: 100%;
-            }
-        }
         &__descr {
             font-size: 14px;
             line-height: 20px;
@@ -738,6 +687,9 @@
         }
     }
     .how-we-work {
+        &__items {
+            gap: 16px;
+        }
         &__item {
             &-title {
                 font-size: 18px;

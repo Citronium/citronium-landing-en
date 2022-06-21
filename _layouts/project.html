@@ -2,7 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {%- include head.html -%}
   <body>
-    {%- include home/header.html -%}
+    {%- include header.html -%}
     <main>
       <div class="project">
           <div class="container">
@@ -13,8 +13,7 @@
       </div>
     </main>
   </body>
-    
-    {%- include footer.html -%}
-    {%- include feedback-form.html -%}
-    <script src="{{ site.baseurl | prepend: site.url }}/assets/js/script.js"></script>
+  {%- include footer.html -%}
+  {%- include feedback-form.html -%}
+  <script src="{{ site.baseurl | prepend: site.url }}/assets/js/script.js"></script>
 </html>
