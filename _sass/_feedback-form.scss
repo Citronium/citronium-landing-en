@@ -9,7 +9,7 @@
     transition: .4s ease;
     &.active {
         //display: block;
-        transform: scale(100%);
+        transform: scale(1);
     }
     &__container {
         display: flex;
