@@ -1,7 +1,7 @@
 <div class="projects-filters">
     <h4 class="h4 projects-filters-title">Фильтры</h4>
     <div class="projects-filters-components">
-        <div class="dropdown" data-path="spheres">
+        <div class="dropdown dropdown-spheres" data-path="spheres">
             <input id="spheres-input" type="text" class="dropdown__input" placeholder="Все сферы" readonly />
             <div class="dropdown__options" data-target="spheres">
                 {% for sphere in site.data.spheres %}
@@ -9,7 +9,7 @@
                 {% endfor %}
             </div>
         </div>
-        <div class="dropdown" data-path="technologies">
+        <div class="dropdown dropdown-technologies" data-path="technologies">
             <input id="technologies-input" type="text" class="dropdown__input" placeholder="Все технологии" readonly />
             <div class="dropdown__options">
                 {% for technologie in site.data.technologies %}     
@@ -31,7 +31,7 @@
         e.addEventListener('click', e => {
             const targetDropDown = e.currentTarget.dataset.path;
             const optionsItem = e.target.getAttribute("data-target");
-            
+            console.log('click');
             if (optionsItem) {
                 if (targetDropDown === "spheres") {
                     if (optionsItem === "all") {
@@ -110,7 +110,17 @@
             })
 
             window.onclick = e => {
-               console.log(e.target);
+                if (e.target.classList.value.includes("dropdown") === false) {
+                    allDropDowns.forEach(element => {
+                        
+                        element.classList.remove("active");
+
+                        document.body.style.overflow = "auto";
+                        //document.body.style.height = "auto";
+                    })
+                }
+            }
+            window.ontouchstart = e => {
                 if (e.target.classList.value.includes("dropdown") === false) {
                     allDropDowns.forEach(element => {
                         

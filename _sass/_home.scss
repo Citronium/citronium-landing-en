@@ -157,17 +157,17 @@
 
 .how-we-work {
     &__items {
-        margin-top: 80px;
+        margin-top: calc(80px - 24px);
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 24px;
     }
     &__item {
         background-color: var(--color-white);
         border-radius: 20px;
         display: flex;
         flex-direction: row;
+        margin-top: 24px;
         
         &--reverse {
             flex-direction: row-reverse;
@@ -219,14 +219,13 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        gap: 24px;
-        
     }
     &__item1 {
         width: 60%;
         background-color: var(--color-yellow);
         border-radius: 20px;
         height: 450px;
+        margin-right: 12px;
         &-title {
             padding-top: 56px;
             padding-left: 56px;
@@ -242,6 +241,7 @@
         background-color: var(--color-white);
         border-radius: 20px;
         height: 450px;
+        margin-left: 16px;
         &-title {
             padding-top: 56px;
             padding-left: 56px;

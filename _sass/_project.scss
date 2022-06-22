@@ -44,7 +44,7 @@
             font-weight: 500;
             font-size: 24px;
             line-height: 32px;
-            //text-align: center;
+            text-align: center;
             color: var(--color-dark56);
         }
 
@@ -84,7 +84,7 @@
         &-item-half{
             width: 50%;
             align-self: flex-end;
-            text-align: left;
+            text-align: left!important;
         }
 
         &-time {
@@ -94,12 +94,12 @@
             justify-content: center;
             width: 100%;
             margin-top: 80px;
-            gap: 24px;
             &__left {
                 width: 50%;
                 background-color: var(--color-yellow);
                 border-radius: 20px;
                 padding: 40px;
+                margin-right: 12px;
                 &-title {
                     font-weight: 500;
                     font-size: 24px;
@@ -119,6 +119,7 @@
                 background-color: var(--color-white);
                 border-radius: 20px;
                 padding: 40px;
+                margin-left: 12px;
                 &-title {
                     font-weight: 500;
                     font-size: 24px;
@@ -141,16 +142,15 @@
             justify-content: center;
             width: 100%;
             margin-top: 80px;
-            gap: 112px;
             background-color: var(--color-white);
             border-radius: 20px;
-            padding: 56px;
-            //min-height: 484px;
             &__left {
                 width: 50%;
+                margin: 56px;
             }
             &__right {
                 width: 50%;
+                margin: 56px;
                 &-title {
                     font-weight: 600;
                     font-size: 32px;
