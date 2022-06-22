@@ -21,12 +21,13 @@
 </div>
 
 <script type="text/javascript">
-    let intervalId;
-
     var spheres = [];
     var technologies = [];
+    const allDropDowns = document.querySelectorAll('.dropdown');
+    const spheresInput = document.getElementById("spheres-input")
+    const technologiesInput = document.getElementById("technologies-input")
 
-    document.querySelectorAll('.dropdown').forEach(e => {
+    allDropDowns.forEach(e => {
         e.addEventListener('click', e => {
             const targetDropDown = e.currentTarget.dataset.path;
             const optionsItem = e.target.getAttribute("data-target");
@@ -35,7 +36,6 @@
                 if (targetDropDown === "spheres") {
                     if (optionsItem === "all") {
                         spheres = []
-                        document.getElementById("spheres-input").value = "Все сферы";
                     } else {
                         const indexFilter = spheres.findIndex(item => item === optionsItem);
                         if (indexFilter === -1) {
@@ -43,14 +43,27 @@
                         } else {
                             spheres = spheres.filter(item => item !== optionsItem);
                         }
-                        const filtersText = spheres.length > 0 ? spheres.length : "Все"
-                        document.getElementById("spheres-input").value = filtersText + " сферы";
                     }
+
+                    const optionItems = e.currentTarget.querySelectorAll('.dropdown__options-item')
+                    optionItems.forEach(element => {
+                        const elementDataTarget = element.getAttribute("data-target")
+                        const indexFilter = spheres.findIndex(item => item === elementDataTarget);
+                        if (indexFilter === -1) {
+                            element.classList.remove("active");
+                        } else {
+                            element.classList.add("active");
+                        }
+                    })
+
+                    const text = declOfNum(spheres.length, ['сфера', 'сферы', 'сфер'])
+
+                    spheresInput.value = text
                 }
+
                 if (targetDropDown === "technologies") {
                     if (optionsItem === "all") {
                         technologies = []
-                        document.getElementById("technologies-input").value = "Все технологии";
                     } else {
                         const indexFilter = technologies.findIndex(item => item === optionsItem);
                         if (indexFilter === -1) {
@@ -58,18 +71,36 @@
                         } else {
                             technologies = technologies.filter(item => item !== optionsItem);
                         }
-                        const filtersText = technologies.length > 0 ? technologies.length : "Все"
-                        document.getElementById("technologies-input").value = filtersText + " технологии";
                     }
-                }
 
-                e.target.classList.toggle('active');
+                    const optionItems = e.currentTarget.querySelectorAll('.dropdown__options-item')
+                    optionItems.forEach(element => {
+                        const elementDataTarget = element.getAttribute("data-target")
+                        const indexFilter = technologies.findIndex(item => item === elementDataTarget);
+                        if (indexFilter === -1) {
+                            element.classList.remove("active");
+                        } else {
+                            element.classList.add("active");
+                        }
+                    })
+
+                    const text = declOfNum(technologies.length, ['технология', 'технологии', 'технологий'])
+
+                    technologiesInput.value = text
+                }
                 
                 filterProjects(spheres, technologies)
                 return
             }
 
-            const allDropDowns = document.querySelectorAll('.dropdown');
+            if (window.matchMedia('(max-width: 800px)').matches) {
+                document.body.style.overflow = "hidden";
+                //document.body.style.height = "100%";
+            } else {
+                document.body.style.overflow = "auto";
+                //document.body.style.height = "auto";
+            }
+            
             allDropDowns.forEach(element => {
                 if (element.dataset.path !== e.currentTarget.dataset.path) {
                     element.classList.remove("active");
@@ -77,10 +108,16 @@
                     element.classList.toggle("active");
                 }
             })
+
             window.onclick = e => {
+               console.log(e.target);
                 if (e.target.classList.value.includes("dropdown") === false) {
-                    document.querySelectorAll('.dropdown').forEach(element => {
+                    allDropDowns.forEach(element => {
+                        
                         element.classList.remove("active");
+
+                        document.body.style.overflow = "auto";
+                        //document.body.style.height = "auto";
                     })
                 }
             }
@@ -111,4 +148,24 @@
             projectDiv.style.display = isShow ? 'flex' : 'none';
         {% endfor %}
     }
+
+    function declOfNum(num, texts) {
+        num = Math.abs(num) % 100;
+        var num1 = num % 10;
+
+        if (num === 0) {
+            return "Все " + texts[1];
+        }
+        
+        if (num > 10 && num < 20) {
+            return num + " " + texts[2];
+        }
+        if (num1 > 1 && num1 < 5) {
+            return num + " " + texts[1];
+        }
+        if (num1 === 1) {
+            return num + " " + texts[0];
+        }
+        return num + " " + texts[2];
+    };
 </script>
