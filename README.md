@@ -51,7 +51,7 @@ bundle exec  jekyll serve --livereload --baseurl=""
 |   ├── spheres.json //Список сфер
 |   └── technologies.json //Список технологий
 ├── _includes // HTML куски, встраиваемые в других файлах
-├── _posts // Все посты лежат здесь
+├── _projects // Все файлы проектов
 ├── _sass // Стили
 ├── _site // Билд проекта, генерирует Jekyll. В репозитории его нет.
 ├── assets // Картинки, скрипты, главный файл стилей
