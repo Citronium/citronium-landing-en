@@ -1,0 +1,17 @@
+version: '3'
+services:  
+  app:
+    build: .
+#    container_name: citronium-landing
+    volumes:
+      - citronium_landing:/var/www/html/'
+    #restart: always
+    labels:
+      - traefik.backend=citronium-landing
+      - traefik.frontend.rule=Host:citronium-landing.psrv5.citronium.com
+      - traefik.port=80
+      - traefik.docker.network=traefik_proxy
+    networks:      
+      - traefik
+volumes:
+  citronium_landing:
