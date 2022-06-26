@@ -18,8 +18,11 @@ node {
         sh "docker-compose -p citronium-landing up -d"
       }
 
+     } catch(e) {
+      sendMessage("🛠❌ Build ${repositoryName} №${env.BUILD_NUMBER}: Error ${imageTag} ${e}")
+      throw e
     }
-    }
+}
 
 
 def sendChangeLogs() {
