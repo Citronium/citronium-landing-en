@@ -6,14 +6,34 @@ def chatId          = ''
 def token           = ''
 
 def branch        = env.BRANCH_NAME
+def dockerRegistry  = "registry.citronium.com/${repositoryName}"
+def imageTag
 
 node {
     try {
       stage("Checkout") {
          git branch: "${branch}",
           url: 'git@github.com:Citronium/citronium-landing.git'
+          
+        def commit_hash = sh(returnStdout: true, script: "git rev-parse --short HEAD").trim()
+        def now = new Date()
+        imageTag = "${now.format('yyMMdd', TimeZone.getTimeZone('UTC'))}_${branch}_${BUILD_NUMBER}_${commit_hash}"
+        imageTag = imageTag.toLowerCase()
+        imageTag = imageTag.replaceAll('/', '_')
+      }      
+        
+      stage("Start") {
+        sendMessage("☑ Build №${env.BUILD_NUMBER}: Start ${imageTag} ${env.JOB_URL} ${sendChangeLogs()}")
       }
-      
+
+      stage("Build") {
+        sh "docker build -t ${dockerRegistry}:${imageTag} ."
+      }
+
+      //stage("Push") {
+      //  sh "docker push ${dockerRegistry}:${imageTag}"
+      //}  
+        
       stage("Docker start at psrv5") {
         sh "docker-compose -p citronium-landing up -d"
       }
