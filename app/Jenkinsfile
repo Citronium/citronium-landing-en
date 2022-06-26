@@ -1,13 +1,11 @@
 @NonCPS
 
 def repositoryName  = 'citronium-landing'
-def jenkinsURL      = 'https://jenkins.citronium.com/view/Base/job/citronium-landing/'
+def jenkinsURL      = 'https://jenkins.citronium.com/view/Base/job/citronium-landing-create-conteiner/'
 def chatId          = ''
 def token           = ''
 
 def branch        = env.BRANCH_NAME
-def dockerRegistry  = "registry.citronium.com/${repositoryName}"
-def imageTag
 
 node {
     try {
