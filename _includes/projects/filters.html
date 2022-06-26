@@ -1,17 +1,21 @@
 <div class="projects-filters">
-    <h4 class="h4 projects-filters-title">Фильтры</h4>
     <div class="projects-filters-components">
         <div class="dropdown dropdown-spheres" data-path="spheres">
-            <input id="spheres-input" type="text" class="dropdown__input" placeholder="Все сферы" readonly />
-            <div class="dropdown__options" data-target="spheres">
-                {% for sphere in site.data.spheres %}
-                    <div class="dropdown__options-item" data-target="{{sphere.en}}">{{sphere.ru}}</div>
-                {% endfor %}
+            <div id="spheres-input" class="dropdown__input">Все сферы</div>
+            <div class="dropdown__options dropdown__options-spheres" data-target="spheres">
+                <span class="dropdown__options-line"></span>
+                <div class="dropdown__options-container">
+                    {% for sphere in site.data.spheres %}
+                        <div class="dropdown__options-item" data-target="{{sphere.en}}">{{sphere.ru}}</div>
+                    {% endfor %}
+                </div>
+                
             </div>
         </div>
         <div class="dropdown dropdown-technologies" data-path="technologies">
-            <input id="technologies-input" type="text" class="dropdown__input" placeholder="Все технологии" readonly />
-            <div class="dropdown__options">
+            <div id="technologies-input" class="dropdown__input">Все технологии</div>
+            <div class="dropdown__options dropdown__options-technologies">
+                <span class="dropdown__options-line"></span>
                 {% for technologie in site.data.technologies %}     
                     <div class="dropdown__options-item" data-target="{{technologie.en}}">{{technologie.ru}}</div>        
                 {% endfor %}
@@ -58,7 +62,7 @@
 
                     const text = declOfNum(spheres.length, ['сфера', 'сферы', 'сфер'])
 
-                    spheresInput.value = text
+                    spheresInput.innerHTML = text
                 }
 
                 if (targetDropDown === "technologies") {
@@ -86,7 +90,7 @@
 
                     const text = declOfNum(technologies.length, ['технология', 'технологии', 'технологий'])
 
-                    technologiesInput.value = text
+                    technologiesInput.innerHTML = text
                 }
                 
                 filterProjects(spheres, technologies)
@@ -97,7 +101,7 @@
                 document.body.style.overflow = "hidden";
                 //document.body.style.height = "100%";
             } else {
-                document.body.style.overflow = "auto";
+                document.body.style.overflow = "scroll";
                 //document.body.style.height = "auto";
             }
             

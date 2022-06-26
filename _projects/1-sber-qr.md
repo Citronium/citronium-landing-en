@@ -7,9 +7,8 @@ description: Чтобы научить людей пользоваться QR-к
 prev_image: "/assets/img/projects/prev/sber-qr-prev.png"
 prev_position: center
 prev_background: "#367CF4"
-spheres: 'business-processes'
-technologies: 'hybrid'
-
+spheres: "business-processes"
+technologies: "hybrid"
 ---
 
 # Sber QR
@@ -48,16 +47,10 @@ technologies: 'hybrid'
 
 ## Столько времени мы занимались проектом
 
-<div class="project-content-time">
-    <div class="project-content-time__left">
-        <p class="project-content-time__left-title">Первый релиз</p>
-        <p class="project-content-time__left-month">18 месяцев</p>
-    </div>
-    <div class="project-content-time__right">
-        <p class="project-content-time__right-title">Развитие продукта</p>
-        <p class="project-content-time__right-month">15 месяцев</p>
-    </div>
-</div>
+{% include project/DevelopTime.html
+    reliseTime='18 месяцев'
+    developmentTime='15 месяцев'
+%}
 
 #### Отзыв
 
@@ -80,4 +73,3 @@ technologies: 'hybrid'
         </p>
     </div>
 </div>
-

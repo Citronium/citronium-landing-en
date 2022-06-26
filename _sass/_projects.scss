@@ -20,17 +20,17 @@
         max-width: 671px;
     }
     &-filters {
-        margin-top: 216px;
+        margin-top: 40px;
         width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         &-components {
             display: flex;
             width: 600px;
             flex-direction: row;
-            & :first-child {
+            & > :first-child {
                 margin-right: 16px;
             }
         }
@@ -135,7 +135,9 @@
         transform: rotate(-225deg);
     }
     &.active &__options {
-        display: block;
+        //display: block;
+        opacity: 1;
+        visibility: visible;
     }
 
     &__input {
@@ -156,19 +158,40 @@
         cursor: pointer;
     }
     &__options {
-        display: none;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: opacity 600ms, visibility 600ms;
+        transition: opacity 600ms, visibility 600ms;
         position: absolute;
         top: 80px;
-        right: 0;
-        width: 600px;
-        padding: 25px;
-        max-height: 600px;
-        overflow: auto;
+        padding-top: 25px;
+        overflow: hidden;
         background: #fff;
+        box-shadow: -2px -2px 4px rgba(177, 177, 177, 0.2), 2px 2px 4px rgba(177, 177, 177, 0.2);
         border-radius: 10px;
         z-index: 9999;
+        &-container {
+            height: 100%;
+            overflow: auto;
+        }
+        &-spheres {
+            width: 600px;
+            height: 600px;
+        }
+        &-technologies {
+            width: 100%;
+        }
+        &-line {
+            display: none;
+            width: 40px;
+            height: 4px;
+            background: rgba(51, 51, 51, 0.56);
+            border-radius: 5px;
+            margin:  0 auto;
+        }
         &-item {
             display: block;
+            position: relative;
             padding: 12px 20px;
             cursor: pointer;
             font-weight: 400;
