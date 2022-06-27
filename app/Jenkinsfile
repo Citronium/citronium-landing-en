@@ -30,9 +30,9 @@ node {
         sh "docker build -t ${dockerRegistry}:${imageTag} -f app/Dockerfile ."
       }
 
-      //stage("Push") {
-      //  sh "docker push ${dockerRegistry}:${imageTag}"
-      //}  
+      stage("Push") {
+        sh "docker push ${dockerRegistry}:${imageTag}"
+      }  
         
       stage("Docker start at psrv5") {
         sh "docker-compose -p citronium-landing -f app/docker-compose.yml up -d"
