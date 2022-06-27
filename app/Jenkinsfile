@@ -27,7 +27,7 @@ node {
       }
 
       stage("Build") {
-        sh "docker build -t ${dockerRegistry}:${imageTag} ."
+        sh "docker build -t ${dockerRegistry}:${imageTag} -f app/Dockerfile ."
       }
 
       //stage("Push") {
