@@ -13,5 +13,9 @@ services:
       - traefik.docker.network=traefik_proxy
     networks:      
       - traefik
+networks:
+  traefik:
+    external:
+      name: traefik_proxy
 volumes:
   citronium_landing:
