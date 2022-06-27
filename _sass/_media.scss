@@ -1,4 +1,11 @@
 @media (max-width: 960px) {
+    .header {
+        &-right {
+            & > :last-child {
+                margin-left: 80px;
+            }
+        }
+    }
     .hero {
         min-height: 816px;
         &__title {
@@ -311,6 +318,14 @@
         background-size: 18px 10px;
         height: 10px;
         width: 18px;
+    }
+    .header {
+        &-right {
+            display: none;
+        }
+    }
+    .burger {
+        display: block;
     }
     .hero {
         min-height: 738px;
