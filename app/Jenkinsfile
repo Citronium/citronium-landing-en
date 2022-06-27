@@ -35,7 +35,7 @@ node {
       }  
         
       stage("Docker start at psrv5") {
-        sh "docker-compose -p citronium-landing -f app/docker-compose.yml up -d"
+        sh "APP_VERSION=${imageTag} docker-compose -p citronium-landing -f app/docker-compose.yml up -d"
       }
 
      } catch(e) {
