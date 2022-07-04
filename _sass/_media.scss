@@ -1,11 +1,4 @@
 @media (max-width: 960px) {
-    .header {
-        &-right {
-            & > :last-child {
-                margin-left: 80px;
-            }
-        }
-    }
     .hero {
         min-height: 816px;
         &__title {
@@ -320,11 +313,17 @@
         width: 18px;
     }
     .header {
+        width: calc(100% - 2 * 20px);
+        margin-left: 20px;
+        margin-right: 20px;
         &-right {
             display: none;
         }
     }
     .burger {
+        display: block;
+    }
+    .mobile-menu {
         display: block;
     }
     .hero {
@@ -700,6 +699,11 @@
         font-size: 24px;
         line-height: 28px;
     }
+    .header {
+        width: calc(100% - 2 * 16px);
+        margin-left: 16px;
+        margin-right: 16px;
+    }
     .section-title {
         margin-top: 20px;
     }
@@ -972,6 +976,11 @@
 @media (max-width: 320px) {
     .container {
         padding: 80px 10px;
+    }
+    .header {
+        width: calc(100% - 2 * 10px);
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .hero {
         min-height: 640px;
