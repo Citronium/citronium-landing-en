@@ -1,39 +1,8 @@
+@import "section-hero";
+
 .section-title {
     margin-top: 40px;
     width: 100%;
-}
-
-.hero {
-    height: 100vh;
-    min-height: 832px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color: var(--color-yellow);
-    &__title {
-        font-weight: 700;
-        font-size: 64px;
-        line-height: 64px;
-        letter-spacing: -0.5px;
-        text-align: center;
-        color: var(--color-dark);
-        max-width: 900px;
-        margin: 0;
-    }
-    &__descr {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 32px;
-        text-align: center;
-        color: var(--color-dark);
-        opacity: 0.56;
-        max-width: 642px;
-        margin-top: 40px;
-    }
-    &__btn {
-        margin-top: 80px;
-        padding: 18px 56px;
-    }
 }
 
 .what-we-do {

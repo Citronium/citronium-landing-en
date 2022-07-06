@@ -13,6 +13,10 @@
         font-size: 40px;
         line-height: 40px;
     }
+    @media (max-width: 390px) {
+        font-size: 24px;
+        line-height: 28px;
+    }
 }
 
 .h2 {
@@ -22,12 +26,32 @@
     text-align: center;
     letter-spacing: -0.5px;
     color: var(--color-dark);
+
+    @media (max-width: 640px) {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    @media (max-width: 390px) {
+        font-size: 24px;
+        line-height: 28px;
+    }
 }
 
 .h3 {
     font-weight: 600;
     font-size: 32px;
     line-height: 40px;
+
+    @media (max-width: 640px) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    @media (max-width: 390px) {
+        font-size: 18px;
+        line-height: 24px;
+    }
 }
 
 .h4 {
@@ -37,6 +61,11 @@
     text-align: center;
     color: var(--color-dark);
     opacity: 0.56;
+
+    @media (max-width: 390px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 .flex-container {
@@ -49,6 +78,18 @@
     max-width: 1280px;
     margin: 0 auto;
     padding: 116px 40px 100px 40px;
+
+    @media (max-width: 640px) {
+        padding: 100px 20px;
+    }
+
+    @media (max-width: 390px) {
+        padding: 80px 16px;
+    }
+
+    @media (max-width: 320px) {
+        padding: 80px 10px;
+    }
 }
 
 .btn {
