@@ -143,45 +143,6 @@
     .section-title {
         margin-top: 30px;
     }
-    .what-we-do {
-        &__items {
-            margin-top: 60px;
-            grid-template-areas:
-                "item1"
-                "item2"
-                "item3";
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-gap: 24px;
-        }
-        &__item {
-            height: 300px;
-        }
-        &__item1 {
-            background-size: 255px;
-            background-position: right bottom;
-            &-title {
-                margin-left: 40px;
-                margin-top: 40px;
-            }
-        }
-        &__item2 {
-            background-size: 272px;
-            background-position: right bottom;
-            &-title {
-                margin-left: 40px;
-                margin-top: 40px;
-            }
-        }
-        &__item3 {
-            background-size: 244px;
-            background-position: right bottom;
-            &-title {
-                margin-left: 40px;
-                margin-top: 40px;
-            }
-        }
-    }
     .why-we {
         &__items {
             margin-top: 60px;
@@ -564,39 +525,6 @@
             }
         }
     }
-    .what-we-do {
-        &__items {
-            margin-top: 40px;
-            gap: 16px;
-        }
-        &__item {
-            height: 200px;
-        }
-        &__item1 {
-            background-size: 161px;
-            &-title {
-                max-width: 200px;
-                margin-top: 24px;
-                margin-left: 24px;
-            }
-        }
-        &__item2 {
-            background-size: 177px;
-            &-title {
-                max-width: 117px;
-                margin-top: 24px;
-                margin-left: 24px;
-            }
-        }
-        &__item3 {
-            background-size: 149px;
-            &-title {
-                max-width: 160px;
-                margin-top: 24px;
-                margin-left: 24px;
-            }
-        }
-    }
     .project {
         &-content {
             &-time {
@@ -847,26 +775,7 @@
         margin-left: 10px;
         margin-right: 10px;
     }
-    .what-we-do {
-        &__item1 {
-            background-size: 111px;
-            &-title {
-                max-width: 162px;
-            }
-        }
-        &__item2 {
-            background-size: 147px;
-            &-title {
-                max-width: 188px;
-            }
-        }
-        &__item3 {
-            background-size: 118px;
-            &-title {
-                max-width: 159px;
-            }
-        }
-    }
+    
     .why-we {
         &__item1 {
             height: 284px;

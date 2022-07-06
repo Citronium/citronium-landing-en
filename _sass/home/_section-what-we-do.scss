@@ -1,0 +1,169 @@
+.what-we-do {
+    &__items {
+        margin-top: 80px;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            "item1 item1"
+            "item2 item3";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 450px 450px;
+        grid-gap: 24px;
+
+        @media (max-width: 800px) {
+            margin-top: 60px;
+            grid-template-areas:
+                "item1"
+                "item2"
+                "item3";
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 24px;
+        }
+
+        @media (max-width: 520px) {
+            margin-top: 40px;
+            gap: 16px;
+        }
+    }
+    &__item {
+        width: 100%;
+        border-radius: 20px;
+        background-repeat: no-repeat, repeat;
+
+        @media (max-width: 800px) {
+            height: 300px;
+        }
+
+        @media (max-width: 520px) {
+            height: 200px;
+        }
+    }
+    &__item1 {
+        grid-area: item1;
+        background-color: var(--color-purple);
+        background-image: url(img/calc.png);
+        background-position: right bottom;
+        background-size: 390px;
+
+        @media (max-width: 800px) {
+            background-size: 255px;
+            background-position: right bottom;
+        }
+
+        @media (max-width: 520px) {
+            background-size: 161px;
+        }
+
+        @media (max-width: 320px) {
+            background-size: 111px;
+        }
+
+        &-title {
+            color: var(--color-white);
+            max-width: 40%;
+            margin-left: 56px;
+            margin-top: 56px;
+            background-size: 400px;
+
+            @media (max-width: 800px) {
+                margin-left: 40px;
+                margin-top: 40px;
+            }
+
+            @media (max-width: 520px) {
+                max-width: 200px;
+                margin-top: 24px;
+                margin-left: 24px;
+            }
+
+            @media (max-width: 320px) {
+                max-width: 162px;
+            }
+        }
+    }
+    &__item2 {
+        grid-area: item2;
+        background-color: var(--color-primary);
+        background-image: url(img/notebook.png);
+        background-position: right bottom;
+        background-size: 265px;
+
+        @media (max-width: 800px) {
+            background-size: 272px;
+            background-position: right bottom;
+        }
+
+        @media (max-width: 520px) {
+            background-size: 177px;
+        }
+
+        @media (max-width: 320px) {
+            background-size: 147px;
+        }
+
+        &-title {
+            color: var(--color-white);
+            max-width: 40%;
+            margin-left: 56px;
+            margin-top: 56px;
+
+            @media (max-width: 800px) {
+                margin-left: 40px;
+                margin-top: 40px;
+            }
+
+            @media (max-width: 520px) {
+                max-width: 117px;
+                margin-top: 24px;
+                margin-left: 24px;
+            }
+
+            @media (max-width: 320px) {
+                max-width: 188px;
+            }
+        }
+    }
+    &__item3 {
+        grid-area: item3;
+        background-color: var(--color-white);
+        background-image: url(img/doc.png);
+        background-position: right bottom;
+        background-size: 265px;
+
+        @media (max-width: 800px) {
+            background-size: 244px;
+            background-position: right bottom;
+        }
+
+        @media (max-width: 520px) {
+            background-size: 149px;
+        }
+
+        @media (max-width: 320px) {
+            background-size: 118px;
+        }
+
+        &-title {
+            color: var(--color-dark);
+            max-width: 40%;
+            margin-left: 56px;
+            margin-top: 56px;
+
+            @media (max-width: 800px) {
+                margin-left: 40px;
+                margin-top: 40px;
+            }
+
+            @media (max-width: 520px) {
+                max-width: 160px;
+                margin-top: 24px;
+                margin-left: 24px;
+            }
+
+            @media (max-width: 320px) {
+                max-width: 159px;
+            }
+        }
+    }
+}
