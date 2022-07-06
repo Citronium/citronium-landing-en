@@ -1,70 +1,13 @@
 @import "section-hero";
-@import "_section-what-we-do";
+@import "section-what-we-do";
+@import "section-why-we";
 
 .section-title {
     margin-top: 40px;
     width: 100%;
 }
 
-.why-we {
-    &__items {
-        margin-top: 80px;
-        width: 100%;
-        display: grid;
-        grid-template-areas:
-            "item1 item2"
-            "item3 item3";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 24px;
-    }
-    &__item {
-        width: 100%;
-        height: 450px;
-        border-radius: 20px;
-        background-repeat: no-repeat, repeat;
-        //background-size: auto;
-    }
-    &__item1 {
-        grid-area: item1;
-        background-color: var(--color-white);
-        background-image: url(img/search.png);
-        background-position: center bottom;
-        background-size: 220px;
-        &-title {
-            color: var(--color-dark);
-            max-width: 100%;
-            margin-left: 56px;
-            margin-top: 56px;
-        }
-    }
-    &__item2 {
-        grid-area: item2;
-        background-color: var(--color-blush);
-        background-image: url(img/rocket.png);
-        background-position: center bottom;
-        background-size: 220px;
-        &-title {
-            color: var(--color-white);
-            max-width: 404px;
-            margin-left: 56px;
-            margin-top: 56px;
-        }
-    }
-    &__item3 {
-        grid-area: item3;
-        background-color: var(--color-purple);
-        background-image: url(img/calc.png);
-        background-position: right bottom;
-        background-size: 400px;
-        &-title {
-            color: var(--color-white);
-            max-width: 42%;
-            margin-left: 56px;
-            margin-top: 56px;
-        }
-    }
-}
+
 
 .how-we-work {
     &__items {
