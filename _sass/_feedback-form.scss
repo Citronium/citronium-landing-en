@@ -6,81 +6,101 @@
     top: 0;
     z-index: 1005;
     transform: scale(0);
-    transition: .4s ease;
+    transition: 0.4s ease;
+
     &.active {
-        //display: block;
         transform: scale(1);
     }
+
     &__container {
         display: flex;
         width: 100%;
         height: 100%;
     }
+
     &__body {
         margin: auto;
         max-width: 700px;
-        //width: 100%;
         background-color: #fff;
         border-radius: 10px;
         padding: 56px;
         position: relative;
-        &-top {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
+
+        @media (max-width: 640px) {
+            height: 100vh;
+            border-radius: 0;
+            width: 100%;
         }
-        &-close {
-            font-size: 30px;
-            cursor: pointer;
-            color: rgba(0, 0, 0, 0.56);
+
+        @media (max-width: 390px) {
+            padding: 48px 40px 40px 40px;
         }
-        &-title {
-            font-weight: 600;
-            font-size: 40px;
-            line-height: 48px;
-            color: #333333;
+
+        @media (max-width: 320px) {
+            padding: 48px 10px 10px 10px;
         }
-        &-item {
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        color: #333333;
+    }
+
+    &__close {
+        font-size: 30px;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.56);
+    }
+
+    &-form {
+        &__item {
             margin-top: 40px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: flex-start;
-        }
-        &-label {
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 24px;
-            color: #000000;
-        }
-        &-input {
-            display: block;
-            height: 64px;
-            width: 100%;
-            margin-top: 8px;
-            padding: 20px;
-            border: 2px solid rgba(51, 51, 51, 0.2);
-            border-radius: 10px;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 24px;
-            color: black;
-            &:focus {
-                outline: none;
+
+            @media (max-width: 390px) {
+                margin-top: 32px;
             }
         }
-        &-btn {
+
+        &__label {
+            color: #000000;
+        }
+
+        &__input {
+            margin-top: 8px;
+            color: black;
+        }
+
+        &__btn {
             padding: 10px 50px;
             margin-top: 40px;
             width: 100%;
+
+            @media (max-width: 390px) {
+                margin-top: 24px;
+            }
         }
-        &-personal {
+
+        &__personal {
             margin-top: 16px;
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
             color: rgba(0, 0, 0, 0.5);
+
+            @media (max-width: 390px) {
+                font-size: 14px;
+                line-height: 20px;
+            }
         }
     }
 }

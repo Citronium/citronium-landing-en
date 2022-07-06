@@ -1,23 +1,22 @@
 <div id="feedback-form" class="feedback">
     <div class="feedback__container">
         <div class="feedback__body">
-            <div class="feedback__body-top">
-                <p class="feedback__body-title">Запись на консультацию</p>
-                <div id="feedback-close" class="feedback__body-close">&#10005</div>
+            <div class="feedback__header">
+                <h3 class="feedback__title h3">Запись на консультацию</h3>
+                <div id="feedback-close" class="feedback__close">&#10005</div>
             </div>
-            <form action="">
-                <div class="feedback__body-item">
-                    <label class="feedback__body-label">Имя</label>
-                    <input class="feedback__body-input" type="text" placeholder="Введите имя">
+            <form class="feedback-form" action="">
+                <div class="feedback-form__item">
+                    <label class="feedback-form__label label">Имя*</label>
+                    <input class="feedback-form__input input" type="text" placeholder="Введите имя" required>
                 </div>
-                <div class="feedback__body-item">
-                    <label class="feedback__body-label">Телефон</label>
-                    <input class="feedback__body-input" type="text" placeholder="+7">
+                <div class="feedback-form__item">
+                    <label class="feedback-form__label label">Телефон*</label>
+                    <input class="feedback-form__input input" type="tel" placeholder="+7 (XXX) XXX-XX-XX" required>
                 </div>
-                <button class="btn btn--dark feedback__body-btn">Начать проект</button>
-                <p class="feedback__body-personal">Нажимая на кнопку вы даёте согласие <u>на обработку персональных данных</u></p>
+                <button class="feedback-form__btn btn btn--dark">Начать проект</button>
+                <p class="feedback-form__personal">Нажимая на кнопку вы даёте согласие <u>на обработку персональных данных</u></p>
             </form>
-            
         </div>
     </div>
 </div>
