@@ -1,0 +1,68 @@
+@NonCPS
+
+def repositoryName  = 'citronium-landing'
+def jenkinsURL      = 'https://jenkins.citronium.com/view/Base/job/citronium-landing-deploy/'
+def chatId          = ''
+def token           = ''
+
+def branch        = env.BRANCH_NAME
+def dockerRegistry  = "registry.citronium.com/${repositoryName}"
+def imageTag
+
+node {
+    try {
+      stage("Checkout") {
+         git branch: "${branch}",
+          url: 'git@github.com:Citronium/citronium-landing.git'
+          
+        def commit_hash = sh(returnStdout: true, script: "git rev-parse --short HEAD").trim()
+        def now = new Date()
+        imageTag = "${now.format('yyMMdd', TimeZone.getTimeZone('UTC'))}_${branch}_${BUILD_NUMBER}_${commit_hash}"
+        imageTag = imageTag.toLowerCase()
+        imageTag = imageTag.replaceAll('/', '_')
+      }      
+        
+      stage("Clear") {
+        sh "rm -Rfv ./_site/*"        
+      }
+
+      stage("Build") {
+        sh "docker volume create landing-tmp"
+        sh "docker run -d --rm --name landing-tmp -v landing-tmp:/root busybox:1.35.0 tail -f /dev/null"
+        sh "docker cp ./ landing-tmp:/root/"
+        sh "docker run -d --name citronium-landing-jekyll -v landing-tmp:/srv/jekyll jekyll/jekyll:3.8 jekyll build"
+        sh "docker cp landing-tmp:/root/_site ./_site"
+        //sh "docker run -d --network none --name citronium-landing-jekyll jekyll/jekyll:3.8 jekyll serve"
+        //sh "docker cp ./ citronium-landing-jekyll:/srv/jekyll/"
+        //sh "docker exec citronium-landing-jekyll jekyll build"
+        //sh "docker cp citronium-landing-jekyll:/srv/jekyll/_site ./_site"
+      }
+
+      stage("ls") {
+        sh "ls -l"
+      }        
+      
+
+     } catch(e) {
+      sendMessage("🛠❌ Build ${repositoryName} №${env.BUILD_NUMBER}: Error ${imageTag} ${e}")
+      throw e
+    }
+}
+
+
+def sendChangeLogs() {
+    def commitMessages = ""
+    def changeLogSets = currentBuild.changeSets
+    for (int i = 0; i < changeLogSets.size(); i++) {
+        def entries = changeLogSets[i].items
+        for (int j = 0; j < entries.length; j++) {
+            def entry = entries[j]
+            commitMessages = commitMessages + "\n> ${entry.author}: ${entry.msg} "
+        }
+    }
+    return commitMessages
+}
+
+def sendMessage(message) {
+    //sh(returnStdout: false, script: "curl -X POST -H 'Content-Type: application/json' -d '{\"chat_id\": \"${chatId}\", \"text\": \"${message}\", \"disable_notification\": true}' https://api.telegram.org/bot${token}/sendMessage")
+}
