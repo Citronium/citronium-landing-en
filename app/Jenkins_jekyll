@@ -29,7 +29,7 @@ node {
       stage("Build") {
         sh "docker run --rm -d --network none --name citronium-landing-jekyll jekyll/jekyll:3.8 jekyll serve"
         sh "docker cp ./* citronium-landing-jekyll:/srv/jekyll/"
-        sh "docker exec citronium-landing-jekyll jekyll build
+        sh "docker exec citronium-landing-jekyll jekyll build"
         sh "docker cp citronium-landing-jekyll:/srv/jekyll/_site ./"
       }
 
