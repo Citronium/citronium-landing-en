@@ -2,17 +2,11 @@
 @import "section-what-we-do";
 @import "section-why-we";
 @import "section-how-we-work";
+@import "section-our-approach";
 
 .section-title {
     margin-top: 40px;
     width: 100%;
-}
-
-.our-approach {
-    &__diagram {
-        margin-top: 80px;
-        width: 100%;
-    }
 }
 
 .about-team {
