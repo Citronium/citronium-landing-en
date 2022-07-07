@@ -2,165 +2,21 @@
 @import "section-what-we-do";
 @import "section-why-we";
 @import "section-how-we-work";
+@import "section-our-approach";
+@import "section-about-team";
+@import "section-trust-us";
+@import "section-our-awards";
 
 .section-title {
     margin-top: 40px;
     width: 100%;
-}
 
-.our-approach {
-    &__diagram {
-        margin-top: 80px;
-        width: 100%;
+    @media (max-width: 640px) {
+        margin-top: 30px;
     }
-}
 
-.about-team {
-    &__items {
-        margin-top: 80px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-    }
-    &__item1 {
-        width: 60%;
-        background-color: var(--color-yellow);
-        border-radius: 20px;
-        height: 450px;
-        margin-right: 12px;
-        &-title {
-            padding-top: 56px;
-            padding-left: 56px;
-            padding-right: 56px;
-            color: var(--color-white);
-        }
-    }
-    &__item2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 40%;
-        background-color: var(--color-white);
-        border-radius: 20px;
-        height: 450px;
-        margin-left: 16px;
-        &-title {
-            padding-top: 56px;
-            padding-left: 56px;
-            padding-right: 56px;
-            color: var(--color-dark);
-        }
+    @media (max-width: 390px) {
+        margin-top: 20px;
     }
 }
 
-.trust-us {
-    &__items {
-        margin-top: 80px;
-        padding: 56px;
-
-        width: 100%;
-        display: grid;
-        grid-template-areas:
-            "item1 item2 item3"
-            "item4 item5 item6";
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        border-radius: 20px;
-        background-color: var(--color-white);
-    }
-    &__item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 150px;
-        background-repeat: no-repeat, repeat;
-        background-position: center;
-        &-1 {
-            grid-area: item1;
-            background-image: url(img/capital-group.png);
-            background-size: 80%;
-        }
-        &-2 {
-            grid-area: item2;
-            background-image: url(img/lukoil.png);
-            background-size: 50%;
-        }
-        &-3 {
-            grid-area: item3;
-            background-image: url(img/sber.png);
-            background-size: 40%;
-        }
-        &-4 {
-            grid-area: item4;
-            background-image: url(img/mrs.png);
-            background-size: 80%;
-        }
-        &-5 {
-            grid-area: item5;
-            background-image: url(img/supermarket.png);
-            background-size: 70%;
-        }
-        &-6 {
-            grid-area: item6;
-            background-image: url(img/cds.png);
-            background-size: 40%;
-        }
-    }
-}
-
-.our-awards {
-    &__items {
-        margin-top: 80px;
-        width: 100%;
-        
-        display: grid;
-        grid-template-areas:
-            "item1 item2"
-            "item3 item4";
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 24px;
-    }
-    &__item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: var(--color-white);
-        border-radius: 20px;
-        padding: 40px;
-        & img {
-            max-width: 150px;
-            width: 100%;
-        }
-        &-title {
-            // font-weight: 600;
-            // font-size: 40px;
-            // line-height: 48px;
-            text-align: center;
-            color: var(--color-dark);
-            margin-top: 40px;
-            width: 100%;
-        }
-        &-desc {
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 32px;
-            text-align: center;
-            color: var(--color-dark);
-            opacity: 0.56;
-            margin-top: 8px;
-        }
-        &-1 {
-            grid-area: item1;
-        }
-        &-2 {
-            grid-area: item2;
-        }
-        &-3 {
-            grid-area: item3;
-        }
-        &-4 {
-            grid-area: item4;
-        }
-    }
-}
