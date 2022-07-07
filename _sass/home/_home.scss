@@ -1,63 +1,11 @@
 @import "section-hero";
 @import "section-what-we-do";
 @import "section-why-we";
+@import "section-how-we-work";
 
 .section-title {
     margin-top: 40px;
     width: 100%;
-}
-
-
-
-.how-we-work {
-    &__items {
-        margin-top: calc(80px - 24px);
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    &__item {
-        background-color: var(--color-white);
-        border-radius: 20px;
-        display: flex;
-        flex-direction: row;
-        margin-top: 24px;
-        
-        &--reverse {
-            flex-direction: row-reverse;
-        }
-        &-col {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            padding: 88px 56px;
-        }
-        &-center {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 50%;
-        }
-        &-title {
-            color: var(--color-dark);
-        }
-        &-desc {
-            font-size: 24px;
-            line-height: 32px;
-            color: var(--color-dark);
-            opacity: 0.56;
-            margin-top: 16px;
-        }
-        &-link {
-            display: inline-block;
-            margin-top: 40px;
-        }
-        &-img {
-            width: 100%;
-            max-width: 328px;
-        }
-    }
 }
 
 .our-approach {

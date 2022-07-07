@@ -1,25 +1,4 @@
 @media (max-width: 960px) {
-    .how-we-work {
-        &__item {
-            flex-direction: column-reverse;
-            &-col {
-                width: 100%;
-                height: 60%;
-                padding: 56px;
-            }
-            &-center {
-                height: 40%;
-                width: 100%;
-            }
-            &-desc {
-                margin-top: 24px;
-            }
-            &-img {
-                margin-top: 45px;
-                max-width: 320px;
-            }
-        }
-    }
     .about-team {
         &__items {
             flex-direction: column;
@@ -184,17 +163,7 @@
     .mobile-menu {
         display: block;
     }
-    .how-we-work {
-        margin-top: calc(60px - 24px);
-        &__item {
-            &-col {
-                padding: 40px;
-            }
-            &-img {
-                max-width: 174px;
-            }
-        }
-    }
+    
     .our-approach {
         &__diagram {
             margin-top: 60px;
@@ -449,30 +418,7 @@
     .link {
         font-size: 16px;
     }
-    .how-we-work {
-        &__items {
-            margin-top: calc(40px - 16px);
-        }
-        &__item {
-            margin-top: 16px;
-            &-desc {
-                font-size: 14px;
-                line-height: 20px;
-                margin-top: 4px;
-            }
-            &-col {
-                padding: 24px 24px 24px 24px;
-            }
-            &-link {
-                font-size: 16px;
-                line-height: 22px;
-                margin-top: 27px;
-            }
-            &-img {
-                max-width: 150px;
-            }
-        }
-    }
+    
     .our-approach {
         &__diagram {
             margin-top: 40px;
