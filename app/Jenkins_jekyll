@@ -27,7 +27,7 @@ node {
       }
 
       stage("Build") {
-        sh "docker run --rm --volume='./:/srv/jekyll' -it jekyll/jekyll:3.8 jekyll build"
+        sh "docker run --rm -d --name citronium-landing-jekyll jekyll/jekyll:3.8 j"
       }
 
       stage("ls") {
