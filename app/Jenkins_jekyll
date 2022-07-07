@@ -27,7 +27,7 @@ node {
       }
 
       stage("Build") {
-        sh "docker run --rm -d --name citronium-landing-jekyll jekyll/jekyll:3.8 j"
+        sh "docker run --rm -d --network none --name citronium-landing-jekyll jekyll/jekyll:3.8"
       }
 
       stage("ls") {
