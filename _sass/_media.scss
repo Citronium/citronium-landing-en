@@ -1,17 +1,4 @@
 @media (max-width: 960px) {
-    .about-team {
-        &__items {
-            flex-direction: column;
-        }
-        &__item1 {
-            width: 100%;
-            margin: 0;
-        }
-        &__item2 {
-            width: 100%;
-            margin: 24px 0 0 0;
-        }
-    }
     .projects {
         &__item {
             flex-direction: column;
@@ -82,24 +69,6 @@
 }
 
 @media (max-width: 800px) {
-    .section-title {
-        margin-top: 30px;
-    }
-    .our-awards {
-        &__items {
-            margin-top: 60px;
-        }
-        & img {
-            max-width: 180px;
-        }
-        &__item {
-            padding: 24px;
-            &-desc {
-                font-size: 16px;
-                line-height: 24px;
-            }
-        }
-    }
     .dropdown {
         position: relative;
         height: 64px;
@@ -133,9 +102,6 @@
 }
 
 @media (max-width: 640px) {
-    .section-title {
-        margin-top: 30px;
-    }
     .link {
         font-size: 18px;
     }
@@ -309,32 +275,6 @@
 }
 
 @media (max-width: 520px) {
-    .our-awards {
-        &__items {
-            margin-top: 40px;
-            grid-template-areas:
-                "item1"
-                "item2"
-                "item3"
-                "item4";
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            grid-template-columns: 1fr;
-            grid-gap: 16px;
-        }
-        &__item {
-            & img {
-                max-width: 150px;
-            }
-            &-title {
-                margin-top: 40px;
-            }
-            &-desc {
-                font-size: 14px;
-                line-height: 20px;
-                margin-top: 16px;
-            }
-        }
-    }
     .project {
         &-content {
             &-time {
@@ -362,9 +302,6 @@
         width: calc(100% - 2 * 16px);
         margin-left: 16px;
         margin-right: 16px;
-    }
-    .section-title {
-        margin-top: 20px;
     }
     .link {
         font-size: 16px;
@@ -527,10 +464,5 @@
         width: calc(100% - 2 * 10px);
         margin-left: 10px;
         margin-right: 10px;
-    }
-    .trust-us {
-        &__items {
-            padding: 24px;
-        }
     }
 }
