@@ -163,34 +163,7 @@
     .mobile-menu {
         display: block;
     }
-    
-    .about-team {
-        &__items {
-            margin-top: 60px;
-        }
-        &__item1 {
-            min-height: 416px;
-            &-title {
-                padding-top: 40px;
-                padding-left: 40px;
-                padding-right: 40px;
-                // font-size: 24px;
-                // line-height: 32px;
-            }
-        }
-        &__item2 {
-            &-title {
-                padding-top: 40px;
-                padding-left: 40px;
-                padding-right: 40px;
-                // font-size: 24px;
-                // line-height: 32px;
-            }
-            &-img {
-                max-width: 240px;
-            }
-        }
-    }
+
     .trust-us {
         &__items {
             margin-top: 60px;
@@ -414,30 +387,6 @@
         font-size: 16px;
     }
     
-    .about-team {
-        &__items {
-            margin-top: 40px;
-        }
-        &__item1 {
-            min-height: 346px;
-            &-title {
-                padding-top: 24px;
-                padding-left: 24px;
-                padding-right: 24px;
-            }
-        }
-        &__item2 {
-            margin-top: 16px;
-            &-title {
-                padding-top: 24px;
-                padding-left: 24px;
-                padding-right: 24px;
-            }
-            &-img {
-                max-width: 195px;
-            }
-        }
-    }
     .trust-us {
         &__items {
             padding: 24px;

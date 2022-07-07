@@ -3,48 +3,11 @@
 @import "section-why-we";
 @import "section-how-we-work";
 @import "section-our-approach";
+@import "section-about-team";
 
 .section-title {
     margin-top: 40px;
     width: 100%;
-}
-
-.about-team {
-    &__items {
-        margin-top: 80px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-    }
-    &__item1 {
-        width: 60%;
-        background-color: var(--color-yellow);
-        border-radius: 20px;
-        height: 450px;
-        margin-right: 12px;
-        &-title {
-            padding-top: 56px;
-            padding-left: 56px;
-            padding-right: 56px;
-            color: var(--color-white);
-        }
-    }
-    &__item2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 40%;
-        background-color: var(--color-white);
-        border-radius: 20px;
-        height: 450px;
-        margin-left: 16px;
-        &-title {
-            padding-top: 56px;
-            padding-left: 56px;
-            padding-right: 56px;
-            color: var(--color-dark);
-        }
-    }
 }
 
 .trust-us {
