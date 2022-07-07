@@ -14,6 +14,11 @@
     transform: translateY(-100vh) translateX(0px);
     transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.5s ease;
     box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.05), 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 640px) {
+        display: block;
+    }
+
     &.active {
         //top: 100px;
         opacity: 1;

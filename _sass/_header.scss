@@ -7,8 +7,25 @@
     z-index: 1000;
     margin-left: 40px;
     margin-right: 40px;
+
+    @media (max-width: 640px) {
+        width: calc(100% - 2 * 20px);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    @media (max-width: 390px) {
+        width: calc(100% - 2 * 16px);
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    @media (max-width: 320px) {
+        width: calc(100% - 2 * 10px);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     
-   
     &__container {
         max-width: 1200px;
         margin: 0 auto;
@@ -33,6 +50,10 @@
     &-right {
         & > :last-child {
             margin-left: 40px;
+        }
+
+        @media (max-width: 640px) {
+            display: none;
         }
     }
 }
@@ -62,6 +83,11 @@
     &::after {
         bottom: 0;
     }
+
+    @media (max-width: 640px)  {
+        display: block;
+    }
+
     &__line {
         position: absolute;
         left: 0;

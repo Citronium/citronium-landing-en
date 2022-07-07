@@ -100,9 +100,9 @@
     line-height: 24px;
     text-align: center;
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    @media (max-width: 390px) {
+
+    @media (max-width: 640px) {
         font-size: 16px;
-        line-height: 24px;
     }
 }
 
@@ -130,17 +130,31 @@
     font-weight: 500;
     font-size: 24px;
     color: var(--color-primary);
-}
 
-.link:after {
-    display: inline-block;
-    content: "";
-    background-image: url("img/rarrow.svg");
-    background-size: 18px 14px;
-    background-repeat: no-repeat, repeat;
-    height: 14px;
-    width: 18px;
-    margin-left: 9px;
+    @media (max-width: 640px) {
+        font-size: 18px;
+    }
+
+    @media (max-width: 390px) {
+        font-size: 16px;
+    }
+
+    &:after {
+        display: inline-block;
+        content: "";
+        background-image: url("img/rarrow.svg");
+        background-size: 18px 14px;
+        background-repeat: no-repeat, repeat;
+        height: 14px;
+        width: 18px;
+        margin-left: 9px;
+
+        @media (max-width: 640px) {
+            background-size: 18px 10px;
+            height: 10px;
+            width: 18px;
+        }
+    }
 }
 
 .input {
