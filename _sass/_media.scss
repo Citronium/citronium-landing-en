@@ -1,41 +1,4 @@
 @media (max-width: 960px) {
-    .projects {
-        &__item {
-            flex-direction: column;
-            flex-direction: column-reverse;
-            & > * {
-                margin: 40px;
-            }
-            &-content {
-                width: calc(100% - 2 * 40px);
-            }
-            &-title {
-                margin-top: 0;
-            }
-            &-descr {
-                margin-top: 16px;
-            }
-            &-img {
-                height: 560px;
-                width: calc(100% - 2 * 40px);
-                &--center {
-                    & img {
-                        max-width: 414px;
-                    }
-                }
-                &--left {
-                    & img {
-                        right: 260px;
-                    }
-                }
-                &--right {
-                    & img {
-                        left: 260px;
-                    }
-                }
-            }
-        }
-    }
     .project {
         &-content {
             & > h1 {
@@ -57,81 +20,7 @@
     }
 }
 
-@media (max-width: 800px) {
-    .dropdown {
-        position: relative;
-        height: 64px;
-        &__input {
-            font-size: 16px;
-            line-height: 24px;
-        }
-        &__options {
-            position: fixed;
-            bottom: 0;
-            top: unset;
-            left: 0;
-            right: 0;
-            border-radius: 10px 10px 0 0; 
-            &-spheres {
-                width: 100%;
-                height: 80%;
-            }
-            &-technologies {
-                width: 100%;
-            }
-            &-line {
-                display: block;
-            }
-            &-item {
-                font-size: 16px;
-                line-height: 24px;
-            }
-        }
-    }
-}
-
 @media (max-width: 640px) {
-    .projects {
-        &__descr {
-            font-size: 16px;
-            line-height: 24px;
-            max-width: 445px;
-        }
-        &__item {
-            margin-top: 16px;
-            &-descr {
-                margin-top: 4px;
-                font-size: 16px;
-                line-height: 24px;
-            }
-            &-link {
-                margin-top: 42px;
-            }
-            &-img {
-                &--center {
-                    height: 320px;
-                    & img {
-                        top: 40px;
-                        max-width: 262px;
-                    }
-                }
-                &--left {
-                    height: 320px;
-                    & img {
-                        top: 40px;
-                        right: 151px;
-                    }
-                }
-                &--right {
-                    height: 320px;
-                    & img {
-                        top: 40px;
-                        left: 151px;
-                    }
-                }
-            }
-        }
-    }
     .project {
         &-content {
             & > h1 {
@@ -202,7 +91,6 @@
             }
         }
     }
-    
 }
 
 @media (max-width: 520px) {
@@ -229,77 +117,6 @@
 }
 
 @media (max-width: 390px) {
-   
-    .projects {
-        &__descr {
-            font-size: 14px;
-            line-height: 20px;
-            max-width: 285px;
-        }
-
-        &-filters {
-            &-components {
-                & > :first-child {
-                    margin-right: 8px;
-                }
-            }
-        }
-
-        &__item {
-            & > * {
-                margin: 24px;
-            }
-            &-content {
-                width: calc(100% - 2 * 24px);
-            }
-            &-descr {
-                margin-top: 4px;
-                font-size: 14px;
-                line-height: 20px;
-            }
-            &-link {
-                margin-top: 42px;
-            }
-            &-img {
-                height: 276px;
-                width: calc(100% - 2 * 24px);
-                &--center {
-                    & img {
-                        top: 24px;
-                        max-width: 206px;
-                    }
-                }
-                &--left {
-                    & img {
-                        top: 24px;
-                        right: 24px;
-                    }
-                }
-                &--right {
-                    & img {
-                        top: 24px;
-                        left: 24px;
-                    }
-                }
-            }
-        }
-    }
-    .dropdown {
-        height: 56px;
-        &__options {
-            &-item {
-                font-size: 14px;
-                line-height: 20px;
-            }
-        }
-        &-spheres {
-            width: 45%;
-        }
-
-        &-technologies {
-            width: 55%;
-        }
-    }
     .project {
         &-content {
             & > h1 {
