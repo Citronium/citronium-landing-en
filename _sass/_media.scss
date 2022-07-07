@@ -12,11 +12,6 @@
             margin: 24px 0 0 0;
         }
     }
-    .trust-us {
-        &__items {
-            flex-direction: column;
-        }
-    }
     .projects {
         &__item {
             flex-direction: column;
@@ -164,18 +159,6 @@
         display: block;
     }
 
-    .trust-us {
-        &__items {
-            margin-top: 60px;
-            padding: 40px;
-            grid-template-areas:
-                "item1 item2"
-                "item4 item3"
-                "item5 item6";
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
-        }
-    }
     .projects {
         &__descr {
             font-size: 16px;
@@ -387,11 +370,6 @@
         font-size: 16px;
     }
     
-    .trust-us {
-        &__items {
-            padding: 24px;
-        }
-    }
     .projects {
         &__descr {
             font-size: 14px;

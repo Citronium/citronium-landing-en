@@ -4,65 +4,11 @@
 @import "section-how-we-work";
 @import "section-our-approach";
 @import "section-about-team";
+@import "section-trust-us";
 
 .section-title {
     margin-top: 40px;
     width: 100%;
-}
-
-.trust-us {
-    &__items {
-        margin-top: 80px;
-        padding: 56px;
-
-        width: 100%;
-        display: grid;
-        grid-template-areas:
-            "item1 item2 item3"
-            "item4 item5 item6";
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        border-radius: 20px;
-        background-color: var(--color-white);
-    }
-    &__item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 150px;
-        background-repeat: no-repeat, repeat;
-        background-position: center;
-        &-1 {
-            grid-area: item1;
-            background-image: url(img/capital-group.png);
-            background-size: 80%;
-        }
-        &-2 {
-            grid-area: item2;
-            background-image: url(img/lukoil.png);
-            background-size: 50%;
-        }
-        &-3 {
-            grid-area: item3;
-            background-image: url(img/sber.png);
-            background-size: 40%;
-        }
-        &-4 {
-            grid-area: item4;
-            background-image: url(img/mrs.png);
-            background-size: 80%;
-        }
-        &-5 {
-            grid-area: item5;
-            background-image: url(img/supermarket.png);
-            background-size: 70%;
-        }
-        &-6 {
-            grid-area: item6;
-            background-image: url(img/cds.png);
-            background-size: 40%;
-        }
-    }
 }
 
 .our-awards {
