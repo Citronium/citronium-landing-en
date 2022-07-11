@@ -37,8 +37,8 @@ node {
       stage("Clear") {
         sh "rm -Rfv ./_site"
         sh "rm -Rfv ./html"
-        //sh "docker stop citronium-landing"
-        //sh "docker rm citronium-landing"
+        sh "docker stop citronium-landing"
+        sh "docker rm citronium-landing"
         sh "docker volume rm -f citronium-landing_citronium_landing"
       }
         
@@ -48,9 +48,11 @@ node {
         
       stage("Jekyll Build") {
         sh "docker volume create landing-tmp"
-        sh "docker run -d --rm --name landing-tmp -v landing-tmp:/root busybox:1.35.0 tail -f /dev/null"
+        sh "docker run -d --name landing-tmp -v landing-tmp:/root busybox:1.35.0 tail -f /dev/null"
         sh "docker cp ./ landing-tmp:/root/"
-        sh "docker run -d --rm --name citronium-landing-jekyll -v landing-tmp:/srv/jekyll jekyll/builder:3.8 jekyll build"
+        sh "docker stop landing-tmp"
+        sh "docker run -d --name citronium-landing-jekyll -v landing-tmp:/srv/jekyll jekyll/builder:3.8 jekyll build"
+        sh "docker start landing-tmp"
         sh "docker cp landing-tmp:/root/_site ./html"
         sh "docker stop landing-tmp"
         sh "docker volume rm landing-tmp"
