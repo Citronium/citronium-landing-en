@@ -37,7 +37,7 @@ node {
       stage("Clear") {
         sh "rm -Rfv ./_site"
         sh "rm -Rfv ./html"        
-        sh "docker rm -f $(docker ps --filter name=citronium-landing)"
+        sh "docker rm -f \$(docker ps --filter name=citronium-landing)"
         sh "docker volume rm -f citronium-landing_citronium_landing"
       }
         
