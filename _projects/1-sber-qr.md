@@ -1,7 +1,7 @@
 ---
 layout: project
 permalink: projects/sber-qr/
-id: 1
+id: 2
 title: Sber QR
 description: Чтобы научить людей пользоваться QR-кодами, Сбербанк придумал геймифицированный продукт по типу «Ingress» и «Pokemon Go». С его помощью можно взаимодействовать с реальными
 prev_image: "/assets/img/projects/prev/sber-qr-prev.png"
