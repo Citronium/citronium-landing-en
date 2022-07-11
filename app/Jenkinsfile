@@ -33,10 +33,32 @@ node {
       stage("Push") {
         sh "docker push ${dockerRegistry}:${imageTag}"
       }  
+      
+      stage("Clear") {
+        sh "rm -Rfv ./_site"
+        sh "rm -Rfv ./html"
+        sh "docker stop citronium-landing"
+        sh "docker rm citronium-landing"
+        sh "docker volume rm citronium_landing"
+      }
         
       stage("Docker start at psrv5") {
         sh "APP_VERSION=${imageTag} docker-compose -p citronium-landing -f app/docker-compose.yml up -d"
       }
+        
+      stage("Jekyll Build") {
+        sh "docker volume create landing-tmp"
+        sh "docker run -d --rm --name landing-tmp -v landing-tmp:/root busybox:1.35.0 tail -f /dev/null"
+        sh "docker cp ./ landing-tmp:/root/"
+        sh "docker run -d --rm --name citronium-landing-jekyll -v landing-tmp:/srv/jekyll jekyll/builder:3.8 jekyll build"
+        sh "docker cp landing-tmp:/root/_site ./html"
+        sh "docker stop landing-tmp"
+        sh "docker volume rm landing-tmp"
+        sh "docker cp ./html citronium-landing:/var/www/"
+        sh "docker restart citronium-landing"
+      }  
+        
+        
 
      } catch(e) {
       sendMessage("🛠❌ Build ${repositoryName} №${env.BUILD_NUMBER}: Error ${imageTag} ${e}")
