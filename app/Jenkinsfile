@@ -48,10 +48,10 @@ node {
         
       stage("Jekyll Build") {
         sh "docker volume create landing-tmp"
-        sh "docker run -d --name landing-tmp -v landing-tmp:/root busybox:1.35.0 tail -f /dev/null"
-        sh "docker cp ./ landing-tmp:/root/"
+        sh "docker run -d --name citronium-landing-jekyll -v landing-tmp:/srv/jekyll jekyll/builder tail -f /dev/null"
+        sh "docker cp ./ citronium-landing-jekyll://srv/jekyll/"
         sh "docker stop landing-tmp"
-        sh "docker run -d --name citronium-landing-jekyll -v landing-tmp:/srv/jekyll jekyll/builder jekyll build"
+        sh "docker run -d --name citronium-landing-jekyll -v landing-tmp:/srv/jekyll jekyll/builder tail -f /dev/null"
         sh "docker start landing-tmp"
         sh "docker cp landing-tmp:/root/_site ./html"
         sh "docker stop landing-tmp"
