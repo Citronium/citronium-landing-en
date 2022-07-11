@@ -39,7 +39,7 @@ node {
         sh "rm -Rfv ./html"
         sh "docker stop citronium-landing"
         sh "docker rm citronium-landing"
-        sh "docker volume rm citronium_landing"
+        sh "docker volume rm -f citronium-landing_citronium_landing"
       }
         
       stage("Docker start at psrv5") {
