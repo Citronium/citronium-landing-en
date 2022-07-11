@@ -59,7 +59,7 @@ node {
         sh "docker cp citronium-landing-jekyll:/srv/jekyll/_site/ ./html/"
         //sh "docker stop landing-tmp"
         //sh "docker volume rm landing-tmp"
-        sh "docker cp ./html/ citronium-landing:/var/www//html/"
+        sh "docker cp ./html/ citronium-landing:/var/www/html/"
         sh "docker restart citronium-landing"
       }  
         
