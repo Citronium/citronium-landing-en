@@ -47,19 +47,17 @@ node {
       }
         
       stage("Jekyll Build") {
-        sh "docker volume create landing-tmp"
-        sh "docker run -d --name citronium-landing-jekyll -v landing-tmp:/srv/jekyll jekyll/builder:3.8 tail -f /dev/null"
-        sh "docker cp ./ citronium-landing-jekyll:/srv/jekyll/"
-        //sh "docker stop citronium-landing-jekyll"
-        //sh "docker rm citronium-landing-jekyll"
-        sh "mkdir html"
-        sh "docker exec citronium-landing-jekyll jekyll build"        
+        //sh "docker volume create landing-tmp"
+        //sh "docker run -d --name citronium-landing-jekyll -v landing-tmp:/srv/jekyll jekyll/builder:3.8 tail -f /dev/null"
+        //sh "docker cp ./ citronium-landing-jekyll:/srv/jekyll/"        
+        //sh "mkdir html"
+        //sh "docker exec citronium-landing-jekyll jekyll build"        
         //sh "docker rm citronium-landing-jekyll"
         //sh "docker run -d --name citronium-landing-jekyll -v landing-tmp:/srv/jekyll jekyll/builder:3.8 tail -f /dev/null"        
-        sh "docker cp citronium-landing-jekyll:/srv/jekyll/_site ./_site"
-        //sh "docker stop landing-tmp"
+        sh "docker cp citronium-landing-jekyll:/srv/jekyll/_site ./html"
+        //sh "docker stop citronium-landing-jekyll"
         //sh "docker volume rm landing-tmp"
-        sh "docker cp ./_site citronium-landing:/var/www/html"
+        sh "docker cp ./html citronium-landing:/var/www/"
         sh "docker restart citronium-landing"
       }  
         
