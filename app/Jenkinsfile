@@ -1,7 +1,7 @@
 @NonCPS
 
 def repositoryName  = 'citronium-landing'
-def jenkinsURL      = 'https://jenkins.citronium.com/view/Base/job/citronium-landing-create-conteiner/'
+def jenkinsURL      = 'https://jenkins.citronium.com/view/Base/job/citronium-landing/'
 def chatId          = ''
 def token           = ''
 
@@ -33,10 +33,34 @@ node {
       stage("Push") {
         sh "docker push ${dockerRegistry}:${imageTag}"
       }  
+      
+      stage("Clear") {
+        sh "rm -Rfv ./_site"
+        sh "rm -Rfv ./html"
+        sh "docker stop citronium-landing"
+        sh "docker rm citronium-landing"
+        sh "docker volume rm -f citronium-landing_citronium_landing"
+      }
         
       stage("Docker start at psrv5") {
         sh "APP_VERSION=${imageTag} docker-compose -p citronium-landing -f app/docker-compose.yml up -d"
       }
+        
+      stage("Jekyll Build") {
+        sh "docker volume create landing-tmp"
+        sh "docker run -d --name citronium-landing-jekyll -v landing-tmp:/srv/jekyll jekyll/builder:3.8 tail -f /dev/null"
+        sh "docker cp ./ citronium-landing-jekyll:/srv/jekyll/"        
+        //sh "mkdir html"
+        sh "docker exec citronium-landing-jekyll jekyll build"                
+        sh "docker cp citronium-landing-jekyll:/srv/jekyll/_site ./html"       
+        sh "docker cp ./html citronium-landing:/var/www/"
+        sh "docker restart citronium-landing"
+        sh "docker stop citronium-landing-jekyll"
+        sh "docker rm citronium-landing-jekyll"
+        sh "docker volume rm landing-tmp"
+      }  
+        
+        
 
      } catch(e) {
       sendMessage("🛠❌ Build ${repositoryName} №${env.BUILD_NUMBER}: Error ${imageTag} ${e}")
