@@ -8,7 +8,7 @@ layout: default
             {%- include projects/top-content.html -%}
             {%- include projects/filters.html -%}
             <div class="projects-list">
-                {% for project in site.projects %}
+                {% for project in site.posts %}
                     {% assign mod = forloop.index | modulo: 2 %}                   
                     {% if mod == 0 %}
                         {% assign itemClass = "projects__item projects__item--reverse" %}
