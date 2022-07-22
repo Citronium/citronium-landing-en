@@ -1,30 +1,29 @@
 .hero {
-    height: 100vh;
-    min-height: 832px;
+    min-height: 900px;
     width: 100%;
     display: flex;
-    align-items: center;
-    background-color: var(--color-yellow);
+    align-items: flex-start;
+    background-image: url(img/home/hero.png);
+    background-size: calc(min(1200px, 100%));
+    background-repeat: no-repeat;
+    background-position: bottom center;
 
     @media (max-width: 960px) {
-        min-height: 816px;
+        min-height: 860px;
     }
 
     @media (max-width: 640px) {
-        min-height: 738px;
+        min-height: 700px;
     }
 
     @media (max-width: 390px) {
-        min-height: 612px;
-    }
-
-    @media (max-width: 320px) {
-        min-height: 640px;
+        min-height: 560px;
     }
 
     &__title {
         color: var(--color-dark);
         max-width: 900px;
+        margin-top: 80px;
 
         @media (max-width: 960px) {
             max-width: 880px;
@@ -36,6 +35,7 @@
 
         @media (max-width: 390px) {
             max-width: 358px;
+            margin-top: 40px;
         }
 
         @media (max-width: 320px) {
@@ -50,7 +50,7 @@
         color: var(--color-dark);
         opacity: 0.56;
         max-width: 642px;
-        margin-top: 40px;
+        margin-top: 24px;
 
         @media (max-width: 960px) {
             max-width: 880px;
@@ -60,14 +60,14 @@
             font-size: 16px;
             line-height: 24px;
             max-width: 552px;
-            margin-top: 30px;
+            margin-top: 16px;
         }
 
         @media (max-width: 390px) {
             font-size: 14px;
             line-height: 20px;
             max-width: 358px;
-            margin-top: 20px;
+            
         }
 
         @media (max-width: 320px) {
@@ -75,15 +75,18 @@
         }
     }
     &__btn {
-        margin-top: 80px;
-        padding: 18px 56px;
+        margin-top: 40px;
+        width: 250px;
+        height: 60px;
 
-        @media (max-width: 960px) {
-            margin-top: 60px;
+        @media (max-width: 640px) {
+            margin-top: 30px;
+            width: 220px;
+            height: 48px;
         }
 
         @media (max-width: 390px) {
-            margin-top: 40px;
+            width: 180px;
         }
     }
 }

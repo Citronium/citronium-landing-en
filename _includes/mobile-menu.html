@@ -1,13 +1,17 @@
 <div id="mobile-menu"" class="mobile-menu">
+    <div class="mobile-menu__header">
+        <a href="{{site.baseurl}}/">
+            {%- include logo-white.html -%}
+        </a>
+        <span id="mobile-menu__close" class="mobile-menu__close">&#10005</span>
+    </div>
+    
     <div class="mobile-menu__items">
-        <div class="mobile-menu__item">
-            <a class="mobile-menu__item-link" href="{{site.baseurl}}/projects">Проекты</a>
-        </div>
-        <div class="mobile-menu__item">
+        <nav class="mobile-menu__item">
+            <a class="mobile-menu__item-link" href="{{site.baseurl}}/projects">Наши проекты</a>
+        </nav>
+        <nav class="mobile-menu__item">
             <a class="mobile-menu__item-link" href="{{site.baseurl}}/contacts">Контакты</a>
-        </div>
-        <div class="mobile-menu__item">
-            <button id="open-btn-hero" class="btn btn--dark mobile-menu__item-btn modal-btn">Начать проект</button>
-        </div>
+        </nav>
     </div>
 </div>
