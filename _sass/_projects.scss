@@ -309,7 +309,7 @@
         background: #fff;
         box-shadow: -2px -2px 4px rgba(177, 177, 177, 0.2), 2px 2px 4px rgba(177, 177, 177, 0.2);
         border-radius: 10px;
-        z-index: 9999;
+        z-index: 50;
 
         @media (max-width: 800px) {
             position: fixed;
