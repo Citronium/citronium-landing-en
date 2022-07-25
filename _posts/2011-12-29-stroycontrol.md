@@ -9,8 +9,8 @@ description:
 prev_image: "/assets/img/projects/prev/stroycontrol-prev.png"
 prev_position: left
 prev_background: "#F3CA46"
-spheres: 'project-management'
-technologies: 'native'
+spheres: ['electronic-document']
+technologies: ['android']
 ---
 
 # Стройконтроль

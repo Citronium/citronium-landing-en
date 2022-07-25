@@ -7,8 +7,8 @@ description: Сайт с рецептами, своего рода социал�
 prev_image: "/assets/img/projects/prev/cookly-bookly-prev.png"
 prev_position: right
 prev_background: "#F3CA46"
-spheres: 'project-management'
-technologies: 'web'
+spheres: ['project-management']
+technologies: ['native']
 ---
 
 # CooklyBookly

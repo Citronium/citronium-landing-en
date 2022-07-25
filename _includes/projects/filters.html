@@ -3,7 +3,6 @@
         <div class="dropdown dropdown-spheres" data-path="spheres">
             <div id="spheres-input" class="dropdown__input">Все сферы</div>
             <div class="dropdown__options dropdown__options-spheres" data-target="spheres">
-                <span class="dropdown__options-line"></span>
                 <div class="dropdown__options-container">
                     {% for sphere in site.data.spheres %}
                         <div class="dropdown__options-item" data-target="{{sphere.en}}">{{sphere.ru}}</div>
@@ -15,7 +14,6 @@
         <div class="dropdown dropdown-technologies" data-path="technologies">
             <div id="technologies-input" class="dropdown__input">Все технологии</div>
             <div class="dropdown__options dropdown__options-technologies">
-                <span class="dropdown__options-line"></span>
                 {% for technologie in site.data.technologies %}     
                     <div class="dropdown__options-item" data-target="{{technologie.en}}">{{technologie.ru}}</div>        
                 {% endfor %}
@@ -35,7 +33,7 @@
         e.addEventListener('click', e => {
             const targetDropDown = e.currentTarget.dataset.path;
             const optionsItem = e.target.getAttribute("data-target");
-            console.log('click');
+            
             if (optionsItem) {
                 if (targetDropDown === "spheres") {
                     if (optionsItem === "all") {
@@ -139,24 +137,24 @@
     });
 
     function filterProjects(spheresArray, technologiesArray) {
-        {% for project in site.projects %}
+        {% for project in site.posts %}
             var isShow = false;
-            var projectSpheres= {{ project.spheres | jsonify }};
-            var projectTechnologies= {{ project.technologies | jsonify }};
+            var projectSpheres = {{ project.spheres | jsonify }};
+            var projectTechnologies = {{ project.technologies | jsonify }};
             var id = {{ project.id | jsonify }};
             var projectDiv = document.getElementById(id);
 
             if (spheresArray.length === 0 && technologiesArray.length === 0) {
                 isShow = true
             }
-    
-            var indexSphere = spheresArray.findIndex(item => item === projectSpheres)
-            if (spheresArray.length > 0 && indexSphere > -1) {
+
+            var isFoundSphere = projectSpheres.some(r => spheresArray.includes(r))
+            if (spheresArray.length > 0 && isFoundSphere) {
                 isShow = true
             }
 
-            var indexTechnologies = technologiesArray.findIndex(item => item === projectTechnologies)
-            if (technologiesArray.length > 0 && indexTechnologies > -1) {
+            var isFoundTechnologies = projectTechnologies.some(r => technologiesArray.includes(r))
+            if (technologiesArray.length > 0 && isFoundTechnologies) {
                 isShow = true
             }
             projectDiv.style.display = isShow ? 'flex' : 'none';
