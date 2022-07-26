@@ -97,10 +97,8 @@
 
             if (window.matchMedia('(max-width: 800px)').matches) {
                 document.body.style.overflow = "hidden";
-                //document.body.style.height = "100%";
             } else {
                 document.body.style.overflow = "scroll";
-                //document.body.style.height = "auto";
             }
             
             allDropDowns.forEach(element => {
@@ -118,7 +116,6 @@
                         element.classList.remove("active");
 
                         document.body.style.overflow = "auto";
-                        //document.body.style.height = "auto";
                     })
                 }
             }
@@ -129,7 +126,6 @@
                         element.classList.remove("active");
 
                         document.body.style.overflow = "auto";
-                        //document.body.style.height = "auto";
                     })
                 }
             }
@@ -138,26 +134,42 @@
 
     function filterProjects(spheresArray, technologiesArray) {
         {% for project in site.posts %}
-            var isShow = false;
+            var isShowSpheres = false;
+            var isShowTechnologies = false;
+
+            var matches = 0
+
+
             var projectSpheres = {{ project.spheres | jsonify }};
             var projectTechnologies = {{ project.technologies | jsonify }};
             var id = {{ project.id | jsonify }};
             var projectDiv = document.getElementById(id);
 
-            if (spheresArray.length === 0 && technologiesArray.length === 0) {
-                isShow = true
+            if (spheresArray.length === 0) {
+                isShowSpheres = true
+            }
+
+            if (technologiesArray.length === 0) {
+                isShowTechnologies = true
             }
 
             var isFoundSphere = projectSpheres.some(r => spheresArray.includes(r))
             if (spheresArray.length > 0 && isFoundSphere) {
-                isShow = true
+                isShowSpheres = true
             }
 
             var isFoundTechnologies = projectTechnologies.some(r => technologiesArray.includes(r))
             if (technologiesArray.length > 0 && isFoundTechnologies) {
-                isShow = true
+                isShowTechnologies = true
             }
-            projectDiv.style.display = isShow ? 'flex' : 'none';
+
+            var isShow = isShowSpheres && isShowTechnologies
+
+            if (isShow) {
+                matches = matches + 1
+            }
+            
+            projectDiv.style.display =  isShow ? 'flex' : 'none';
         {% endfor %}
     }
 
