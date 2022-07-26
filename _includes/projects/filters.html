@@ -5,17 +5,16 @@
             <div class="dropdown__options dropdown__options-spheres" data-target="spheres">
                 <div class="dropdown__options-container">
                     {% for sphere in site.data.spheres %}
-                        <div class="dropdown__options-item" data-target="{{sphere.en}}">{{sphere.ru}}</div>
+                    <div class="dropdown__options-item" data-target="{{sphere.en}}">{{sphere.ru}}</div>
                     {% endfor %}
                 </div>
-                
             </div>
         </div>
         <div class="dropdown dropdown-technologies" data-path="technologies">
             <div id="technologies-input" class="dropdown__input">Все технологии</div>
             <div class="dropdown__options dropdown__options-technologies">
-                {% for technologie in site.data.technologies %}     
-                    <div class="dropdown__options-item" data-target="{{technologie.en}}">{{technologie.ru}}</div>        
+                {% for technologie in site.data.technologies %}
+                <div class="dropdown__options-item" data-target="{{technologie.en}}">{{technologie.ru}}</div>
                 {% endfor %}
             </div>
         </div>
@@ -33,7 +32,7 @@
         e.addEventListener('click', e => {
             const targetDropDown = e.currentTarget.dataset.path;
             const optionsItem = e.target.getAttribute("data-target");
-            
+
             if (optionsItem) {
                 if (targetDropDown === "spheres") {
                     if (optionsItem === "all") {
@@ -90,7 +89,7 @@
 
                     technologiesInput.innerHTML = text
                 }
-                
+
                 filterProjects(spheres, technologies)
                 return
             }
@@ -100,7 +99,7 @@
             } else {
                 document.body.style.overflow = "scroll";
             }
-            
+
             allDropDowns.forEach(element => {
                 if (element.dataset.path !== e.currentTarget.dataset.path) {
                     element.classList.remove("active");
@@ -112,7 +111,7 @@
             window.onclick = e => {
                 if (e.target.classList.value.includes("dropdown") === false) {
                     allDropDowns.forEach(element => {
-                        
+
                         element.classList.remove("active");
 
                         document.body.style.overflow = "auto";
@@ -122,7 +121,7 @@
             window.ontouchstart = e => {
                 if (e.target.classList.value.includes("dropdown") === false) {
                     allDropDowns.forEach(element => {
-                        
+
                         element.classList.remove("active");
 
                         document.body.style.overflow = "auto";
@@ -133,11 +132,13 @@
     });
 
     function filterProjects(spheresArray, technologiesArray) {
+        var matches = 0
+
         {% for project in site.posts %}
             var isShowSpheres = false;
             var isShowTechnologies = false;
 
-            var matches = 0
+
 
 
             var projectSpheres = {{ project.spheres | jsonify }};
@@ -168,7 +169,13 @@
             if (isShow) {
                 matches = matches + 1
             }
-            
+
+            if (matches % 2) {
+                projectDiv.classList.add('projects__item--reverse')
+            } else {
+                projectDiv.classList.remove('projects__item--reverse')
+            }
+
             projectDiv.style.display =  isShow ? 'flex' : 'none';
         {% endfor %}
     }
@@ -180,7 +187,7 @@
         if (num === 0) {
             return "Все " + texts[1];
         }
-        
+
         if (num > 10 && num < 20) {
             return num + " " + texts[2];
         }
