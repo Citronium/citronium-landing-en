@@ -5,15 +5,20 @@ layout: default
 <main>
     <div class="projects">
         <div class="container">
-            {%- include projects/top-content.html -%}
+            <div class="flex-container">
+                <h1 class="h1 projects__title">Наши проекты</h1>
+                <p class="projects__descr">
+                    Мы сделали и запустили в работу более 500 проектов. Лучшие из них мы превратили в увлекательные истории.
+                </p>
+            </div>
             {%- include projects/filters.html -%}
             <div class="projects-list">
                 {% for project in site.posts %}
                     {% assign mod = forloop.index | modulo: 2 %}                   
                     {% if mod == 0 %}
-                        {% assign itemClass = "projects__item projects__item--reverse" %}
-                    {% else %}
                         {% assign itemClass = "projects__item" %}
+                    {% else %}
+                        {% assign itemClass = "projects__item projects__item--reverse" %}
                     {% endif %}
                         <div id="{{project.id}}" class="{{ itemClass }}">
                             <div class="projects__item-content ">
