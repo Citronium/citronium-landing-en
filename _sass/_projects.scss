@@ -2,7 +2,15 @@
     width: 100%;
     &__title {
         color: var(--color-dark);
-        margin-top: 116px;
+        margin-top: 100px;
+
+        @media (max-width: 640px) {
+            margin-top: 80px;
+        }
+
+        @media (max-width: 390px) {
+            margin-top: 40px;
+        }
     }
     &__descr {
         font-weight: 500;
@@ -145,7 +153,9 @@
                 width: calc(100% - 2 * 40px);
             }
 
-            @media (max-width: 390px) {}
+            @media (max-width: 390px) {
+                width: calc(100% - 2 * 24px);
+            }
 
             &--center {
                 display: flex;
