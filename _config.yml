@@ -11,6 +11,9 @@ github_username:  jekyll
 # Build settings
 theme: minima
 
+autoprefixer:
+  only_production: false
+
 plugins:
   - jekyll-feed
   - jekyll-autoprefixer
