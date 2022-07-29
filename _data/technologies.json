@@ -33,10 +33,5 @@
         "en": "desktop",
         "ru": "Desktop",
         "type": "technologies"
-    },
-    {
-        "en": "game",
-        "ru": "Геймификация",
-        "type": "technologies"
     }
 ]

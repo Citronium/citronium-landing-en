@@ -63,5 +63,10 @@
         "en": "bi",
         "ru": "BI",
         "type": "spheres"
+    },
+    {
+        "en": "game",
+        "ru": "Геймификация",
+        "type": "technologies"
     }
 ]
