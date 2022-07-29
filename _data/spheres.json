@@ -58,5 +58,15 @@
         "en": "geolocation",
         "ru": "Геолокация",
         "type": "spheres"
+    },
+    {
+        "en": "bi",
+        "ru": "BI",
+        "type": "spheres"
+    },
+    {
+        "en": "game",
+        "ru": "Геймификация",
+        "type": "technologies"
     }
 ]

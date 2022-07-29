@@ -28,5 +28,10 @@
         "en": "web",
         "ru": "Web",
         "type": "technologies"
+    },
+    {
+        "en": "desktop",
+        "ru": "Desktop",
+        "type": "technologies"
     }
 ]
