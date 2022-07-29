@@ -96,6 +96,20 @@ technologies: ['hybrid', 'web'] //К какой технологии относ�
 
 3. В процессе разработки
 
+## Плагины
+
+jekyll-autoprefixer, "1.0.1"
+
+Префиксы добавляются только со скриптом 
+
+```sh
+JEKYLL_ENV=production bundle exec jekyll serve
+```
+
+```sh
+JEKYLL_ENV=production bundle exec jekyll build
+```
+
 ## FAQ
 
 - [Установка Jekyll](https://jekyllrb.com/docs/installation/)
