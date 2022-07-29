@@ -6,20 +6,24 @@
         flex-direction: column;
         max-width: 1280px;
         margin: 0 auto;
-        padding: 73px 40px 24px 40px;
+        padding: 72px 40px 24px 40px;
         @media (max-width: 640px) {
-            padding: 56px 20px 24px 20px;
+            padding: 72px 20px 24px 20px;
         }
         @media (max-width: 390px) {
-            padding: 40px 16px 24px 16px;
+            padding: 72px 16px 24px 16px;
         }
         @media (max-width: 320px) {
-            padding: 32px 10px 24px 10px;
+            padding: 72px 10px 24px 10px;
         }
     }
     &__title {
         color: var(--color-dark);
-        margin-top: 100px;
+        margin-top: 80px;
+
+        @media (max-width: 390px) {
+            margin-top: 40px;
+        }
     }
     &-content {
         display: flex;
@@ -39,15 +43,18 @@
         padding: 56px;
         width: calc(50% - 12px);
         margin-right: 12px;
+
         @media (max-width: 960px) {
             width: 100%;
             margin-right: 0;
             margin-top: 24px;
             padding: 40px;
         }
+
         @media (max-width: 640px) {
             padding: 32px;
         }
+
         @media (max-width: 390px) {
             padding: 24px;
         }
@@ -58,17 +65,21 @@
         padding: 56px;
         width: calc(50% - 12px);
         margin-left: 12px;
+
         @media (max-width: 960px) {
             width: 100%;
             margin-left: 0;
             padding: 40px;
         }
+
         @media (max-width: 640px) {
             padding: 32px;
         }
+
         @media (max-width: 390px) {
             padding: 24px;
         }
+
         &-title {
             color: #333333;
         }
@@ -76,10 +87,12 @@
     &__adress {
         color: #ffffff;
     }
+
     &__phone {
         color: #ffffff;
         margin-top: 24px;
     }
+
     &-form {
         &__item {
             margin-top: 40px;
@@ -91,6 +104,7 @@
                 margin-top: 24px;
             }
         }
+
         &__label {
             font-style: normal;
             font-weight: 400;
@@ -98,6 +112,7 @@
             line-height: 24px;
             color: #333333;
         }
+
         &__input {
             display: block;
             height: 64px;
@@ -123,6 +138,7 @@
                 color: rgba(51, 51, 51, 0.56);
             }
         }
+
         &__btn {
             padding: 10px 50px;
             margin-top: 40px;
@@ -131,6 +147,7 @@
                 margin-top: 24px;
             }
         }
+
         &__personal {
             margin-top: 16px;
             font-weight: 400;
@@ -143,41 +160,51 @@
             }
         }
     }
+
     &__footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-top: 80px;
+
         @media (max-width: 800px) {
             flex-direction: column;
             align-items: center;
         }
+
         @media (max-width: 390px) {
             margin-top: 40px;
         }
+
         &-text {
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
             line-height: 24px;
             color: rgba(51, 51, 51, 0.56);
+
             @media (max-width: 640px) {
                 font-size: 14px;
             }
+
             @media (max-width: 390px) {
                 text-align: center;
             }
         }
+        
         &-right {
             display: flex;
             flex-direction: row;
+
             @media (max-width: 800px) {
                 flex-direction: column;
                 align-items: center;
             }
         }
+
         &-personal {
             margin-right: 40px;
+
             @media (max-width: 800px) {
                 margin-right: 0;
             }

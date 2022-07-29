@@ -99,19 +99,19 @@
         }
         &-img {
             width: 100%;
-            max-width: 328px;
+            //max-width: 328px;
 
             @media (max-width: 960px) {
                 margin-top: 45px;
-                max-width: 320px;
+                // max-width: 320px;
             }
 
             @media (max-width: 640px) {
-                max-width: 174px;
+                // max-width: 174px;
             }
 
             @media (max-width: 390px) {
-                max-width: 150px;
+                // max-width: 150px;
             }
         }
     }
