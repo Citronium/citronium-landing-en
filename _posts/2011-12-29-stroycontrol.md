@@ -1,7 +1,7 @@
 ---
 layout: project
 permalink: project/stroycontrol/
-id: 2
+id: 5
 title: Программный комплекс «Стройконтроль»
 description:
     Мобильное и веб-приложение для контроля выполняемых строительных работ.

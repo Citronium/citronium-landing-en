@@ -1,7 +1,7 @@
 ---
 layout: project
 permalink: project/remote-assistant/
-id: 3
+id: 2
 title: RemoteAssistant
 description: Программное решение для автомобилей поставщика KIA Motors в Италии. Оно передает важнейшие технические параметры автомобиля в реальном времени.
 prev_image: '/assets/img/projects/prev/remote-assistant-prev.png'
