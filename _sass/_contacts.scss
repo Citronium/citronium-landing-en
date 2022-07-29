@@ -32,7 +32,7 @@
         @media (max-width: 960px) {
             flex-direction: column-reverse;
         }
-        
+
         @media (max-width: 390px) {
             margin-top: 24px;
         }
@@ -111,6 +111,11 @@
             font-size: 20px;
             line-height: 24px;
             color: #333333;
+
+            @media (max-width: 390px) {
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
 
         &__input {
@@ -126,6 +131,11 @@
             line-height: 24px;
             color: black;
 
+            @media (max-width: 390px) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
             &:focus {
                 outline: none;
             }
@@ -136,6 +146,11 @@
                 font-size: 20px;
                 line-height: 24px;
                 color: rgba(51, 51, 51, 0.56);
+
+                @media (max-width: 390px) {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
             }
         }
 
@@ -191,7 +206,7 @@
                 text-align: center;
             }
         }
-        
+
         &-right {
             display: flex;
             flex-direction: row;
