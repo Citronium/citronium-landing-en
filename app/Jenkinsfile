@@ -51,7 +51,7 @@ node {
         sh "docker run -d --name citronium-landing-jekyll -v landing-tmp:/srv/jekyll jekyll/builder:3.8 tail -f /dev/null"
         sh "docker cp ./ citronium-landing-jekyll:/srv/jekyll/"        
         //sh "mkdir html"
-        sh "docker exec citronium-landing-jekyll JEKYLL_ENV=production jekyll build"                
+        sh "docker exec citronium-landing-jekyll jekyll build JEKYLL_ENV=production"                
         sh "docker cp citronium-landing-jekyll:/srv/jekyll/_site ./html"       
         sh "docker cp ./html citronium-landing:/var/www/"
         sh "docker restart citronium-landing"
