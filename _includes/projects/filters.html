@@ -5,7 +5,7 @@
             <div class="dropdown__options dropdown__options-spheres" data-target="spheres">
                 <div class="dropdown__options-container">
                     {% for sphere in site.data.spheres %}
-                    <div class="dropdown__options-item" data-target="{{sphere.en}}">{{sphere.ru}}</div>
+                        <div class="dropdown__options-item" data-option="spheres" data-target="{{sphere.en}}">{{sphere.ru}}</div>
                     {% endfor %}
                 </div>
             </div>
@@ -14,7 +14,7 @@
             <div id="technologies-input" class="dropdown__input">Все технологии</div>
             <div class="dropdown__options dropdown__options-technologies">
                 {% for technologie in site.data.technologies %}
-                <div class="dropdown__options-item" data-target="{{technologie.en}}">{{technologie.ru}}</div>
+                    <div class="dropdown__options-item" data-option="technologies" data-target="{{technologie.en}}">{{technologie.ru}}</div>
                 {% endfor %}
             </div>
         </div>
@@ -24,6 +24,7 @@
 <script type="text/javascript">
     var spheres = [];
     var technologies = [];
+
     const allDropDowns = document.querySelectorAll('.dropdown');
     const spheresInput = document.getElementById("spheres-input")
     const technologiesInput = document.getElementById("technologies-input")
@@ -35,69 +36,17 @@
 
             if (optionsItem) {
                 if (targetDropDown === "spheres") {
-                    if (optionsItem === "all") {
-                        spheres = []
-                    } else {
-                        const indexFilter = spheres.findIndex(item => item === optionsItem);
-                        if (indexFilter === -1) {
-                            spheres.push(optionsItem);
-                        } else {
-                            spheres = spheres.filter(item => item !== optionsItem);
-                        }
-                    }
-
-                    const optionItems = e.currentTarget.querySelectorAll('.dropdown__options-item')
-                    optionItems.forEach(element => {
-                        const elementDataTarget = element.getAttribute("data-target")
-                        const indexFilter = spheres.findIndex(item => item === elementDataTarget);
-                        if (indexFilter === -1) {
-                            element.classList.remove("active");
-                        } else {
-                            element.classList.add("active");
-                        }
-                    })
-
-                    const text = declOfNum(spheres.length, ['сфера', 'сферы', 'сфер'])
-
-                    spheresInput.innerHTML = text
+                    updateSpheres(optionsItem) 
+                    updateSphereOptions()
                 }
 
                 if (targetDropDown === "technologies") {
-                    if (optionsItem === "all") {
-                        technologies = []
-                    } else {
-                        const indexFilter = technologies.findIndex(item => item === optionsItem);
-                        if (indexFilter === -1) {
-                            technologies.push(optionsItem);
-                        } else {
-                            technologies = technologies.filter(item => item !== optionsItem);
-                        }
-                    }
-
-                    const optionItems = e.currentTarget.querySelectorAll('.dropdown__options-item')
-                    optionItems.forEach(element => {
-                        const elementDataTarget = element.getAttribute("data-target")
-                        const indexFilter = technologies.findIndex(item => item === elementDataTarget);
-                        if (indexFilter === -1) {
-                            element.classList.remove("active");
-                        } else {
-                            element.classList.add("active");
-                        }
-                    })
-
-                    const text = declOfNum(technologies.length, ['технология', 'технологии', 'технологий'])
-
-                    technologiesInput.innerHTML = text
+                    updateTechnologies(optionsItem)
+                    updateTechnologieOptions()
                 }
-
+                
                 filterProjects(spheres, technologies)
                 return
-            }
-
-            if (window.matchMedia('(max-width: 800px)').matches) {
-                document.body.style.overflow = "hidden";
-            } else {
-                document.body.style.overflow = "scroll";
             }
 
             allDropDowns.forEach(element => {
@@ -111,19 +60,16 @@
             window.onclick = e => {
                 if (e.target.classList.value.includes("dropdown") === false) {
                     allDropDowns.forEach(element => {
-
                         element.classList.remove("active");
-
                         document.body.style.overflow = "auto";
                     })
                 }
             }
+
             window.ontouchstart = e => {
                 if (e.target.classList.value.includes("dropdown") === false) {
                     allDropDowns.forEach(element => {
-
                         element.classList.remove("active");
-
                         document.body.style.overflow = "auto";
                     })
                 }
@@ -131,15 +77,81 @@
         });
     });
 
+    document.addEventListener("DOMContentLoaded", showProjectsBySphere);
+
+    function showProjectsBySphere() {
+        var myParam = location.search.split('sphere=')[1]
+        if (myParam) {
+            updateSpheres(myParam)
+            updateSphereOptions()
+            filterProjects(spheres, technologies)
+        }
+    }
+
+    function updateSpheres(optionsItem) {
+        if (optionsItem === "all") {
+            spheres = []
+        } else {
+            const indexFilter = spheres.findIndex(item => item === optionsItem);
+            if (indexFilter === -1) {
+                spheres.push(optionsItem);
+            } else {
+                spheres = spheres.filter(item => item !== optionsItem);
+            }
+        }
+    }
+
+    function updateSphereOptions() {
+        const optionItems = document.querySelectorAll("[data-option='spheres']")
+        optionItems.forEach(element => {
+            const elementDataTarget = element.getAttribute("data-target")
+            const indexFilter = spheres.findIndex(item => item === elementDataTarget);
+            if (indexFilter === -1) {
+                element.classList.remove("active");
+            } else {
+                element.classList.add("active");
+            }
+        })
+
+        const text = declOfNum(spheres.length, ['сфера', 'сферы', 'сфер'])
+        spheresInput.innerHTML = text
+    }
+ 
+    function updateTechnologies(optionsItem) {
+        if (optionsItem === "all") {
+            technologies = []
+        } else {
+            const indexFilter = technologies.findIndex(item => item === optionsItem);
+            if (indexFilter === -1) {
+                technologies.push(optionsItem);
+            } else {
+                technologies = technologies.filter(item => item !== optionsItem);
+            }
+        }
+    }
+
+    function updateTechnologieOptions() {
+        const optionItems = document.querySelectorAll("[data-option='technologies']")
+        optionItems.forEach(element => {
+            const elementDataTarget = element.getAttribute("data-target")
+            const indexFilter = technologies.findIndex(item => item === elementDataTarget);
+            if (indexFilter === -1) {
+                element.classList.remove("active");
+            } else {
+                element.classList.add("active");
+            }
+        })
+
+        const text = declOfNum(technologies.length, ['технология', 'технологии', 'технологий'])
+        technologiesInput.innerHTML = text
+    }
+
     function filterProjects(spheresArray, technologiesArray) {
         var matches = 0
 
         {% for project in site.posts %}
             var isShowSpheres = false;
             var isShowTechnologies = false;
-
-
-
 
             var projectSpheres = {{ project.spheres | jsonify }};
             var projectTechnologies = {{ project.technologies | jsonify }};
