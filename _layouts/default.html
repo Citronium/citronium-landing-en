@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  {%- include head.html -%}
-  <body>
-    {%- include header.html -%}
-    {{ content }}
-    {%- include footer.html -%}
-  </body>
-  {%- include feedback-form.html -%}
-  {%- include mobile-menu.html -%}
-  <script src="{{ site.baseurl | prepend: site.url }}/assets/js/script.js"></script>
+    {%- include head.html -%}
+    <body>
+        {%- include header.html -%}
+        {{ content }}
+        {%- include footer.html -%}
+    </body>
+    {%- include feedback.html -%}
+    {%- include mobile-menu.html -%}
+
+    <script src="{{ site.baseurl | prepend: site.url }}/assets/js/script.js"></script>
+    <script src="{{ site.baseurl | prepend: site.url }}/assets/js/feedback.js"></script>
+    {% if jekyll.environment == "development" %}
+        <script>
+            window.isTestMode == true
+        </script>
+    {%- endif -%}
 </html>

@@ -1,22 +1,37 @@
-<div id="feedback-form" class="feedback">
-    <div class="feedback__container">
-        <div class="feedback__body">
-            <div class="feedback__header">
-                <h3 class="feedback__title h3">Запись на консультацию</h3>
-                <div id="feedback-close" class="feedback__close">&#10005</div>
-            </div>
-            <form class="feedback-form" action="">
-                <div class="feedback-form__item">
-                    <label class="feedback-form__label label">Имя*</label>
-                    <input class="feedback-form__input input" type="text" placeholder="Введите имя" required>
-                </div>
-                <div class="feedback-form__item">
-                    <label class="feedback-form__label label">Телефон*</label>
-                    <input class="feedback-form__input input" type="tel" placeholder="+7 (XXX) XXX-XX-XX" required>
-                </div>
-                <button class="feedback-form__btn btn btn--dark">Начать проект</button>
-                <p class="feedback-form__personal">Нажимая на кнопку вы даёте согласие <u>на обработку персональных данных</u></p>
-            </form>
+<div class="feedback-form-container">
+    <h3 class="feedback-form__title h3">Запись на консультацию</h3>
+    <form id="feedback-form" class="feedback-form" action="">
+        <div class="feedback-form__item">
+            <label class="feedback-form__label label">Имя*</label>
+            <input
+                id="feedback-form-name"
+                name="name"
+                class="feedback-form__input input"
+                type="text"
+                placeholder="Введите имя"
+                autocomplete="off"
+            />
+            <label id="feedback-form-name-error" class="feedback-form__error label"></label>
         </div>
-    </div>
+        <div class="feedback-form__item">
+            <label class="feedback-form__label label">Телефон*</label>
+            <input
+                id="feedback-form-phone"
+                name="phone"
+                class="feedback-form__input input"
+                type="tel"
+                placeholder="+7 (XXX) XXX-XX-XX"
+                autocomplete="off"
+            />
+            <label id="feedback-form-phone-error" class="feedback-form__error label"></label>
+        </div>
+        <button class="feedback-form__btn btn btn--dark">Начать проект</button>
+        <a href="/policy-personal-data" class="feedback-form__personal">
+            Нажимая на кнопку вы даёте согласие <u>на обработку персональных данных</u>
+        </a>
+    </form>
+</div>
+
+<div class="feedback-form-message">    
+    <h3 class="feedback-form-message__text h3"></h3>
 </div>

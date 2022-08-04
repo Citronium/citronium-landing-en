@@ -1,21 +1,13 @@
-const feedbackForm = document.getElementById("feedback-form");
-
 const buttons = document.querySelectorAll(".modal-btn");
 for (let i = 0; i < buttons.length; i++) {
     const btn = buttons[i];
     btn.addEventListener("click", (e) => {
-        feedbackForm.classList.add("active");
+        document.getElementById("feedback-modal").classList.add("active");
         document.body.style.overflow = "hidden";
         document.body.style.height = "100%";
+        document.getElementById("feedback-form").reset()
     });
 }
-
-const closeBtn = document.getElementById("feedback-close");
-closeBtn.addEventListener("click", () => {
-    feedbackForm.classList.remove("active");
-    document.body.style.overflow = "auto";
-    document.body.style.height = "auto";
-});
 
 const burgerBtn = document.getElementById("burger-btn");
 const mobileMenu = document.getElementById("mobile-menu");
