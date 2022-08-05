@@ -296,6 +296,10 @@
     position: relative;
     height: 72px;
 
+    @media (max-width: 640px) {
+        height: 64px;
+    }
+
     @media (max-width: 390px) {
         height: 56px;
     }
@@ -314,11 +318,6 @@
         transform: rotate(-45deg);
         transition: 0.5s;
         pointer-events: none;
-    }
-
-    @media (max-width: 800px) {
-        position: relative;
-        height: 64px;
     }
 
     &.active::before {
@@ -340,14 +339,14 @@
         color: var(--color-dark56);
         border: none;
         outline: none;
-        padding: 18px 16px;
+        padding: 20px 20px;
         border-radius: 10px;
         font-weight: 400;
         font-size: 24px;
         line-height: 32px;
         cursor: pointer;
 
-        @media (max-width: 800px) {
+        @media (max-width: 640px) {
             font-size: 16px;
             line-height: 24px;
         }
@@ -355,7 +354,7 @@
         @media (max-width: 390px) {
             font-size: 14px;
             line-height: 20px;
-            padding: 22px 16px;
+            padding: 18px 16px;
         }
     }
     &__options {
