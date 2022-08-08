@@ -3,6 +3,7 @@
 @import "common";
 @import "header";
 @import "footer";
+@import "footer-small";
 @import "mobile-menu";
 @import "home/home";
 @import "projects";
@@ -16,6 +17,14 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 *,
@@ -29,10 +38,6 @@ a {
     color: inherit;
     text-decoration: none;
 }
-
-// img {
-//     //max-width: 100%;
-// }
 
 * {
     font-family: "Roboto Flex", sans-serif;
@@ -51,6 +56,9 @@ p {
 
 main {
     background: var(--color-bacground);
+    //height: 100%;
+    margin: 0;
+    flex: 1;
 }
 
 /*плавная загрузка страниц*/

@@ -21,7 +21,6 @@
     &__body {
         margin: auto;
         max-width: 700px;
-        height: 588px;
         background-color: #fff;
         border-radius: 10px;
         padding: 56px;
@@ -29,7 +28,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 621px;
+        width: 622px;
+        height: 564px;
 
         @media (max-width: 640px) {
             height: 100vh;
@@ -70,5 +70,84 @@
             top: 42px;
             right: 10px;
         }
+    }
+}
+
+.feedback-loader {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    margin: -25px 0 0 -25px;
+    -webkit-animation: round1-rotate 2s infinite linear;
+    animation: round1-rotate 2s infinite linear;
+
+    @media (max-width: 640px) {
+        top: 320px;
+    }
+
+    &.active {
+        display: block;
+    }
+
+    & span {
+        width: 30px;
+        height: 30px;
+        display: block;
+        position: absolute;
+        background-color: black;
+        border-radius: 50%;
+        -webkit-animation: round1-bounce 2s infinite ease-in-out;
+        animation: round1-bounce 2s infinite ease-in-out;
+    }
+
+    & span:nth-child(2) {
+        top: auto;
+        bottom: 0;
+        -webkit-animation-delay: -1s;
+        animation-delay: -1s;
+    }
+}
+
+@-webkit-keyframes round1-rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes round1-rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes round1-bounce {
+    0%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes round1-bounce {
+    0%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
 }

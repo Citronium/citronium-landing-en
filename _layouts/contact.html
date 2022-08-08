@@ -4,7 +4,9 @@
   <body>
     {%- include header.html -%}
     {{ content }}
+    {%- include footer-small.html -%}
   </body>
+  
   {%- include feedback.html -%}
   {%- include mobile-menu.html -%}
   <script src="{{ site.baseurl | prepend: site.url }}/assets/js/script.js"></script>

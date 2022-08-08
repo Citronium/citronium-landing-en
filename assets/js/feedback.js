@@ -12,20 +12,25 @@ const formMessageTextEl = document.querySelector(".feedback-form-message__text")
 
 const closeBtn = document.getElementById("feedback-close");
 
+const feedbackLoader = document.querySelector(".feedback-loader");
+
 //on close modal
 closeBtn.addEventListener("click", () => {
     document.getElementById("feedback-modal").classList.remove("active");
+
     document.body.style.overflow = "auto";
     document.body.style.height = "auto";
-
-    formContainerEl.style.display = "block";
-    formMessageEl.style.display = "none";
 
     nameEl.classList.remove("error");
     nameErrorEl.innerText = "";
 
     phoneEl.classList.remove("error");
     phoneErrorEl.innerText = "";
+
+    setTimeout(() => {
+        formContainerEl.style.display = "block";
+        formMessageEl.style.display = "none";
+    }, 300);
 });
 
 const feedbackForm = document.getElementById("feedback-form");
@@ -62,7 +67,13 @@ feedbackForm.addEventListener("submit", async function (e) {
         phone: phoneEl.value,
     };
 
+    feedbackLoader.classList.add("active")
+
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
     const res = await sendMail(payload);
+
+    feedbackLoader.classList.remove("active")
 
     formContainerEl.style.display = "none";
 
