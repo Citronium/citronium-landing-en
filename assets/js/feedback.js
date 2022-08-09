@@ -12,7 +12,6 @@ const formMessageTextEl = document.querySelector(".feedback-form-message__text")
 
 const closeBtn = document.getElementById("feedback-close");
 
-const feedbackLoader = document.querySelector(".feedback-loader");
 
 //on close modal
 closeBtn.addEventListener("click", () => {
@@ -33,6 +32,10 @@ closeBtn.addEventListener("click", () => {
 });
 
 const feedbackForm = document.getElementById("feedback-form");
+const feedbackFormBtn = document.querySelector(".feedback-form__btn");
+
+const feedbackSpinner = document.querySelector(".feedback-form__btn-spinner");
+const feedbackBtnText = document.querySelector(".feedback-form__btn-text");
 
 //on submit form
 feedbackForm.addEventListener("submit", async function (e) {
@@ -66,13 +69,17 @@ feedbackForm.addEventListener("submit", async function (e) {
         phone: phoneEl.value,
     };
 
-    feedbackLoader.classList.add("active")
+    feedbackFormBtn.disabled = true
+    feedbackBtnText.classList.add("hide")
+    feedbackSpinner.classList.add("show")
 
     await new Promise(resolve => setTimeout(resolve, 1000));
 
     const res = await sendMail(payload);
 
-    feedbackLoader.classList.remove("active")
+    feedbackFormBtn.disabled = false
+    feedbackBtnText.classList.remove("hide")
+    feedbackSpinner.classList.remove("show")
 
     formContainerEl.style.display = "none";
 

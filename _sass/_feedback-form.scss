@@ -43,10 +43,33 @@
         padding: 10px 50px;
         margin-top: 40px;
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        // @media (max-width: 390px) {
-        //     margin-top: 24px;
-        // }
+        &-spinner {
+            display: none;
+            height: 30px;
+            width: 30px;
+            border-left: 3px solid;
+            border-bottom: 3px solid #ffffff;
+            border-right: 3px solid #ffffff;
+            border-top: 3px solid transparent;
+            border-radius: 50%;
+            animation: spinner 1s linear infinite;
+
+            &.show {
+                display: block;
+            }
+        }
+
+        &-text {
+            display: block;
+
+            &.hide {
+                display: none;
+            }
+        }
     }
 
     &__personal {
@@ -75,5 +98,15 @@
         &__text {
             text-align: center;
         }
+    }
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }
