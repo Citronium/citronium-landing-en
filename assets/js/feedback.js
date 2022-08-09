@@ -12,12 +12,11 @@ const formMessageTextEl = document.querySelector(".feedback-form-message__text")
 
 const closeBtn = document.getElementById("feedback-close");
 
-
 //on close modal
 closeBtn.addEventListener("click", () => {
     document.getElementById("feedback-modal").classList.remove("active");
 
-    document.body.style.overflow = "auto";
+    //document.body.style.overflow = "auto";
 
     nameEl.classList.remove("error");
     nameErrorEl.innerText = "";
@@ -29,6 +28,11 @@ closeBtn.addEventListener("click", () => {
         formContainerEl.style.display = "block";
         formMessageEl.style.display = "none";
     }, 300);
+
+    const scrollY = document.body.style.top;
+    document.body.style.position = "";
+    document.body.style.top = "";
+    window.scrollTo(0, parseInt(scrollY || "0") * -1);
 });
 
 const feedbackForm = document.getElementById("feedback-form");
@@ -69,17 +73,17 @@ feedbackForm.addEventListener("submit", async function (e) {
         phone: phoneEl.value,
     };
 
-    feedbackFormBtn.disabled = true
-    feedbackBtnText.classList.add("hide")
-    feedbackSpinner.classList.add("show")
+    feedbackFormBtn.disabled = true;
+    feedbackBtnText.classList.add("hide");
+    feedbackSpinner.classList.add("show");
 
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise((resolve) => setTimeout(resolve, 1000));
 
     const res = await sendMail(payload);
 
-    feedbackFormBtn.disabled = false
-    feedbackBtnText.classList.remove("hide")
-    feedbackSpinner.classList.remove("show")
+    feedbackFormBtn.disabled = false;
+    feedbackBtnText.classList.remove("hide");
+    feedbackSpinner.classList.remove("show");
 
     formContainerEl.style.display = "none";
 
