@@ -19,7 +19,6 @@ closeBtn.addEventListener("click", () => {
     document.getElementById("feedback-modal").classList.remove("active");
 
     document.body.style.overflow = "auto";
-    document.body.style.height = "auto";
 
     nameEl.classList.remove("error");
     nameErrorEl.innerText = "";

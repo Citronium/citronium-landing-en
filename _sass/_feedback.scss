@@ -30,6 +30,7 @@
         align-items: center;
         width: 622px;
         height: 564px;
+        box-shadow: -5px -5px 15px rgba(27, 27, 27, 0.08), 5px 5px 15px rgba(27, 27, 27, 0.08);
 
         @media (max-width: 640px) {
             height: 100vh;
