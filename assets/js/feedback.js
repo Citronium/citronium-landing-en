@@ -12,6 +12,8 @@ const formMessageTextEl = document.querySelector(".feedback-form-message__text")
 
 const closeBtn = document.getElementById("feedback-close");
 
+const feedbackFormBtn = document.querySelector(".feedback-form__btn");
+
 //on close modal
 closeBtn.addEventListener("click", () => {
     document.getElementById("feedback-modal").classList.remove("active");
@@ -23,6 +25,8 @@ closeBtn.addEventListener("click", () => {
 
     phoneEl.classList.remove("error");
     phoneErrorEl.innerText = "";
+
+    feedbackFormBtn.disabled = true;
 
     setTimeout(() => {
         formContainerEl.style.display = "block";
@@ -36,10 +40,24 @@ closeBtn.addEventListener("click", () => {
 });
 
 const feedbackForm = document.getElementById("feedback-form");
-const feedbackFormBtn = document.querySelector(".feedback-form__btn");
 
 const feedbackSpinner = document.querySelector(".feedback-form__btn-spinner");
 const feedbackBtnText = document.querySelector(".feedback-form__btn-text");
+
+const formInputs = document.querySelectorAll(".feedback-form__input");
+
+//on change input
+for (let i = 0; i < formInputs.length; i++) {
+    formInputs[i].addEventListener("input", validateForm);
+}
+
+function validateForm() {
+    if (nameEl.value !== "" && phoneEl.value !== "") {
+        feedbackFormBtn.disabled = false;
+    } else {
+        feedbackFormBtn.disabled = true;
+    }
+}
 
 //on submit form
 feedbackForm.addEventListener("submit", async function (e) {
