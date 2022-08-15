@@ -100,12 +100,25 @@ feedbackForm.addEventListener("submit", async function (e) {
     const res = await sendMail(payload);
 
     feedbackFormBtn.disabled = false;
-    feedbackBtnText.classList.remove("hide");
     feedbackSpinner.classList.remove("show");
+    feedbackBtnText.classList.remove("hide");
+
+    if (res.statusCode === 400) {
+        if (res.message.name) {
+            nameEl.classList.add("error");
+            nameErrorEl.innerText = res.message.name;
+        }
+        if (res.message.phone) {
+            phoneEl.classList.add("error");
+            phoneErrorEl.innerText = res.message.phone;
+        }
+
+        return
+    }
 
     formContainerEl.style.display = "none";
 
-    if (res.success) {
+    if (res.statusCode === 200) {
         formMessageTextEl.innerText = "Спасибо за заявку! \n Ваши данные успешно отправлены";
     } else {
         formMessageTextEl.innerText = "Не получилось отправить заявку. \n Попробуйте еще раз.";
