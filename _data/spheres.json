@@ -67,6 +67,11 @@
     {
         "en": "game",
         "ru": "Геймификация",
-        "type": "technologies"
+        "type": "spheres"
+    },
+    {
+        "en": "data-analysis",
+        "ru": "Анализ данных",
+        "type": "spheres"
     }
 ]
