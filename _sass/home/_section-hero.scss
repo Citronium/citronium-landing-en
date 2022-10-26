@@ -20,6 +20,24 @@
         min-height: 560px;
     }
 
+    &-container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 72px 40px 100px 40px;
+    
+        @media (max-width: 640px) {
+            padding: 72px 20px;
+        }
+    
+        @media (max-width: 390px) {
+            padding: 80px 16px;
+        }
+    
+        @media (max-width: 320px) {
+            padding: 80px 10px;
+        }
+    }
+
     &__title {
         color: var(--color-dark);
         max-width: 900px;
