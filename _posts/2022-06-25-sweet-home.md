@@ -1,12 +1,10 @@
 ---
 layout: project
 permalink: project/sweet-home/
-id: 3
 title: Sweet Home
 description: 'Приложение для контроля работы медицинского персонала в США: учет рабочего времени, выполнение недельного плана и оценка качества обслуживания от пациентов' 
 prev_image: '/assets/img/projects/prev/sweet-home-preview.png'
 prev_position: center
-prev_background: '#DA657A'
 spheres: ['medical', 'management', 'electronic-document']
 technologies: ['web', 'iOS', 'android']
 ---

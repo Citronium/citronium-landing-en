@@ -1,12 +1,10 @@
 ---
 layout: project
 permalink: project/seven-kids/
-id: 5
 title: Центр детского развития «Seven Kids»
 description: Система менеджмента для сети учебных центров по франшизе, включающая в себя детское игровое приложение
 prev_image: "/assets/img/projects/prev/seven-kids-prev.png"
 prev_position: right
-prev_background: "#7B5DEB"
 spheres: ['e-learning', 'management', 'game']
 technologies: ['ios', 'android', 'web']
 ---

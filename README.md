@@ -8,7 +8,6 @@
 - [GCC](https://gcc.gnu.org/install/) и [Make](https://www.gnu.org/software/make/)
 
 ## Разрабатываемое окружение
-- Mac OS BigSur 11.6.7
 - Ruby 3.2.2
 - Gem 3.3.7
 
@@ -74,7 +73,7 @@ JEKYLL_ENV=production bundle exec jekyll build
 
 ## Добавление нового поста
 
-1. Создайте файл с расширением .md в папке _posts
+1. Создайте файл с расширением .md в папке _posts: ДАТА-имя.md
 
 2. В шапке заполнить Front Matter
 
@@ -83,12 +82,10 @@ JEKYLL_ENV=production bundle exec jekyll build
 ---
 layout: project //Имя шаблона, без расширения
 permalink: projects/test/ //Желаемый вид uri в браузере
-id: 1 //Уникальный номер проекта
 title: Test title //Титул
 description: Тестовое описание // Описание проекта
 prev_image: "/assets/img/projects/prev/test-prev.png" //Путь к изображению, который будет показываться на странице со списком проектов
 prev_position: center // Расположение изображения. Варианты: center, left, right
-prev_background: "#367CF4" //Цвет фона за изображением
 spheres: ['business-processes', 'geolocation'] //К какой сфере относится проект. Весь список находится в _data/spheres.json
 technologies: ['hybrid', 'web'] //К какой технологии относится проект. Весь список находится в _data/technologies.json
 ---

@@ -1,12 +1,10 @@
 ---
 layout: project
 permalink: project/mobisat-greenbox/
-id: 5
 title: Mobisat Greenbox
 description: Спутниковый мониторинг транспорта и удаленная оценка безопасности вождения с мобильных устройств и личных компьютеров
 prev_image: "/assets/img/projects/prev/mobisat-greenbox-prev.png"
 prev_position: right
-prev_background: "#7AE470"
 spheres: ['logistics', 'data-analysis']
 technologies: ['android', 'ios', 'web']
 ---

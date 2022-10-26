@@ -1,14 +1,12 @@
 ---
 layout: project
 permalink: project/stroycontrol/
-id: 5
 title: Программный комплекс «Стройконтроль»
 description:
     Мобильное и веб-приложение для контроля выполняемых строительных работ.
     Позволяет ставить и проверять задачи с помощью мобильных устройств в реальном времени
 prev_image: "/assets/img/projects/prev/stroycontrol-prev.png"
 prev_position: left
-prev_background: "#F3CA46"
 spheres: ['electronic-document', 'bi', 'management']
 technologies: ['android', 'ios', 'web']
 ---
