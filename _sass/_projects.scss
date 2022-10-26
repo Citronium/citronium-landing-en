@@ -194,6 +194,7 @@
             margin: 56px;
             border-radius: 10px;
             overflow: hidden;
+            background-color: var(--color-dark);
 
             @media (max-width: 960px) {
                 height: 560px;
@@ -272,10 +273,6 @@
                     left: 56px;
                     height: 100%;
 
-                    // @media (max-width: 960px) {
-                    //     left: 260px;
-                    // }
-
                     @media (max-width: 640px) {
                         top: 40px;
                         left: 40px;
@@ -312,9 +309,9 @@
         z-index: 2;
         width: 8px;
         height: 8px;
-        border: 2px solid #333;
-        border-top: 2px solid #fff;
-        border-right: 2px solid #fff;
+        border: 2px solid var(--color-dark);
+        border-top: 2px solid var(--color-white);
+        border-right: 2px solid var(--color-white);
         transform: rotate(-45deg);
         transition: 0.5s;
         pointer-events: none;
@@ -366,7 +363,7 @@
         top: 80px;
         padding-top: 9px;
         overflow: hidden;
-        background: #fff;
+        background: var(--color-white);
         box-shadow: -2px -2px 4px rgba(177, 177, 177, 0.2), 2px 2px 4px rgba(177, 177, 177, 0.2);
         border-radius: 10px;
         z-index: 50;
@@ -422,7 +419,7 @@
             }
 
             &.active {
-                color: #367cf4;
+                color: var(--color-dark)
             }
         }
     }

@@ -26,8 +26,7 @@ layout: default
                                 <p class="projects__item-descr">{{ project.description | markdownify | strip_html | truncate: 170 }}</p>
                                 <a class="link projects__item-link" href="{{ project.url | relative_url }}">Посмотреть подробнее</a>
                             </div>
-                            <div style="background-color: {{ project.prev_background }};"
-                                class="projects__item-img projects__item-img--{{ project.prev_position}}">
+                            <div class="projects__item-img projects__item-img--{{ project.prev_position}}">
                                 <img src="{{site.baseurl}}{{project.prev_image }}" alt="">
                             </div>
                         </div>

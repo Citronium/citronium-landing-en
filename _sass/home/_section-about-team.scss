@@ -1,101 +1,49 @@
 .about-team {
-    &__items {
+    &__item {
         margin-top: 80px;
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--color-white);
+        border-radius: 20px;
+        padding: 56px;
 
         @media (max-width: 960px) {
-            flex-direction: column;
+            padding: 48px 56px 48px 56px;
         }
 
         @media (max-width: 640px) {
             margin-top: 60px;
+            padding: 40px;
         }
 
         @media (max-width: 390px) {
             margin-top: 40px;
-        }
-    }
-    &__item1 {
-        width: 60%;
-        background-color: var(--color-yellow);
-        border-radius: 20px;
-        height: 450px;
-        margin-right: 12px;
-
-        @media (max-width: 960px) {
-            width: 100%;
-            margin: 0;
-        }
-
-        @media (max-width: 640px) {
-            min-height: 416px;
-        }
-
-        @media (max-width: 390px) {
-            min-height: 346px;
+            padding: 24px;
         }
 
         &-title {
-            padding-top: 56px;
-            padding-left: 56px;
-            padding-right: 56px;
-            color: var(--color-white);
-
-            @media (max-width: 640px) {
-                padding-top: 40px;
-                padding-left: 40px;
-                padding-right: 40px;
-            }
-
-            @media (max-width: 390px) {
-                padding-top: 24px;
-                padding-left: 24px;
-                padding-right: 24px;
-            }
-        }
-    }
-    &__item2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 40%;
-        background-color: var(--color-white);
-        border-radius: 20px;
-        height: 450px;
-        margin-left: 16px;
-
-        @media (max-width: 960px) {
-            width: 100%;
-            margin: 24px 0 0 0;
-        }
-
-        @media (max-width: 640px) {
-            min-height: 416px;
-        }
-
-        @media (max-width: 390px) {
-            margin-top: 16px;
-        }
-
-        &-title {
-            padding-top: 56px;
-            padding-left: 56px;
-            padding-right: 56px;
+            text-align: center;
             color: var(--color-dark);
+        }
 
+        &-btn {
+            margin-top: 40px;
+            width: 250px;
+            height: 60px;
+    
             @media (max-width: 640px) {
-                padding-top: 40px;
-                padding-left: 40px;
-                padding-right: 40px;
+                margin-top: 30px;
+                width: 220px;
+                height: 48px;
             }
-
+    
             @media (max-width: 390px) {
-                padding-top: 24px;
-                padding-left: 24px;
-                padding-right: 24px;
+                width: 180px;
             }
         }
+
+
     }
 }

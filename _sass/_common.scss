@@ -115,8 +115,7 @@
 
         &:hover {
             &:not([disabled]) {
-                color: var(--color-white);
-                background-color: var(--color-primary);
+                background-color: var(--color-dark-hover);
             }
         }
     }
@@ -127,8 +126,7 @@
 
         &:hover {
             &:not([disabled]) {
-                color: var(--color-white);
-                background-color: var(--color-primary);
+                background-color: var(--color-white-hover);
             }
         }
     }
@@ -137,7 +135,7 @@
 .link {
     font-weight: 500;
     font-size: 24px;
-    color: var(--color-primary);
+    color: var(--color-dark);
 
     @media (max-width: 640px) {
         font-size: 18px;
