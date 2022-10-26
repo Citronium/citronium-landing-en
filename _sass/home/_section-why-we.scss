@@ -22,22 +22,22 @@
                 "item2"
                 "item3";
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, 500px);
+            grid-template-rows: repeat(3, 550px);
         }
 
         @media (max-width: 640px) {
             margin-top: 60px;
-            grid-template-rows: repeat(3, 450px);
+            grid-template-rows: repeat(3, 400px);
         }
 
         @media (max-width: 390px) {
             margin-top: 40px;
-            grid-template-rows: repeat(3, 330px);
+            grid-template-rows: repeat(3, 310px);
         }
 
         @media (max-width: 320px) {
             margin-top: 40px;
-            grid-template-rows: repeat(3, 280px);
+            grid-template-rows: repeat(3, 320px);
         }
     }
     &__item {
@@ -73,14 +73,23 @@
 
             & img {
                 max-width: 100%;
-                align-self: center;
+                object-fit: cover;
+                height: 100%;
                 
                 @media (max-width: 960px) {
-                    max-height: 380px;
+                    max-height: 430px;
                 }
 
                 @media (max-width: 640px) {
-                    max-height: 362px;
+                    max-height: 312px;
+                }
+
+                @media (max-width: 390px) {
+                    max-height: 222px;
+                }
+
+                @media (max-width: 320px) {
+                    max-height: 232px;
                 }
             }
         }
@@ -93,14 +102,23 @@
 
             & img {
                 max-width: 100%;
-                align-self: center;
+                object-fit: cover;
+                height: 100%;
                 
                 @media (max-width: 960px) {
-                    max-height: 380px;
+                    max-height: 390px;
                 }
 
                 @media (max-width: 640px) {
-                    max-height: 362px;
+                    max-height: 280px;
+                }
+
+                @media (max-width: 390px) {
+                    max-height: 222px;
+                }
+
+                @media (max-width: 320px) {
+                    max-height: 208px;
                 }
             }
         }
@@ -132,15 +150,24 @@
             }
             & img {
                 max-width: 50%;
-                align-self: center;
+                object-fit: cover;
+                height: 100%;
 
                 @media (max-width: 960px) {
-                    max-height: 380px;
                     max-width: 100%;
+                    max-height: 350px;
                 }
 
                 @media (max-width: 640px) {
-                    max-height: 362px;
+                    max-height: 248px;
+                }
+
+                @media (max-width: 390px) {
+                    max-height: 174px;
+                }
+
+                @media (max-width: 320px) {
+                    max-height: 184px;
                 }
             }
         }
