@@ -7,68 +7,68 @@
         grid-template-rows: 450px 450px;
         grid-gap: 24px;
 
-        @media (max-width: 800px) {
-            margin-top: 60px;
+        @media (max-width: 960px) {
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(4, 450px);
+            grid-template-rows: repeat(4, 550px);
+        }
+
+        @media (max-width: 640px) {
+            margin-top: 60px;
+            grid-template-rows: repeat(4, 380px);
         }
 
         @media (max-width: 390px) {
-            grid-template-rows: repeat(4, 428px);
             margin-top: 40px;
+            grid-template-rows: repeat(4, 280px);
+        }
+        @media (max-width: 320px) {
+            grid-template-rows: repeat(4, 270px);
         }
     }
     &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         border-radius: 20px;
         background-color: #ffffff;
-        background-repeat: no-repeat, repeat;
-        background-position: center bottom;
-        background-size: 100% auto;
-
-        @media (max-width: 800px) {
-            background-size: calc(min(600px, 100%));
-        }
-
-        @media (max-width: 520px) {
-            background-size: 130%;
-            background-position: center bottom 20px;
-        }
-
-        @media (max-width: 390px) {
-            background-size: 130%;
-            background-position: center bottom 40px;
-        }
-
-        @media (max-width: 320px) {
-            background-position: center bottom 50px;
-        }
-
-        &.item1 {
-            background-image: url(img/home/business-process.png);
-        }
-
-        &.item2 {
-            background-image: url(img/home/project-management.png);
-        }
-
-        &.item3 {
-            background-image: url(img/home/document-management.png);
-        }
-
-        &.item4 {
-            background-image: url(img/home/all-spheres.png);
-        }
 
         &-title {
             color: var(--color-dark);
-            margin: 56px;
+            padding: 48px 48px 24px 48px;
 
-            @media (max-width: 800px) {
-                margin: 40px;
+            @media (max-width: 960px) {
+                padding: 56px 56px 24px 56px;
+            }
+
+            @media (max-width: 640px) {
+                padding: 40px 40px 0 40px;
             }
 
             @media (max-width: 390px) {
-                margin: 24px;
+                padding: 24px 24px 0 24px;
+            }
+        }
+
+        & img {
+            max-width: 100%;
+            object-fit: cover;
+            height: 100%;
+            max-height: 298px;
+
+            @media (max-width: 960px) {
+                max-height: 430px;
+            }
+
+            @media (max-width: 640px) {
+                max-height: 292px;
+            }
+
+            @media (max-width: 390px) {
+                max-height: 216px;
+            }
+
+            @media (max-width: 320px) {
+                max-height: 206px;
             }
         }
     }
