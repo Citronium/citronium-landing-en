@@ -45,7 +45,11 @@ technologies: ['android', 'ios', 'web']
 4. База данных с актуальными строительными нормами, которые подгружаются при заполнении нарушений.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/stroycontrol/stroycontrol-3-issue.png" alt="СтройКонтроль: Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/stroycontrol/stroycontrol-3-issue-1.png" alt="СтройКонтроль: Обзорная картинка"/>
+</figure>
+
+<figure>
+    <img src="{{ site.baseurl }}/assets/img/projects/stroycontrol/stroycontrol-3-issue-2.png" alt="СтройКонтроль: Обзорная картинка"/>
 </figure>
 
 ## Интеграции
@@ -53,6 +57,10 @@ technologies: ['android', 'ios', 'web']
 Для создания единой IT-экосистемы мы провели интеграция с 1C, Pilot-Ice, MS Progect Manager, Vault, BIM360 и другими.  
 
 Стройконтроль упрощает процесс принятия управленческих решений, в том числе при работе с инвестиционным проектом, благодаря тому, что информация наглядно собирается в одном приложении. Разработанный нами блок аналитики включает в себя более 15 стандартных графиков и настраиваемый модуль BI.
+
+<figure>
+    <img src="{{ site.baseurl }}/assets/img/projects/stroycontrol/stroycontrol-4-analytics.png" alt="СтройКонтроль: Обзорная картинка"/>
+</figure>
 
 ## Результат
 
