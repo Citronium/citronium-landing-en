@@ -110,3 +110,24 @@ JEKYLL_ENV=production bundle exec jekyll build
 ## FAQ
 
 - [Установка Jekyll](https://jekyllrb.com/docs/installation/)
+
+Определение dev окружения для JavaScript везде в layout подключено env.html
+
+```sh
+{% if jekyll.environment == "development" %}
+<script type="javascript">
+    window.dev = true
+</script>
+{%- endif -%}
+```
+
+Для изменения api feedback.js
+```sh
+function sendMail
+...
+if (window.dev === true) {
+    api = "https://citronium-landing-api.psrv5.citronium.com/users/send-email";
+} else {
+    api = "https://citronium-landing-api.psrv5.citronium.com/users/send-email"
+}
+```
