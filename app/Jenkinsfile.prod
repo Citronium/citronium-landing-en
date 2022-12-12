@@ -39,9 +39,8 @@ node {
           sh "rm -Rfv ./_site"
           sh "rm -Rfv ./html"
           sh "ssh citronium@194.177.22.5 rm -rf /home/citronium/landing_2022/*"
-          sh "ssh citronium@194.177.22.5 rm -rf /home/citronium/landing_2022/.[!.]*"
-          sh "ssh citronium@194.177.22.5 docker stop citronium-landing"
-          sh "ssh citronium@194.177.22.5 docker rm citronium-landing"
+          sh "ssh citronium@194.177.22.5 rm -rf /home/citronium/landing_2022/.[!.]*"          
+          sh "ssh citronium@194.177.22.5 docker rm -f citronium-landing"
           sh "ssh citronium@194.177.22.5 docker volume rm -f citronium-landing_citronium_landing"
         }  
       }
