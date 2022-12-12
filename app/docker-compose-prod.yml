@@ -1,0 +1,22 @@
+version: '3'
+services:  
+  app:
+    image: registry.citronium.com/citronium-landing:${APP_VERSION:-latest}    
+    container_name: citronium-landing
+    volumes:
+      - citronium_landing:/var/www/html
+    #restart: always
+    labels:
+      - traefik.backend=citronium-landing
+      - traefik.frontend.rule=Host:citronium-landing.citronium.com
+      - traefik.port=80
+      - traefik.docker.network=citronium_proxy
+      - traefik.enable=true
+    networks:      
+      - traefik
+networks:
+  traefik:
+    external:
+      name: citronium_proxy
+volumes:
+  citronium_landing:
