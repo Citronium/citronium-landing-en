@@ -43,11 +43,7 @@ node {
           sh "ssh citronium@194.177.22.5 docker rm -f citronium-landing"
           sh "ssh citronium@194.177.22.5 docker volume rm -f citronium-landing_citronium_landing"
         }  
-      }
-        
-      stage("Docker start at psrv5") {
-        sh "APP_VERSION=${imageTag} docker-compose -p citronium-landing -f app/docker-compose.yml up -d"
-      }
+      }      
         
       stage("Jekyll Build") {
         sshagent(credentials : ['landing-citronium']) {          
