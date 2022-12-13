@@ -54,7 +54,7 @@ node {
           sh "docker cp citronium-landing-jekyll:/srv/jekyll/_site ./html"
           
           sh "scp -rp app/docker-compose-prod.yml citronium@194.177.22.5:/home/citronium/landing_2022/"
-          sh "ssh citronium@194.177.22.5 APP_VERSION=${imageTag} docker-compose -p citronium-landing -f /home/citronium/landing_2022/docker-compose.yml up -d"
+          sh "ssh citronium@194.177.22.5 APP_VERSION=${imageTag} docker-compose -p citronium-landing -f /home/citronium/landing_2022/docker-compose-prod.yml up -d"
           sh "scp -rp ./html citronium@194.177.22.5:/home/citronium/landing_2022/"
           sh "ssh citronium@194.177.22.5 docker cp /home/citronium/landing_2022/html citronium-landing:/var/www/"
           sh "ssh citronium@194.177.22.5 docker restart citronium-landing"
