@@ -133,7 +133,7 @@ function sendMail(payload) {
     if (window.dev === true) {
         api = "https://citronium-landing-api.psrv5.citronium.com/users/send-email";
     } else {
-        api = "https://citronium-landing-api.psrv5.citronium.com/users/send-email"
+        api = "http://landing-api.citronium.com/user/send-email"
     }
 
     return fetch(api, {
