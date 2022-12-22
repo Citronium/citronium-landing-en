@@ -38,8 +38,8 @@ node {
         sshagent(credentials : ['landing-citronium']) {
           sh "rm -Rfv ./_site"
           sh "rm -Rfv ./html"
-          sh "docker rm -f citronium-landing-jekyll"
-          sh "docker volume rm landing-tmp"
+//          sh "docker rm -f citronium-landing-jekyll"
+//          sh "docker volume rm landing-tmp"
           sh "ssh citronium@194.177.22.5 rm -rf /home/citronium/landing_2022/*"
           sh "ssh citronium@194.177.22.5 rm -rf /home/citronium/landing_2022/.[!.]*"          
           sh "ssh citronium@194.177.22.5 docker rm -f citronium-landing"
