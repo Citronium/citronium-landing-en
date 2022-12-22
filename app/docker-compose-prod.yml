@@ -8,7 +8,7 @@ services:
     #restart: always
     labels:
       - traefik.backend=citronium-landing
-      - traefik.frontend.rule=Host:citronium-landing.citronium.com
+      - traefik.frontend.rule=Host:citronium.com
       - traefik.port=80
       - traefik.docker.network=citronium_proxy
       - traefik.enable=true
