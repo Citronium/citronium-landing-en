@@ -1,19 +1,19 @@
+{% assign text = site.data.texts_home.whyWe %}
 <section class="why-we">
     <div class="container flex-container">
-        <h4 class="h4">Почему мы</h4>
-        <h2 class="h2 section-title">IT-бюро со штатом сильных специалистов</h2>
+        <h4 class="h4">{{ text.sectionName[site.lang] }}</h4>
+        <h2 class="h2 section-title">{{ text.sectionTitle[site.lang] }}</h2>
         <div class="why-we__items">
             <div class="why-we__item item1">
-                <h3 class="h3 why-we__item-title">100% наших проектов <br/>  доведены до финала</h3>
+                <h3 class="h3 why-we__item-title">{{ text.item1[site.lang] }}</h3>
                 <img src="{{ site.baseurl }}/assets/img/home/final.png" alt="final" />
             </div>
             <div class="why-we__item item2">
-                <h3 class="h3 why-we__item-title">Умеем внедрять программные системы в больших компаниях</h3>
+                <h3 class="h3 why-we__item-title">{{ text.item2[site.lang] }}</h3>
                 <img src="{{ site.baseurl }}/assets/img/home/implement.png" alt="implement" />
             </div>
             <div class="why-we__item item3">
-                <h3 class="h3 why-we__item-title">Помогаем сформулировать требования, спроектировать систему, написать техническое задание
-                </h3>
+                <h3 class="h3 why-we__item-title">{{ text.item3[site.lang] }}</h3>
                 <img src="{{ site.baseurl }}/assets/img/home/engineering.png" alt="engineering" />
             </div>
         </div>

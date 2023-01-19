@@ -1,16 +1,14 @@
+{% assign text = site.data.texts_home.howWeWork %}
 <section class="how-we-work">
     <div class="container flex-container">
-        <h4 class="h4">Как мы работаем</h4>
-        <h2 class="h2 section-title">Реализуем проекты любой сложности</h2>
+        <h4 class="h4">{{ text.sectionName[site.lang] }}</h4>
+        <h2 class="h2 section-title">{{ text.sectionTitle[site.lang] }}</h2>
         <div class="how-we-work__items">
             <div class="how-we-work__item">
                 <div class="how-we-work__item-col">
-                    <h3 class="h3 how-we-work__item-title">Разработка с нуля</h3>
-                    <p class="how-we-work__item-desc">
-                        Мы поможем определить цели проекта и критерии их достижения, проведём необходимые исследования,
-                        спроектируем дизайн и архитектуру. На протяжении всего проекта мы будем вашим партнёром.
-                    </p>
-                    <a href="#" class="link how-we-work__item-link modal-btn">Получить консультацию</a>
+                    <h3 class="h3 how-we-work__item-title">{{ text.item1.title[site.lang] }}</h3>
+                    <p class="how-we-work__item-desc">{{ text.item1.description[site.lang] }}</p>
+                    <a href="#" class="link how-we-work__item-link modal-btn">{{ text.item1.btnText[site.lang] }}</a>
                 </div>
                 <img
                     class="how-we-work__item-img"
@@ -20,12 +18,9 @@
             </div>
             <div class="how-we-work__item how-we-work__item--reverse">
                 <div class="how-we-work__item-col">
-                    <h3 class="h3 how-we-work__item-title">Проектная работа</h3>
-                    <p class="how-we-work__item-desc">
-                        У вас есть готовое техническое задание или концепция проекта. Мы внимательно изучим объем работ,
-                        разобьем на этапы, согласуем сроки и бюджет и выдадим результат.
-                    </p>
-                    <a href="#" class="link how-we-work__item-link modal-btn">Расчитать смету по ТЗ</a>
+                    <h3 class="h3 how-we-work__item-title">{{ text.item2.title[site.lang] }}</h3>
+                    <p class="how-we-work__item-desc">{{ text.item2.description[site.lang] }}</p>
+                    <a href="#" class="link how-we-work__item-link modal-btn">{{ text.item2.btnText[site.lang] }}</a>
                 </div>
                 <img
                     class="how-we-work__item-img"
@@ -35,12 +30,9 @@
             </div>
             <div class="how-we-work__item">
                 <div class="how-we-work__item-col">
-                    <h3 class="h3 how-we-work__item-title">Гибкая разработка</h3>
-                    <p class="how-we-work__item-desc">
-                        У вас есть сложные задачи, которые требуют особого подхода. Мы работаем спринтами, по итогам
-                        которых команда проанализирует результаты и поставит приоритеты для следующего цикла.
-                    </p>
-                    <a href="#" class="link how-we-work__item-link modal-btn">Написать нам</a>
+                    <h3 class="h3 how-we-work__item-title">{{ text.item3.title[site.lang] }}</h3>
+                    <p class="how-we-work__item-desc">{{ text.item3.description[site.lang] }}</p>
+                    <a href="#" class="link how-we-work__item-link modal-btn">{{ text.item3.btnText[site.lang] }}</a>
                 </div>
                 <img
                     class="how-we-work__item-img"

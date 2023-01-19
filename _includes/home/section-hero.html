@@ -1,8 +1,8 @@
-{% assign hero = site.data.texts.hero %}
+{% assign text = site.data.texts_home.hero %}
 <section class="hero">
     <div class="hero-container flex-container">
-        <h1 class="hero__title h1">{{ hero.title[site.lang] }}</h1>
-        <p class="hero__descr">{{ hero.description[site.lang] }}</p>
-        <button class="btn btn--dark hero__btn modal-btn">{{ hero.startProject[site.lang] }}</button>
+        <h1 class="hero__title h1">{{ text.title[site.lang] }}</h1>
+        <p class="hero__descr">{{ text.description[site.lang] }}</p>
+        <button class="btn btn--dark hero__btn modal-btn">{{ text.startProject[site.lang] }}</button>
     </div>
 </section>

@@ -1,22 +1,23 @@
+{% assign text = site.data.texts_home.whatWeDo %}
 <section class="what-we-do">
     <div class="container flex-container">
-        <h4 class="h4">Что мы делаем</h4>
-        <h2 class="h2 section-title">У нас есть опыт в этих сферах</h2>
+        <h4 class="h4">{{ text.sectionName[site.lang] }}</h4>
+        <h2 class="h2 section-title">{{ text.sectionTitle[site.lang] }}</h2>
         <div class="what-we-do__items">
             <a href="{{site.baseurl}}/projects?sphere=business-processes" class="what-we-do__item">
-                <h3 class="h3 what-we-do__item-title">Цифровизация бизнес-процессов</h3>
+                <h3 class="h3 what-we-do__item-title">{{ text.item1[site.lang] }}</h3>
                 <img src="{{ site.baseurl }}/assets/img/home/business-process.png" alt="business-process" />
             </a>
             <a href="{{site.baseurl}}/projects?sphere=project-management" class="what-we-do__item">
-                <h3 class="h3 what-we-do__item-title">Системы управления проектами</h3>
+                <h3 class="h3 what-we-do__item-title">{{ text.item2[site.lang] }}</h3>
                 <img src="{{ site.baseurl }}/assets/img/home/project-management.png" alt="project-management" />
             </a>
             <a href="{{site.baseurl}}/projects?sphere=electronic-document" class="what-we-do__item">
-                <h3 class="h3 what-we-do__item-title">Электронный документооборот</h3>
+                <h3 class="h3 what-we-do__item-title">{{ text.item3[site.lang] }}</h3>
                 <img src="{{ site.baseurl }}/assets/img/home/document-management.png" alt="document-management" />
             </a>
             <a href="{{site.baseurl}}/projects" class="what-we-do__item">
-                <h3 class="h3 what-we-do__item-title">Посмотреть все сферы</h3>
+                <h3 class="h3 what-we-do__item-title">{{ text.item4[site.lang] }}</h3>
                 <img src="{{ site.baseurl }}/assets/img/home/all-spheres.png" alt="all-spheres" />
             </a>
         </div>

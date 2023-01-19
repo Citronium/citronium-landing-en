@@ -1,31 +1,28 @@
+{% assign text = site.data.texts_home.ourAwards %}
 <section class="our-awards">
     <div class="container flex-container">
-        <h4 class="h4">Наши награды</h4>
-        <h2 class="h2 section-title">Доверие профессионального сообщества</h2>
+        <h4 class="h4">{{ text.sectionName[site.lang] }}</h4>
+        <h2 class="h2 section-title">{{ text.sectionTitle[site.lang] }}</h2>
         <div class="our-awards__items">
             <div class="our-awards__item our-awards__item-1">
                 <img src="{{ site.baseurl }}/assets/img/award.png" alt="" />
-                <h3 class="h3 our-awards__item-title">Веб-интеграторы</h3>
-                <p class="our-awards__item-desc">
-                    Все ключевые рейтинги, аналитика и спецпроекты агентского рынка digital-коммуникаций России.
-                </p>
+                <h3 class="h3 our-awards__item-title">{{ text.item1.title[site.lang] }}</h3>
+                <p class="our-awards__item-desc">{{ text.item1.description[site.lang] }}</p>
             </div>
             <div class="our-awards__item our-awards__item-2">
                 <img src="{{ site.baseurl }}/assets/img/award.png" alt="" />
-                <h3 class="h3 our-awards__item-title">Веб-интеграторы</h3>
-                <p class="our-awards__item-desc">Топ лучших веб-разработчиков и ведущих интеграторов интернет-решений России</p>
+                <h3 class="h3 our-awards__item-title">{{ text.item2.title[site.lang] }}</h3>
+                <p class="our-awards__item-desc">{{ text.item2.description[site.lang] }}</p>
             </div>
             <div class="our-awards__item our-awards__item-3">
                 <img src="{{ site.baseurl }}/assets/img/award.png" alt="" />
-                <h3 class="h3 our-awards__item-title">Мобильная разработка</h3>
-                <p class="our-awards__item-desc">Рейтинг компаний, специализирующихся на заказной разработке мобильных приложений и мобильном маркетинге.</p>
+                <h3 class="h3 our-awards__item-title">{{ text.item3.title[site.lang] }}</h3>
+                <p class="our-awards__item-desc">{{ text.item3.description[site.lang] }}</p>
             </div>
             <div class="our-awards__item our-awards__item-4">
                 <img src="{{ site.baseurl }}/assets/img/award.png" alt="" />
-                <h3 class="h3 our-awards__item-title">Мобильная разработка</h3>
-                <p class="our-awards__item-desc">
-                    Рейтинг лучших поставщиков IT- услуг, заказной и веб разработки в сегменте В2В.
-                </p>
+                <h3 class="h3 our-awards__item-title">{{ text.item4.title[site.lang] }}</h3>
+                <p class="our-awards__item-desc">{{ text.item4.description[site.lang] }}</p>
             </div>
         </div>
     </div>

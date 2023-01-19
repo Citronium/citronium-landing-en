@@ -1,7 +1,8 @@
+{% assign text = site.data.texts_home.ourApproach %}
 <section class="our-approach">
     <div class="container flex-container">
-        <h4 class="h4">Наш подход</h4>
-        <h2 class="h2 section-title">Выбираем технологии, наиболее подходящие для решения задачи</h2>
+        <h4 class="h4">{{ text.sectionName[site.lang] }}</h4>
+        <h2 class="h2 section-title">{{ text.sectionTitle[site.lang] }}</h2>
         <img class="our-approach__diagram" src="{{ site.baseurl }}/assets/img/diagram.png" alt="diagram">
     </div>
 </section>

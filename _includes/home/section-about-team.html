@@ -1,13 +1,11 @@
+{% assign text = site.data.texts_home.aboutTeam %}
 <section class="about-team">
     <div class="container flex-container">
-        <h4 class="h4">О команде</h4>
-        <h2 class="h2 section-title">Мы – команда профессионалов</h2>
+        <h4 class="h4">{{ text.sectionName[site.lang] }}</h4>
+        <h2 class="h2 section-title">{{ text.sectionTitle[site.lang] }}</h2>
         <div class="about-team__item">
-            <h3 class="h3 about-team__item-title">
-                Над вашим проектом будут работать менеджеры, дизайнеры, разработчики, инженеры по качеству и специалисты
-                по внедрению
-            </h3>
-            <button class="btn btn--dark about-team__item-btn modal-btn">Начать проект</button>
+            <h3 class="h3 about-team__item-title">{{ text.item.title[site.lang] }}</h3>
+            <button class="btn btn--dark about-team__item-btn modal-btn">{{ text.item.btnText[site.lang] }}</button>
         </div>
     </div>
 </section>
