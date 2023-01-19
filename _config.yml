@@ -3,6 +3,7 @@ title: Citronium | Разработка веб и мобильных прило�
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://citronium-landing.psrv5.citronium.com/" # the base hostname & protocol for your site, e.g. http://example.com
+lang: ru 
 
 
 # Build settings
