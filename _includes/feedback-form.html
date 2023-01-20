@@ -1,37 +1,36 @@
+{% assign text = site.data.texts_app.feedbackForm %}
 <div class="feedback-form-container">
-    <h3 class="feedback-form__title h3">Запись на консультацию</h3>
+    <h3 class="feedback-form__title h3">{{ text.title[site.lang] }}</h3>
     <form id="feedback-form" class="feedback-form" action="">
         <div class="feedback-form__item">
-            <label class="feedback-form__label label">Имя</label>
+            <label class="feedback-form__label label">{{ text.name.label[site.lang] }}</label>
             <input
                 id="feedback-form-name"
                 name="name"
                 class="feedback-form__input input"
                 type="text"
-                placeholder="Введите имя"
+                placeholder="{{ text.name.placeholder[site.lang] }}"
                 autocomplete="off"
             />
             <label id="feedback-form-name-error" class="feedback-form__error label"></label>
         </div>
         <div class="feedback-form__item">
-            <label class="feedback-form__label label">Телефон</label>
+            <label class="feedback-form__label label">{{ text.phone.label[site.lang] }}</label>
             <input
                 id="feedback-form-phone"
                 name="phone"
                 class="feedback-form__input input"
                 type="tel"
-                placeholder="Введите номер телефона"
+                placeholder="{{ text.phone.placeholder[site.lang] }}"
                 autocomplete="off"
             />
             <label id="feedback-form-phone-error" class="feedback-form__error label"></label>
         </div>
         <button type="submit" class="feedback-form__btn btn btn--dark" disabled>
             <div class="feedback-form__btn-spinner"></div>
-            <span class="feedback-form__btn-text">Начать проект</span> 
+            <span class="feedback-form__btn-text">{{ text.btnSubmit[site.lang] }}</span>
         </button>
-        <a href="/policy-personal-data" class="feedback-form__personal">
-            Нажимая на кнопку вы даёте согласие <u>на обработку персональных данных</u>
-        </a>
+        <a href="/policy-personal-data" class="feedback-form__personal"> {{ text.link[site.lang] }} </a>
     </form>
 </div>
 

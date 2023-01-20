@@ -1,3 +1,4 @@
+{% assign text = site.data.texts_app.header %}
 <header class="header">
     <div class="header__container">
         <div class="header-left">
@@ -6,8 +7,8 @@
             </a>
         </div>
         <div class="header-right">
-            <a class="header-link" href="{{site.baseurl}}/projects">Проекты</a>
-            <a class="header-link" href="{{site.baseurl}}/contacts">Контакты</a>
+            <a class="header-link" href="{{site.baseurl}}/projects">{{ text.projects[site.lang] }}</a>
+            <a class="header-link" href="{{site.baseurl}}/contacts">{{ text.contacts[site.lang] }}</a>
         </div>
         <button id="burger-btn" class="burger">
             <span class="burger__line"></span>

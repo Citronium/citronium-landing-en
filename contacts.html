@@ -1,19 +1,21 @@
 ---
 layout: contact
 ---
+
+{% assign text = site.data.texts_app.contacts %}
 <main>
     <div class="contacts">
         <div class="contacts-container">
-            <h1 class="h1 contacts__title">Контакты</h1>
+            <h1 class="h1 contacts__title">{{ text.title[site.lang] }}</h1>
             <div class="contacts-content">
                 <div class="contacts__left">
-                    <h3 class="h3">Приглашаем вас <br/> на бесплатную консультацию</h1>
-                    <p class="contacts__left-descr">После 15-минутной консультации мы составим коммерческое предложение с ориентиром по стоимости и срокам, пришлем его через 2 дня.</p>
-                    <button id="open-btn-footer" class="btn btn--dark contacts__left-btn modal-btn">Начать проект</button>
+                    <h3 class="h3">{{ text.left.title[site.lang] }}</h1>
+                    <p class="contacts__left-descr">{{ text.left.description[site.lang] }}</p>
+                    <button id="open-btn-footer" class="btn btn--dark contacts__left-btn modal-btn">{{ text.left.btnText[site.lang] }}</button>
                 </div>
                 <div class="contacts__right">
-                    <h3 class="h3 contacts__adress">Йошкар-Ола, Карла Маркса <nobr>109-б</nobr></h3>
-                    <h3 class="h3 contacts__phone">+7 (499) 350-55-75</p>
+                    <h3 class="h3 contacts__adress">{{ text.right.address[site.lang] }}</h3>
+                    <h3 class="h3 contacts__phone">{{ text.right.phone[site.lang] }}</p>
                 </div>
             </div>
         </div>

@@ -1,15 +1,16 @@
+{% assign text = site.data.texts_app.footer %}
 <footer class="footer">
     <div class="footer__container">
         <div class="footer__top">
-            <h1 class="footer__title h1">Приглашаем вас на бесплатную консультацию</h1>
-            <p class="footer__descr">После 15-минутной консультации мы составим коммерческое предложение с ориентиром по стоимости и срокам, пришлем его через 2 дня.</p>
-            <button id="open-btn-footer" class="btn btn--white footer__btn modal-btn">Записаться на консультацию</button>
+            <h1 class="footer__title h1">{{ text.title[site.lang] }}</h1>
+            <p class="footer__descr">{{ text.description[site.lang] }}</p>
+            <button id="open-btn-footer" class="btn btn--white footer__btn modal-btn">{{ text.btnText[site.lang] }}</button>
         </div>
         <div class="footer__bottom">
-            <p class="footer__text footer__company">© 2022 ООО «Цитрониум»</p>
+            <p class="footer__text footer__company">{{ text.company[site.lang] }}</p>
             <div class="footer__bottom-right">
-                <a href="/policy-personal-data" class="footer__text footer__personal">Политика обработки персональных данных</p>
-                <a href="/privacy-policy" class="footer__text footer__privacy">Политика конфиденциальности</a>
+                <a href="/policy-personal-data" class="footer__text footer__personal">{{ text.personal[site.lang] }}</p>
+                <a href="/privacy-policy" class="footer__text footer__privacy">{{ text.privacy[site.lang] }}</a>
             </div>
         </div>
     </div>

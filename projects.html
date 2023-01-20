@@ -2,13 +2,14 @@
 layout: default
 ---
 
+{% assign text = site.data.texts_app.projects %}
 <main>
     <div class="projects">
         <div class="projects-container">
             <div class="flex-container">
-                <h1 class="h1 projects__title">Наши проекты</h1>
+                <h1 class="h1 projects__title">{{ text.title[site.lang] }}</h1>
                 <p class="projects__descr">
-                    Мы сделали и запустили в работу более 500 проектов. Лучшие из них мы превратили в увлекательные истории.
+                    {{ text.description[site.lang] }}
                 </p>
             </div>
             {%- include projects/filters.html -%}
@@ -22,9 +23,9 @@ layout: default
                     {% endif %}
                         <div id="{{project.id}}" class="{{ itemClass }}">
                             <div class="projects__item-content ">
-                                <h3 class="h3 projects__item-title"">{{ project.title }}</h3>
+                                <h3 class="h3 projects__item-title"">{{ project.title[site.lang] }}</h3>
                                 <p class="projects__item-descr">{{ project.description | markdownify | strip_html | truncate: 170 }}</p>
-                                <a class="link projects__item-link" href="{{ project.url | relative_url }}">Посмотреть подробнее</a>
+                                <a class="link projects__item-link" href="{{ project.url | relative_url }}">{{ text.linkText[site.lang] }}</a>
                             </div>
                             <div class="projects__item-img projects__item-img--{{ project.prev_position}}">
                                 <img src="{{site.baseurl}}{{project.prev_image }}" alt="">

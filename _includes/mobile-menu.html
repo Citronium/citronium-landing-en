@@ -1,3 +1,4 @@
+{% assign text = site.data.texts_app.mobileMenu %}
 <div id="mobile-menu"" class="mobile-menu">
     <div class="mobile-menu__header">
         <a href="{{site.baseurl}}/">
@@ -8,10 +9,10 @@
     
     <div class="mobile-menu__items">
         <nav class="mobile-menu__item">
-            <a class="mobile-menu__item-link" href="{{site.baseurl}}/projects">Наши проекты</a>
+            <a class="mobile-menu__item-link" href="{{site.baseurl}}/projects">{{ text.projects[site.lang] }}</a>
         </nav>
         <nav class="mobile-menu__item">
-            <a class="mobile-menu__item-link" href="{{site.baseurl}}/contacts">Контакты</a>
+            <a class="mobile-menu__item-link" href="{{site.baseurl}}/contacts">{{ text.contacts[site.lang] }}</a>
         </nav>
     </div>
 </div>
