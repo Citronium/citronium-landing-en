@@ -23,12 +23,12 @@ layout: default
                     {% endif %}
                         <div id="{{project.id}}" class="{{ itemClass }}">
                             <div class="projects__item-content ">
-                                <h3 class="h3 projects__item-title"">{{ project.title[site.lang] }}</h3>
-                                <p class="projects__item-descr">{{ project.description | markdownify | strip_html | truncate: 170 }}</p>
+                                <h3 class="h3 projects__item-title"">{{ project.postTitle[site.lang] }}</h3>
+                                <p class="projects__item-descr">{{ project.postDescription[site.lang] | markdownify | strip_html | truncate: 170 }}</p>
                                 <a class="link projects__item-link" href="{{ project.url | relative_url }}">{{ text.linkText[site.lang] }}</a>
                             </div>
-                            <div class="projects__item-img projects__item-img--{{ project.prev_position}}">
-                                <img src="{{site.baseurl}}{{project.prev_image }}" alt="">
+                            <div class="projects__item-img projects__item-img--{{ project.prevPosition}}">
+                                <img src="{{site.baseurl}}{{project.prevImage }}" alt="">
                             </div>
                         </div>
                 {% endfor %}
