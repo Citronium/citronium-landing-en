@@ -3,7 +3,7 @@
         "value": "all",
         "label": {
             "ru": "Все сферы",
-            "en": "англ"
+            "en": "All Spheres"
         },
         "type": "spheres"
     },
@@ -11,7 +11,7 @@
         "value": "business-processes",
         "label": {
             "ru": "Цифровизация бизнес-процессов",
-            "en": "англ"
+            "en": "Digitization of Business Processes"
         },
         "type": "spheres"
     },
@@ -19,7 +19,7 @@
         "value": "project-management",
         "label": {
             "ru": "Системы управления проектами",
-            "en": "англ"
+            "en": "Project Management Systems"
         },
         "type": "spheres"
     },
@@ -27,7 +27,7 @@
         "value": "electronic-document",
         "label": {
             "ru": "Электронный документооборот",
-            "en": "англ"
+            "en": "E-Document Management"
         },
         "type": "spheres"
     },
@@ -35,7 +35,7 @@
         "value": "medical",
         "label": {
             "ru": "Медицина",
-            "en": "англ"
+            "en": "Medicine"
         },
         "type": "spheres"
     },
@@ -43,7 +43,7 @@
         "value": "management",
         "label": {
             "ru": "Менеджмент",
-            "en": "англ"
+            "en": "Management"
         },
         "type": "spheres"
     },
@@ -51,7 +51,7 @@
         "value": "e-learning",
         "label": {
             "ru": "E-learning",
-            "en": "англ"
+            "en": "E-Learning"
         },
         "type": "spheres"
     },
@@ -59,7 +59,7 @@
         "value": "logistics",
         "label": {
             "ru": "Логистика",
-            "en": "англ"
+            "en": "Logistics"
         },
         "type": "spheres"
     },
@@ -67,7 +67,7 @@
         "value": "marketing",
         "label": {
             "ru": "Маркетинг",
-            "en": "англ"
+            "en": "Marketing"
         },
         "type": "spheres"
     },
@@ -75,7 +75,7 @@
         "value": "state-sector",
         "label": {
             "ru": "Госсектор",
-            "en": "англ"
+            "en": "Government"
         },
         "type": "spheres"
     },
@@ -83,7 +83,7 @@
         "value": "social-network",
         "label": {
             "ru": "Соцсети",
-            "en": "англ"
+            "en": "Social Networks"
         },
         "type": "spheres"
     },
@@ -91,7 +91,7 @@
         "value": "geolocation",
         "label": {
             "ru": "Геолокация",
-            "en": "англ"
+            "en": "Geolocation"
         },
         "type": "spheres"
     },
@@ -99,7 +99,7 @@
         "value": "bi",
         "label": {
             "ru": "BI",
-            "en": "англ"
+            "en": "BI"
         },
         "type": "spheres"
     },
@@ -107,7 +107,7 @@
         "value": "game",
         "label": {
             "ru": "Геймификация",
-            "en": "англ"
+            "en": "Gamification"
         },
         "type": "spheres"
     },
@@ -115,7 +115,7 @@
         "value": "data-analysis",
         "label": {
             "ru": "Анализ данных",
-            "en": "англ"
+            "en": "Data Analysis"
         },
         "type": "spheres"
     }

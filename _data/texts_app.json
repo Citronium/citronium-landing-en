@@ -22,27 +22,27 @@
     "footer": {
         "title": {
             "ru": "Приглашаем вас на бесплатную консультацию",
-            "en": "англ"
+            "en": "We invite you for a free consultation"
         },
         "description": {
             "ru": "После 15-минутной консультации мы составим коммерческое предложение с ориентиром по стоимости и срокам, пришлем его через 2 дня.",
-            "en": "англ"
+            "en": "After a 15-minute consultation, within two days you will get a commercial offer with costs and time frames."
         },
         "btnText": {
             "ru": "Записаться на консультацию",
-            "en": "англ"
+            "en": "Schedule the Consultation"
         },
         "company": {
             "ru": "© 2022 ООО «Цитрониум»",
-            "en": "англ"
+            "en": "© 2022 Citronium Ltd."
         },
         "personal": {
             "ru": "Политика обработки персональных данных",
-            "en": "англ"
+            "en": "Personal Data Processing Policy"
         },
         "privacy": {
             "ru": "Политика конфиденциальности",
-            "en": "англ"
+            "en": "Data Protection Guidelines"
         }
     },
     "feedbackForm": {
@@ -112,15 +112,15 @@
     "projects": {
         "title": {
             "ru": "Наши проекты",
-            "en": "англ"
+            "en": "Our Projects"
         },
         "description": {
             "ru": " Мы сделали и запустили в работу более 500 проектов. Лучшие из них мы превратили в увлекательные истории.",
-            "en": "англ"
+            "en": "We’ve developed and implemented 500+ projects. We’ve turned the best of them into fascinating stories."
         },
         "linkText": {
             "ru": "Посмотреть подробнее",
-            "en": "англ"
+            "en": "More"
         }
     },
     "projectFilters": {

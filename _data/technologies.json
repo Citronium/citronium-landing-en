@@ -3,7 +3,7 @@
         "value": "all",
         "label": {
             "ru": "Все технологии",
-            "en": "англ"
+            "en": "All Technologies"
         },
         "type": "technologies"
     },
@@ -11,7 +11,7 @@
         "value": "android",
         "label": {
             "ru": "Android",
-            "en": "англ"
+            "en": "Android"
         },
         "type": "technologies"
     },
@@ -19,7 +19,7 @@
         "value": "iOS",
         "label": {
             "ru": "iOS",
-            "en": "англ"
+            "en": "iOS"
         },
         "type": "technologies"
     },
@@ -27,7 +27,7 @@
         "value": "web",
         "label": {
             "ru": "Web",
-            "en": "англ"
+            "en": "Web"
         },
         "type": "technologies"
     }

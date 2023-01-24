@@ -1,38 +1,38 @@
-# «LLK Портал» для Лукойл en
+# «LLK Portal» for Lukoil oil company
 
-К нам обратилась одна из крупнейших нефтедобывающих компаний России для обновления приложения предварительной записи на погрузку масел и битума.
+One of the biggest oil companies in Russia, Lukoil, asked to improve their application for oil and bitumen loading pre-registration.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/lukoil/lukoil-1-overview.png" alt="Лукойл: Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/lukoil/lukoil-1-overview.png" alt="LLK Portal: overview image"/>
 </figure>
 
-## Цели
+## Tasks
 
-1. Исключить возможность перехвата конфиденциальной информации.
-2. Ускорить работу приложения.
-3. Реализовать удобный функционал по обновлению страницы.
+1. Prevent the confidential information interception.
+2. Speed up the application.
+3. Improve the page refreshment.
 
-## Решение
+## Solution
 
-Чтобы защитить информацию от перехвата, было установлено безопасное подключение по протоколу HTTPS. В случае ошибки доступа по HTTPS, подключение проходит по протоколу HTTP. В предыдущей версии использовался только HTTP.
+To protect data from being intercepted, we have implemented usage of the secure HTTPS protocol. In case of an HTTPS access error, the app switches to the HTTP protocol. (In the previous version of the application, only HTTP was used).
 
-Добавлено кэширование файлов для ускорения работы приложения. После этого экраны стали грузиться за 2--3 секунды. Ранее загрузка проходила в течение 30--40 секунд.
+To speed up the application, we’ve added file caching. As a result, the loading of the screen takes two or three seconds. Before the improvement, the loading was much slower - 30-40 seconds.
 
-Добавлен функционал по обновлению контента экрана при оттягивании страницы вниз. Дизайнеры улучшили базовую навигацию в приложении.
+We’ve added a pull-to-refresh feature for updating the screen content. Our designers improved the navigation in the application.
 
-## Результат
+## Result
 
-В приложение реализован следующий функционал:
+We’ve implemented the following features:
 
-1. Вход в приложение двумя способами: пин-код или Touch ID.
-2. Запись на погрузку:
+1. Two ways to log in: Pin-code or Touch ID by fingerprint.
+2. Loading registration:
 
-    * выбор продукции из списка;
-    * выбор места, откуда будет отправлена продукция;
-    * выбор даты в календаре;
-    * выбор времени, к которому нужно доставить;
-    * подтверждение записи.
+    * select products from the list;
+    * choose the place of shipping;
+    * choose a date in the calendar;
+    * choose the shipping time;
+    * confirm the registration.
 
-3. Просмотр истории предыдущих заказов: дата, состав и статус заказа, номер заказа, данные водителя.
+3. Order history access: date, ordered goods and the order status,the order number, the driver info.
 
-Приложения стало удобнее, функциональнее и главное --- стало безопасным с точки зрения защиты информации.
+Thus, the application has become more convenient to use, functional and, most importantly, safe in terms of information security.

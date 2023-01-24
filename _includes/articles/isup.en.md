@@ -1,111 +1,104 @@
-# Информационная система управления проектами en
+# Project Management Information System
 
-Наглядное предоставление полной информации по проектам для принятия управленческих решений
+Visualization of all the information on the projects to make managerial decisions
 
-К нам обратилась крупная компания с проектом, который они не могли реализовать уже несколько лет.
-Пробовали с другими подрядчиками, но до финала так и не дошли.
-А готовые решения по автоматизации управления предприятиям не подходили,
-так как у каждой компании выстроен индивидуальный рабочий процесс.
+A large company came to us with a project that they had not been able to implement for several years. Before they had worked with several contractors but it had never been fruitful. All ready-made solutions for management automating were not suitable, since each company has its individual workflow.
 
-Структура, система бухучета, сфера работы, и даже страна локации --- мы изучили всё это, прописали бизнес-процессы, провели интервью с заинтересованными лицами и предложили свое дизайнерское и техническое решение.
+The structure, the accounting system, the sphere they work in, and even the country they are located in - we studied all of this, registered all the business processes, interviewed stakeholders, and offered our design and technical solution.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/isup/cover.png" alt="cover"/>
 </figure>
 
-## Цели и задачи
+## Goals and Objectives
 
-1. Создать систему, которая позволит управлять >30 проектами внутри компании.
-2. Сделать наглядный и функциональный график проектов с таймлайном.
-3. Подключить сотрудников так, чтобы они могли ставить и выполнять задачи, добавлять информацию и документы по своим проектам.
-4. Создать функционал по сбору всех данные в одном месте в режиме реального времени.
-   Руководство компании должно быстро принимать инвестиционные решения по проектам. Для этого им надо владеть всей полнотой информации.
+1. Develop a system to manage 30+ projects within the company.
+2. Make a clear and functional project schedule with a timeline.
+3. Make it easy for employees to set and execute tasks, and add information and documents to their projects.
+4. Provide functionality to collect all data in one place in real-time. Company executives need to make investment decisions on projects quickly. To do this, they need access to all the information.
 
-## Решение
+## Solution
 
-### Модель SaaS
+### SaaS Model
 
-Модель SaaS --- это наглядная диаграмма по всем проектам. По каждому из них видны плановые и фактические сроки. Пользователь может изучить каждый проект более подробно, «проваливаясь» в него.
+The SaaS model is a visual diagram of all the projects. For each of them, one can see the planned and actual deadlines. The user can get more details on each project by "falling" into it.
 
-График реализации проекта выполнен при помощи доработанной диаграммы Ганта. При наведении курсора пользователь может увидеть существующие задачи, плановые и проблемные выделены цветом.
+The project implementation schedule is shown as an improved Gantt chart. When hovering the cursor, the user can see the existing tasks, planned and problem tasks are highlighted in color.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/isup/saas.png" alt="saas"/>
-    <figcaption>Просмотр связей между задачами</figcaption>
+    <figcaption>Viewing the links between tasks</figcaption>
 </figure>
 
-### Документооборот
+### Document Management
 
-Внутри каждого проекта находится вся необходимая информация: файлы, договоры, задачи, КП, изображения и ссылки. Руководитель видит названия документов и дату их создания. Импорт документов производится из DocsVision, есть фильтрация. Также, к каждому проекту подключено своего рода «общее хранилище файлов», где можно создавать папки и выкладывать информацию для обмена.
+Inside each project the user can find all the necessary information: files, contracts, tasks, offers, images, and links. The manager sees the names of the documents and their dates of creation. Documents are imported from DocsVision, and can be filtered. Also, each project has a kind of "shared file storage", where one can create folders and share information.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/isup/document.png" alt="document"/>
-    <figcaption>Просмотр файлов и папок</figcaption>
+    <figcaption>Viewing files and folders</figcaption>
 </figure>
 
-Внутри есть и технико-экономические показатели --- ключевые параметры, которые были присвоены проекту на старте.
-Ведется сравнение плановых и фактических цифр.
+There the user can also see all the technical and economic indicators - the key parameters defined at the start of the project. There is a comparison of planned and actual numbers.
 
-### История изменений
+### Change History
 
-Мы создали «ленту новостей», с помощью которой можно видеть историю изменений.
-Пользователь понимает, кто из участников и когда производил какие-либо действия.
-Все выглядит максимально наглядно, есть фильтрация.
+We've created a "news feed" that shows the change history. The user sees which of the teammates and when made any actions. Everything looks as clear as possible. Filtering is available.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/isup/history.png" alt="history"/>
-    <figcaption>Лента новостей</figcaption>
+    <figcaption>News Feed</figcaption>
 </figure>
 
-### Инструмент управления
+### Management Tool
 
-Разработанная нами система планируется использоваться и как инструмент управления. Есть возможность создавать задачи, как для себя, так и делегировать их. Каждый участник может посмотреть свои задачи на неделю (по всем проектам) и поставить по ним статус – в работе, выполнена и прочее. Есть поиск по задачам, фильтрация по срочности, постановщику задачи, названию.
+The developed system can also be used as a management tool. It is possible to create tasks for oneself, and to assign them. Each user can view their tasks for the week (for all projects) and change their status - in progress, completed, etc. There is a search by tasks, filtering by priority, task owner, and task name.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/isup/management.png" alt="management"/>
-    <figcaption>Просмотр задач</figcaption>
+    <figcaption>Viewing Tasks</figcaption>
 </figure>
 
-## Сроки разработки
+## Development Timeline
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/isup/time-develop.png" alt="time-develop"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/isup/time-develop-en.png" alt="time-develop"/>
 </figure>
 
-## Дополнительный функционал
+## Additional Features
 
-### Контактная книжка по проекту
+### Project Contact Book
 
-С помощью неё можно увидеть всех задействованных сотрудников и привлеченных контрагентов в конкретном проекте.
+Provides the contact information on all the employees and contractors in the project.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/isup/contact.png" alt="contact"/>
-    <figcaption>Контактная книжка</figcaption>
+    <figcaption>Contact Book</figcaption>
 </figure>
 
-### Уведомления
+### Notifications
 
-Настраиваемые уведомления по новым, выполненным и просроченным задачам.
+Customizable notifications on new, completed, and overdue tasks.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/isup/notification.png" alt="notification"/>
-    <figcaption>Боковое меню с уведомлениями</figcaption>
+    <figcaption>Side Menu with Notifications</figcaption>
 </figure>
 
-### Данные с видеокамер
+### Camera Data
 
-Есть возможность в реальном времени наблюдать ход работ по объектам строительства и проектам.
+Real-time visibility of the progress on construction sites and projects using the data from the cameras.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/isup/videocamera.png" alt="videocamera"/>
-    <figcaption>Данные с видеокамер</figcaption>
+    <figcaption>Camera Data</figcaption>
 </figure>
 
-### Отчеты по договорам и по проектам
+### Reports on Contracts and Projects
 
-Есть возможность формировать отчёты по датам, срокам, и так далее. Данные интегрируются из Power BI, Superset.
+Creation of reports by dates, deadlines, etc. The data are integrated from Power BI, Superset.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/isup/report.png" alt="report"/>
-    <figcaption>Отчёт по договорам</figcaption>
+    <figcaption>Report on Contracts</figcaption>
 </figure>

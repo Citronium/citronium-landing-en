@@ -1,54 +1,54 @@
-# Программный комплекс «Стройконтроль» en
+# StroyControl Software Platform
 
-Облачное решение для контроля качества выполнения строительных работ и выдачи предписаний с помощью мобильных устройств.
-
-<figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/stroycontrol/stroycontrol-1-overview.png" alt="СтройКонтроль: Обзорная картинка"/>
-</figure>
-
-## Цели и задачи
-
-1. Создать единое цифровое пространство для всех участников строительства.
-2. Обеспечить доступ к информации в любое время и в любом месте.
-3. Упросить и ускорить документооборот
-
-## Решение
-
-Для точной фиксации нарушений и замечаний мы разработали систему визуализации CAD-чертежей. Они загружаются быстро и позволяют прикрепить дополнительную информацию к любой точке.
-
-Блок документации позволяет работать с BIM, поддерживает 9 форматов форматов чертежей: DWF, SVG, PDF, XPS, JPG, JPEG, BMP, TIFF, PNG.
-
-Проверяющий может направить замечание конкретному исполнителю и установить сроки выполнения работы и контролировать их. Исполнитель получит оповещение в режиме реального времени: Push-уведомления, Email.
+A cloud solution for quality control of construction works in progress and creating reports using mobile devices.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/stroycontrol/stroycontrol-2-cad.png" alt="СтройКонтроль: Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/stroycontrol/stroycontrol-1-overview.png" alt="StroyControl: overview image"/>
 </figure>
 
-## Цифровизация рабочей документации
+## Goals and Objectives
 
-1. Есть возможность создания шаблонов документации: предписаний, актов, отчетов.
-2. Формирование документации происходит в один клик по данным со стройплощадки.
-3. Все предписания и акты об устранении находятся в одном месте и всегда под рукой.
-4. База данных с актуальными строительными нормами, которые подгружаются при заполнении нарушений.
+1. Create a common digital space for the construction team.
+2. Provide access to information at any time and any place.
+3. Simplify and speed up document flow
+
+## Solution
+
+We have developed a visualization system for CAD-drawings to accurately register issues and observations. The drawings are uploaded quickly and the user can attach additional information to any point.
+
+In the documentation unit, the user can work with BIM, drawing in 9 formats: DWF, SVG, PDF, XPS, JPG, JPEG, BMP, TIFF, PNG.
+
+The inspector registers the issue, sends it to the assignee, sets and monitors deadlines. The assignee is notified in real-time via Push-notifications and emails.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/stroycontrol/stroycontrol-3-issue-1.png" alt="СтройКонтроль: Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/stroycontrol/stroycontrol-2-cad.png" alt="StroyControl: overview image"/>
+</figure>
+
+## Digitalization of Work Documentation
+
+1. Create documentation templates: orders, acts, reports.
+2. Create necessary documents using data from the construction site with a single click.
+3. Find all orders and reports in one place, all documents are always at your fingertips.
+4. Search the database with up-to-date construction standards. They are uploaded automatically when the user is filling in the issue page.
+
+<figure>
+    <img src="{{ site.baseurl }}/assets/img/projects/stroycontrol/stroycontrol-3-issue-1.png" alt="StroyControl: overview image"/>
 </figure>
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/stroycontrol/stroycontrol-3-issue-2.png" alt="СтройКонтроль: Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/stroycontrol/stroycontrol-3-issue-2.png" alt="StroyControl: overview image"/>
 </figure>
 
-## Интеграции
+## Integrations
 
-Для создания единой IT-экосистемы мы провели интеграция с 1C, Pilot-Ice, MS Progect Manager, Vault, BIM360 и другими.  
+To create a highly functional IT -ecosystem, we have integrated our solution with 1C, Pilot-Ice, MS Project Manager, Vault, BIM360 and others.  
 
-Стройконтроль упрощает процесс принятия управленческих решений, в том числе при работе с инвестиционным проектом, благодаря тому, что информация наглядно собирается в одном приложении. Разработанный нами блок аналитики включает в себя более 15 стандартных графиков и настраиваемый модуль BI.
+StroyControl simplifies the process of making management decisions, including those made on investment projects because all the data are visible and collected in one application. The application analytics tool provides over 15 standard charts and a customizable BI module.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/stroycontrol/stroycontrol-4-analytics.png" alt="СтройКонтроль: Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/stroycontrol/stroycontrol-4-analytics.png" alt="StroyControl: overview image"/>
 </figure>
 
-## Результат
+## Result
 
-На данный момент «СтройКонтроль» используют свыше 500 объектов по всей стране: от Сахалина до Калининграда, от жилищного строительства до объектов в сложнейшей нефтегазовой отрасли. С ним строят в 20 регионах страны, в том числе и стратегически важные объекты.
+At present StroyControl is used in 500+ projects all over Russia ( in 20 regions from Sakhalin to Kaliningrad) and in all construction spheres from residential construction to complex oil and gas projects.
