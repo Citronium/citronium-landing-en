@@ -1,20 +1,25 @@
+{% assign text2 = site.data.texts_app.projectFilters %}
 <div class="projects-filters">
     <div class="projects-filters-components">
         <div class="dropdown dropdown-spheres" data-path="spheres">
-            <div id="spheres-input" class="dropdown__input">Все сферы</div>
+            <div id="spheres-input" class="dropdown__input">{{ text2.dropdownSpheres[site.lang] }}</div>
             <div class="dropdown__options dropdown__options-spheres" data-target="spheres">
                 <div class="dropdown__options-container">
                     {% for sphere in site.data.spheres %}
-                        <div class="dropdown__options-item" data-option="spheres" data-target="{{sphere.en}}">{{sphere.ru}}</div>
+                    <div class="dropdown__options-item" data-option="spheres" data-target="{{sphere.value}}">
+                        {{sphere.label[site.lang]}}
+                    </div>
                     {% endfor %}
                 </div>
             </div>
         </div>
         <div class="dropdown dropdown-technologies" data-path="technologies">
-            <div id="technologies-input" class="dropdown__input">Все технологии</div>
+            <div id="technologies-input" class="dropdown__input">{{ text2.dropdownTechnologies[site.lang] }}</div>
             <div class="dropdown__options dropdown__options-technologies">
                 {% for technologie in site.data.technologies %}
-                    <div class="dropdown__options-item" data-option="technologies" data-target="{{technologie.en}}">{{technologie.ru}}</div>
+                <div class="dropdown__options-item" data-option="technologies" data-target="{{technologie.value}}">
+                    {{technologie.label[site.lang]}}
+                </div>
                 {% endfor %}
             </div>
         </div>
@@ -36,7 +41,7 @@
 
             if (optionsItem) {
                 if (targetDropDown === "spheres") {
-                    updateSpheres(optionsItem) 
+                    updateSpheres(optionsItem)
                     updateSphereOptions()
                 }
 
@@ -44,7 +49,7 @@
                     updateTechnologies(optionsItem)
                     updateTechnologieOptions()
                 }
-                
+
                 filterProjects(spheres, technologies)
                 return
             }
@@ -116,7 +121,7 @@
         const text = declOfNum(spheres.length, ['сфера', 'сферы', 'сфер'])
         spheresInput.innerHTML = text
     }
- 
+
     function updateTechnologies(optionsItem) {
         if (optionsItem === "all") {
             technologies = []

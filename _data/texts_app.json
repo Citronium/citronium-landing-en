@@ -122,5 +122,15 @@
             "ru": "Посмотреть подробнее",
             "en": "англ"
         }
+    },
+    "projectFilters": {
+        "dropdownSpheres": {
+            "ru": "Все сферы",
+            "en": "All spheres"
+        },
+        "dropdownTechnologies": {
+            "ru": "Все технологии",
+            "en": "All technologies"
+        }
     }
 }
