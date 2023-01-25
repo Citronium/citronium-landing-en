@@ -113,7 +113,7 @@ feedbackForm.addEventListener("submit", async function (e) {
             phoneErrorEl.innerText = res.message.phone;
         }
 
-        return
+        return;
     }
 
     formContainerEl.style.display = "none";
@@ -128,13 +128,7 @@ feedbackForm.addEventListener("submit", async function (e) {
 });
 
 function sendMail(payload) {
-    let api
-
-    if (window.dev === true) {
-        api = "https://citronium-landing-api.psrv5.citronium.com/users/send-email";
-    } else {
-        api = "https://landing-api.citronium.com/user/send-email"
-    }
+    const api = "https://citronium-landing-api.psrv5.citronium.com/user/send-email";
 
     return fetch(api, {
         method: "POST",
