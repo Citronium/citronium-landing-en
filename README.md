@@ -62,9 +62,12 @@ JEKYLL_ENV=production bundle exec jekyll build
 .
 ├── _data
 |   ├── spheres.json //Список сфер
-|   └── technologies.json //Список технологий
+|   ├── technologies.json //Список технологий
+|   ├── texts_home.json //Тексты главной страницы
+|   └── texts_app.json //Тексты остальных страниц
 ├── _includes // HTML куски, встраиваемые в других файлах
-├── _posts // Все файлы проектов
+    ├──articles //Тексты постов
+├── _posts // Каркас постов
 ├── _sass // Стили
 ├── _site // Билд проекта, генерирует Jekyll. В репозитории его нет.
 ├── assets // Картинки, скрипты, главный файл стилей
@@ -80,18 +83,34 @@ JEKYLL_ENV=production bundle exec jekyll build
 Пример:
 ```sh
 ---
-layout: project //Имя шаблона, без расширения
-permalink: projects/test/ //Желаемый вид uri в браузере
-title: Test title //Титул
-description: Тестовое описание // Описание проекта
-prev_image: "/assets/img/projects/prev/test-prev.png" //Путь к изображению, который будет показываться на странице со списком проектов
-prev_position: center // Расположение изображения. Варианты: center, left, right
-spheres: ['business-processes', 'geolocation'] //К какой сфере относится проект. Весь список находится в _data/spheres.json
-technologies: ['hybrid', 'web'] //К какой технологии относится проект. Весь список находится в _data/technologies.json
+layout: project //Используемый шаблон
+permalink: project/isup/ //Желаемый вид uri в браузере
+
+postTitle: //Титул в списке проектов
+    ru: Информационная система управления проектами
+    en: Project Management Information System
+postDescription: //Описание в списке проектов
+    ru: Разработали систему управления проектами с визуализацией и обновляемой информацией более чем по 30 проектам
+    en: We have developed the project management system with visualization and regular information updates for over 30 projects
+
+prevImage: "/assets/img/projects/prev/isup-prev.png" //Картинка в списке проектов
+prevPosition: right //Расположение картинки в списке проектов
+spheres: ["business-processes", "project-management"] //Сферы проекта
+technologies: ["web"] //Технологии проекта
 ---
 ```
 
-3. В процессе разработки
+3. Указать путь текстов ru en
+```
+{% if site.lang == "ru" %}
+{%- include articles/isup.ru.md -%}
+{% else %}
+{%- include articles/isup.en.md -%}
+{% endif %}
+
+```
+
+4. Добавить в папке articles файлы проектов ru en
 
 ## Плагины
 
@@ -110,24 +129,3 @@ JEKYLL_ENV=production bundle exec jekyll build
 ## FAQ
 
 - [Установка Jekyll](https://jekyllrb.com/docs/installation/)
-
-Определение dev окружения для JavaScript везде в layout подключено env.html
-
-```sh
-{% if jekyll.environment == "development" %}
-<script type="javascript">
-    window.dev = true
-</script>
-{%- endif -%}
-```
-
-Для изменения api feedback.js
-```sh
-function sendMail
-...
-if (window.dev === true) {
-    api = "https://citronium-landing-api.psrv5.citronium.com/users/send-email";
-} else {
-    api = "https://citronium-landing-api.psrv5.citronium.com/users/send-email"
-}
-```
