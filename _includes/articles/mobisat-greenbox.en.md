@@ -1,61 +1,61 @@
-# Mobisat Greenbox en
+# Mobisat Greenbox
 
-Компания MOBISAT разработала геолокационное устройство, которое позволяет определять местоположение автомобиля и передавать все основные транспортные показатели.
+MOBISAT has developed a geolocation device that allows you to determine the location of the car and transmit all the main transport indicators.
 
-Нашей задачей было написать программное обеспечение для этого устройства.
-
-<figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/mobisat-greenbox/mobisat-greenbox-1-overview.png" alt="Mobisat Greenbox Обзорная картинка"/>
-</figure>
-
-## Цели
-
-1. Разработать приложение с функциональным дизайном.
-1. Обеспечить высокую безопасность личных данных клиентов.
-1. Создать возможность использования нескольких устройств одним пользователем.
-1. Предоставление информации пользователям, как технической, так и относящейся к стилям вождения.
+Our task was to write software for this device.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/mobisat-greenbox/mobisat-greenbox-2-profile.png" alt="Mobisat Greenbox Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/mobisat-greenbox/mobisat-greenbox-1-overview.png" alt="Mobisat Greenbox: overview image"/>
 </figure>
 
-## Решение
+## Goals
 
-1. Функция «Найти мой транспорт».
-1. Трекинг автомобиля, водных судов и др.
-1. Интеграция OSM-карт.
-1. Дистанционное слежение за одним или несколькими объектами.
-1. История поездок (время старта и остановок).
-1. Формирование и просмотр отчётов, истории передвижения.
+1. Develop an application with a functional design.
+1. Ensure high security of customers' personal data.
+1. Create the possibility of using multiple devices by one user.
+1. Providing information to users, both technical and related to driving styles.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/mobisat-greenbox/mobisat-greenbox-3-map.png" alt="Mobisat Greenbox Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/mobisat-greenbox/mobisat-greenbox-2-profile.png" alt="Mobisat Greenbox: overview image"/>
 </figure>
 
-## Как это работает
+## Solution
 
-**Родительский контроль**: предупреждение, при превышении скорости по ПДД или установленной вручную и информирование об опасном вождении --- резкое ускорение, торможение, повороты и прочее.
+1. The "Find my transport" function.
+1. Tracking of a car, water vessels, etc.
+1. Integration of OSM maps.
+1. Remote tracking of one or more objects.
+1. Trip history (start and stop times).
+1. Generating and viewing reports, movement history.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/mobisat-greenbox/mobisat-greenbox-4-speed-violations.png" alt="Mobisat Greenbox Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/mobisat-greenbox/mobisat-greenbox-3-map.png" alt="Mobisat Greenbox: overview image"/>
 </figure>
 
-**Виртуальная приборная панель**: воспроизводит приборную панель автомобиля --- скорость, обороты двигателя, топливо, диагностические коды неисправностей, давление в дроссельной заслонке и так далее.
+## How it works
 
-**Удаленная диагностика**: информация об ошибках в работе автомобиля.
-
-**Расширенная отчетность**: создает подробные отчеты о работе вашего автомобиля --- отчеты о пробеге, подробный анализ каждой поездки, время в пути, расход топлива и так далее.
-
-**Управление сигнализацией**: приложение может предупредить вас в случае опасности, отправляя уведомления на ваш смартфон. Уведомления настраиваются.
-
-**Доступно на выбор два картографических сервиса**: Google Maps и Open Street Maps.
+**Parental control**: warning when exceeding the speed limit or manually set and informing about dangerous driving --- sudden acceleration, braking, turns, etc.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/mobisat-greenbox/mobisat-greenbox-5-poi-area.png" alt="Mobisat Greenbox Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/mobisat-greenbox/mobisat-greenbox-4-speed-violations.png" alt="Mobisat Greenbox: overview image"/>
 </figure>
 
-## Результат
+**Virtual Dashboard**: reproduces the dashboard of the car --- speed, engine speed, fuel, diagnostic trouble codes, throttle pressure and so on.
 
-Наша разработка позволила масштабировать бизнес клиента, рассчитанный на управление несколькими сотнями приборов.
+**Remote diagnostics**: information about errors in the operation of the car.
 
-Сейчас с нашим софтом заказчик активно развивает бизнес и работает с пятью крупными авто- и мото-брендами.
+**Advanced Reporting**: Creates detailed reports on the performance of your car --- mileage reports, detailed analysis of each trip, travel time, fuel consumption and so on.
+
+**Alarm Management**: The app can alert you in case of danger by sending notifications to your smartphone. Notifications are configurable.
+
+**Two mapping services are available to choose from**: Google Maps and Open Street Maps.
+
+<figure>
+    <img src="{{ site.baseurl }}/assets/img/projects/mobisat-greenbox/mobisat-greenbox-5-poi-area.png" alt="Mobisat Greenbox: overview image"/>
+</figure>
+
+## Result
+
+Our development made it possible to scale the client's business, designed to manage several hundred devices.
+
+Now, with our software, the customer is actively developing business and working with five major auto and moto brands.

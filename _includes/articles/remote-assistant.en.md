@@ -1,41 +1,41 @@
 # RemoteAssistant
 
-**Диагностика в режиме реального времени**
+**Real-time diagnostics**
 
-Очередная совместная работа с компанией Mobisat. Это приложение также взаимодействует с оборудованием этой компании.
-RemoteAssistant --- это удаленный помощник водителя, программный комплекс для KIA Motors в Италии.
+Another collaboration with Mobisat. This application also interacts with the equipment of this company.
+Remote Assistant --- is a remote driver's assistant, a software package for KIA Motors in Italy.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/remote-assistant/remote-assistant-1-overview.png" alt="Remote Assistant Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/remote-assistant/remote-assistant-1-overview.png" alt="Remote Assistant: overview image"/>
 </figure>
 
-## Цели и задачи
+## Goals and objectives
 
-1. Рост лояльности клиентов поставщика, повторные покупки и рекомендации.
-2. Увеличение количества обращений в сервисный центр за счет напоминаний из приложения.
-3. Увеличение эффективность работы центров сервисного обслуживания.
-4. Разработка ПО, которое передаёт водителю информацию о состоянии автомобиля: пройденные километры, состояние двигателя.
-5. Разработка оповещения о возможных неполадках и напоминания о прохождении ТО.
-6. Создание ПО для сбора данных для специалистов автосервиса.
-7. Создание интуитивно понятного дизайна.
+1. The growth of customer loyalty of the supplier, repeated purchases and recommendations.
+2. Increasing the number of calls to the service center due to reminders from the application.
+3. Increase the efficiency of service centers.
+4. Development of software that transmits information about the condition of the car to the driver: kilometers traveled, engine condition.
+5. Development of alerts about possible problems and reminders about the passage of maintenance.
+6. Creation of software for data collection for car service specialists.
+7. Creating an intuitive design.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/remote-assistant/remote-assistant-3-solution.png" alt="Remote Assistant Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/remote-assistant/remote-assistant-3-solution.png" alt="Remote Assistant: overview image"/>
 </figure>
 
-## Решение
+## Solution
 
-Для создания программного решения мы выделили 2 группы данных:
+To create a software solution, we have identified 2 groups of data:
 
-1. Для автомобилистов информация транслируется в мобильное приложение.
-2. Для автосалонов --- в web-приложение.
+1. For motorists, the information is transmitted to the mobile application.
+2. For car dealerships --- in a web application.
 
-Водитель вовремя получает уведомления о необходимости ТО автомобиля, замене масла и так далее.
+The driver receives timely notifications about the need for maintenance of the car, oil change, and so on.
 
-Специалисты сервисов KIA на компьютере видят нужную для первичной диагностики информацию по каждой машине.
+KIA service specialists on the computer see the information necessary for the initial diagnosis for each car.
 
-В ПО реализована связь с техподдержкой KIA. С помощью неё можно быстро получить информацию в экстренной ситуации: вызвать эвакуатор на место происшествия в случае ДТП или серьёзной поломки автомобиля и даже найти угнанный автомобиль.
+The software implements communication with KIA technical support. With it, you can quickly get information in an emergency situation: call a tow truck to the scene in case of an accident or a serious breakdown of the car and even find a stolen car.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/remote-assistant/remote-assistant-2-goals.png" alt="Remote Assistant Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/remote-assistant/remote-assistant-2-goals.png" alt="Remote Assistant: overview image"/>
 </figure>

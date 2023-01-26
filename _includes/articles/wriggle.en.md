@@ -1,46 +1,46 @@
-# Wriggle en
+# Wriggle
 
-Wriggle --- это приложение, в котором собрана самая вкусная еда Бристоля.
+Wriggle --- is an application in which the most delicious food of Bristol is collected.
 
-В приложении можно заказать еду на вынос или заранее забронировать по меню. Есть купоны, геолокация, оплата, бронирование столиков.
+In the application, you can order takeaway food or pre-book from the menu. There are coupons, geolocation, payment, table reservations.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/wriggle/wriggle-1-overview.png" alt="Wriggle Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/wriggle/wriggle-1-overview.png" alt="Wriggle: overview image"/>
 </figure>
 
-## Цели и задачи
+## Goals and objectives
 
 1. E-commerce
-1. Онлайн оплата внутри приложения
-1. Геолокация
-1. Маркетплейс
-1. Бронирование столика
-1. Таймер для купонов
+1. Online payment within the app
+1. Geolocation
+1. Marketplace
+1. Booking a table
+1. Coupon timer
 
-## Решение
+## Solution
 
-Руководство стартапа хотело охватить максимальную аудиторию и запустить проект в сжатые сроки. Для этих целей было выбрано решение для iOS, Android и Web.
+The startup management wanted to reach the maximum audience and launch the project in a short time. For these purposes, a solution for iOS, Android and Web was chosen.
 
-### Сложности
+### Difficulties
 
-Первую версию приложения необходимо было запустить всего через месяц после начала работы.
+The first version of the application had to be launched just a month after the start of work.
 
-Для этого пришлось подключить больше разработчиков, что вылилось в большую нагрузку на менеджера. Скорректировать процесс разработки помогло ежедневное общение с клиентом.
+To do this, we had to connect more developers, which resulted in a heavy load on the manager. Daily communication with the client helped to adjust the development process.
 
-### Развитие
+### Development
 
-В 2014 году проект был реализован в Бристоле, успех приложения также привёл к позиционированию Wriggle ещё в двух городах Великобритании: Бристоле и Кардиффе.
+In 2014, the project was implemented in Bristol, the success of the application also led to the positioning of Wriggle in two more cities in the UK: Bristol and Cardiff.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/wriggle/wriggle-2-filtration.png" alt="Wriggle Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/wriggle/wriggle-2-filtration.png" alt="Wriggle: overview image"/>
 </figure>
 
-## Отзыв клиента
+## Customer Feedback
 
-### Роб Холл, CEO, Wriggle Gaintly ltd.
+### Rob Hall, CEO, Wriggle Gaintly ltd.
 
-«Я очень рад сотрудничеству с Citronium. Они разработали кроссплатформенное приложение очень высокого качества.
+«I am very happy to cooperate with Citronium. They have developed a cross-platform application of very high quality.
 
-Команда работала в сжатые сроки, но им удалось закончить разработку ровно в срок.
-Они постоянно держали меня в курсе событий и давали очень полезные и профессиональные советы.
-Без сомнения, я буду обращаться к ним с новыми проектами.»
+The team worked on a tight schedule, but they managed to finish the development on time.
+They constantly kept me up to date and gave me very useful and professional advice.
+Without a doubt, I will contact them with new projects.»

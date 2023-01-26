@@ -1,50 +1,50 @@
 # Sweet Home
 
-**Сервис для учета рабочего времени сотрудников медицинских организаций США**
+**Service for recording the working hours of employees of medical organizations in the USA**
 
-Sweet Home Healthcare --- агентство по оказанию услуг в системе здравоохранения, в частности по найму медперсонала для нуждающихся в этом людей --- почасовое или круглосуточное обеспечение ухода за больными.
+Sweet Home Healthcare --- agency for the provision of services in the healthcare system, in particular for the hiring of medical staff for people in need --- hourly or round-the-clock provision of patient care.
 
-Агентство было основано в 2012 году с целью улучшения качества жизни больных и инвалидов в Пенсильвании.
-Сегодня Sweet Home Healthcare работает с более чем 2000 клиентов и лицами, обеспечивающими уход.
+The agency was founded in 2012 with the aim of improving the quality of life of the sick and disabled in Pennsylvania.
+Today, Sweet Home Healthcare works with more than 2,000 clients and caregivers.
 
-Агентство обслуживает более 15 округов с офисами в Филадельфии, Скрантоне и Гаррисберге.
+The agency serves more than 15 counties with offices in Philadelphia, Scranton and Harrisburg.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/sweet-home/sweet-home-1-overview.png" alt="Sweet Home Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/sweet-home/sweet-home-1-overview.png" alt="Sweet Home: overview image"/>
 </figure>
 
 
-## Цели и задачи
+## Goals and objectives
 
-1. Цифровизация: перейти на электронный учет рабочего времени медицинского персонала и уменьшить количество работы для бухгалтеров.
-2. Выделить 4 пользовательские роли с разными правами доступа.
-3. Предусмотреть возможность получения оперативной обратной связи от клиентов.
+1. Digitalization: switch to electronic accounting of working hours of medical personnel and reduce the amount of work for accountants.
+2. Select 4 user roles with different access rights.
+3. Provide for the possibility of receiving prompt feedback from customers.
 
-## Решение
+## Solution
 
-Система для фиксации время работы медицинского персонала и видов услуг для пациента. Полученные данные сверяются с недельным планом, по нескольким параметрам. Ведётся систематизация и анализ.
+A system for recording the working hours of medical personnel and types of services for the patient. The data obtained is checked against the weekly plan, according to several parameters. Systematization and analysis is underway.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/sweet-home/sweet-home-2-time-sheet.png" alt="Sweet Home Time Sheet"/>
-    <figcaption>Time Sheet пациента</figcaption>
+    <img src="{{ site.baseurl }}/assets/img/projects/sweet-home/sweet-home-2-time-sheet.png" alt="Sweet Home: overview image"/>
+    <figcaption>Patient TimeSheet</figcaption>
 </figure>
 
-Учитывая бизнес-логику, доступ к информации предоставляется как медицинской организации, так и страховщику, с которым заключён договор у пациента. Предложенная нами система учёта времени по задаче заказчика доступна в браузере и в мобильных приложениях на устройствах iOS и Android.
- 
-### Сложности
+Taking into account the business logic, access to information is provided both to the medical organization and to the insurer with whom the patient has a contract. Our proposed time tracking system for the customer's task is available in the browser and in mobile applications on iOS and Android devices.
 
-Столкнулись с трудностями разработки бизнес-логики. Российская и американская системы здравоохранения отличаются, и было не просто погрузиться в логику оказания услуг в этой сфере в США.
+### Difficulties
 
-Провели исследование и подробно описали весь процесс предоставления услуг и контроля качества. Выделили 4 пользовательские роли с различными правами доступа.
- 
-### Результат
+Faced with difficulties in developing business logic. The Russian and American healthcare systems are different, and it was not easy to dive into the logic of providing services in this area in the United States.
 
-Создали мобильные и веб-версии приложения, чтобы им было удобно пользоваться со смартфонов, планшетов и компьютеров.
+We conducted a study and described in detail the entire process of providing services and quality control. We have allocated 4 user roles with different access rights.
 
-Разработанная система позволяет досконально контролировать процесс оказания услуг пациентам на всех этапах: от оценки качества и соответствия объёма работы недельному плану работника и до сбора общей информации по всей компании.
+### Result
 
-Полученные данные импортируется в Google-таблицы, в которых происходит анализ по необходимым заказчику параметрам.
+We have created mobile and web versions of the application so that it is convenient to use them from smartphones, tablets and computers.
 
-Работники в приложении могут фиксировать время обслуживания, потраченное санитарами или медиками, во время ухода за пациентами в электронном бланке. Пациент может подписью заверить бланк с указанным временем. С помощью приложения происходит отправка этих бланков руководству.
+The developed system allows you to thoroughly monitor the process of providing services to patients at all stages: from assessing the quality and compliance of the volume of work with the weekly plan of the employee and to collecting general information throughout the company.
 
-Административный персонал в приложении проверяет правильность заполнения бланков, производит экспорт в сводную таблицу, поручает медикам пациентов для оказания услуг, осуществляет управление штатом и работой с пациентами, экспортирует и производит печать заполненных бланков и сводных таблиц, если это необходимо.
+The received data is imported into Google tables, in which the analysis takes place according to the parameters required by the customer.
+
+Employees in the application can record the service time spent by orderlies or medics while caring for patients in an electronic form. The patient can sign the form with the specified time. With the help of the application, these forms are sent to the management.
+
+The administrative staff in the application checks the correctness of filling out the forms, exports to the summary table, assigns patients to doctors to provide services, manages staff and work with patients, exports and prints completed forms and summary tables, if necessary.

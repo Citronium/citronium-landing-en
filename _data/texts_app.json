@@ -48,7 +48,7 @@
     "feedbackForm": {
         "title": {
             "ru": "Запись на консультацию",
-            "en": "англ"
+            "en": "Make an appointment for a consultation"
         },
         "name": {
             "label": {
@@ -57,7 +57,7 @@
             },
             "placeholder": {
                 "ru": "Введите имя",
-                "en": "англ"
+                "en": "Enter a name"
             }
         },
         "phone": {
@@ -67,16 +67,16 @@
             },
             "placeholder": {
                 "ru": "Введите номер телефона",
-                "en": "англ"
+                "en": "Enter your phone number"
             }
         },
         "btnSubmit": {
             "ru": "Начать проект",
-            "en": "англ"
+            "en": "Start a project"
         },
         "link": {
             "ru": "Нажимая на кнопку вы даёте согласие <u>на обработку персональных данных</u>",
-            "en": "англ"
+            "en": "By clicking on the button you consent <u> to the processing of personal data</u>"
         }
     },
     "contacts": {
@@ -87,25 +87,25 @@
         "left": {
             "title": {
                 "ru": "Приглашаем вас <br/> на бесплатную консультацию",
-                "en": "англ"
+                "en": "We invite you <br/> to a free consultation"
             },
             "description": {
                 "ru": "После 15-минутной консультации мы составим коммерческое предложение с ориентиром по стоимости и срокам, пришлем его через 2 дня.",
-                "en": "англ"
+                "en": "After a 15-minute consultation, we will draw up a commercial offer with a guideline on cost and timing, we will send it in 2 days."
             },
             "btnText": {
                 "ru": "Начать проект",
-                "en": "англ"
+                "en": "Start a project"
             }
         },
         "right": {
             "address": {
                 "ru": "Йошкар-Ола, Карла Маркса <nobr>109-б</nobr>",
-                "en": "англ"
+                "en": "Yoshkar-Ola, Karl Marx <nobr>109-b</nobr>"
             },
             "phone": {
                 "ru": "+7 (499) 350-55-75",
-                "en": "англ"
+                "en": "+7 (499) 350-55-75"
             }
         }
     },

@@ -1,69 +1,69 @@
-# Просто: медитация и сон en
+# Prosto: meditation and sleep
 
-Приложение от Ирены Понарошку. Она сама активно занимается медитациями и хочет помочь людям научиться делать это правильно.
+An application from Irena Ponaroshku. She is actively engaged in meditation herself and wants to help people learn how to do it correctly.
 
-Создательница приложения хочет сделать медитацию понятной и простой. Ирена убеждена, что медитация помогает стать более искренним с собой, разобраться со своими целями и приоритетами, подготовиться к переменам и развитию.
+The creator of the app wants to make meditation clear and simple. Irena is convinced that meditation helps to become more sincere with yourself, to understand your goals and priorities, to prepare for change and development.
 
-По задумке автора идеи искусство медитации должно стать доступным для всех желающих, независимо от опыта, чтобы и новички смогли постепенно вовлекаться в процесс и продвигаться в новом умении.
+According to the idea of the author of the idea, the art of meditation should become accessible to everyone, regardless of experience, so that beginners can gradually get involved in the process and advance in a new skill.
 
-А реализовать это можно просто --- при помощи приложения в телефоне.
-
-<figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/prosto/prosto-1-overview.png" alt="Просто: Обзорная картинка"/>
-</figure>
-
-## Функционал
-
-1. Прослушивание медитации.
-1. Публикация в социальных сетях  аффирмаций --- картинок с вдохновляющим текстом.
-1. Напоминание о медитации.
-1. Просмотр своей статистики прослушивания.
-1. Фиксация прогресса --- количество дней непрерывного прослушивания.
-1. Бесплатный доступ к контенту на неделю.
-1. Управление подпиской в личном кабинете.
+And it can be implemented simply --- using the application in the phone.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/prosto/prosto-2-app.png" alt="Просто: Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/prosto/prosto-1-overview.png" alt="Prosto: overview image"/>
 </figure>
 
-## Как это работает?
+## Functional
 
-Просто наденьте наушники, включите одно из занятий и следуйте пошаговым аудио-инструкциям.
-После скачивания приложения предоставляется 7-дневный пробный период.
-Более 60 уроков разделены на курсы.
-
-1. Основы --- работа с дыханием и телом.
-1. Сон --- практика простых ритуалов для безмятежного, ресурсного сна.
-1. Стресс --- избавление от напряжения в теле и сознании.
-1. Работа --- улучшение концентрации и продуктивности.
-1. Счастье --- изучение природы внутреннего счастья.
+1. Listening to meditation.
+2. Publication of affirmations on social networks --- pictures with inspiring text.
+3. Meditation reminder.
+4. View your listening statistics.
+5. Recording progress --- number of days of continuous listening.
+6. Free access to content for a week.
+7. Manage your subscription in your personal account.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/prosto/prosto-3-healthy-dreaming.png" alt="Просто: Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/prosto/prosto-2-app.png" alt="Prosto: overview image"/>
 </figure>
 
-## Особенности проекта
+## How does it work?
 
-За время разработки проекта особых сложностей не испытывали. Настоящие вызовы начались после релиза. Совместно с техподдержкой пришлось активно включиться в процесс обучения пользователей, часть из которых не знала элементарных вещей, например, как оформлять подписку.
+Just put on your headphones, turn on one of the classes and follow the step-by-step audio instructions.
+After downloading the application, a 7-day trial period is provided.
+More than 60 lessons are divided into courses.
 
-Еще одна задача была связана с плеером, с помощью которого и запускается весь контент. Качественная работа проигрывателя была одним из основных требований.
+1. Basics --- working with the breath and body.
+2. Sleep --- practice simple rituals for a serene, resource-based sleep.
+3. Stress --- getting rid of tension in the body and mind.
+4. Work --- improving concentration and productivity.
+5. Happiness --- study of the nature of inner happiness.
 
-Плеер запускает медитации в онлайне, и нам нужно в реальном времени получать аудиопоток, обрабатывать его, чтобы воспроизведение шло без пауз. Для этого мы поменяли формат с MP3 на HLS: с помощью этого формата аудиофайл идет не целиком, а маленькими кусочками, которые отправить и принять легче.
+<figure>
+    <img src="{{ site.baseurl }}/assets/img/projects/prosto/prosto-3-healthy-dreaming.png" alt="Prosto: overview image"/>
+</figure>
 
-Мы полюбили это приложение и нам было очень важно, чтобы оно работало корректно, чтобы заказчик и пользователи были довольны. Поэтому мы всегда были на связи с техподдержкой, лично консультировали, вникали в каждое обращение, находили решение и помогали общаться с пользователями, хотя это не входит в работу над проектом.
+## Project features
 
-Также на релизе мы столкнулись с большим ажиотажем. Приложение несколько дней было первым в списке самых скачиваемых в сторе, аудитория прирастала гигантскими объемами, а в первый день пользователями приложения стали 33 тысячи человек.
+During the development of the project, we did not experience any special difficulties. The real challenges began after the release. Together with technical support, we had to actively engage in the process of training users, some of whom did not know basic things, for example, how to subscribe.
 
-## Отзыв заказчика
+Another task was related to the player, with which all the content is launched. High-quality operation of the player was one of the main requirements.
 
-### Дмитрий Провоторов, Product Manager, представитель заказчика
+The player starts meditations online, and we need to receive an audio stream in real time, process it so that playback goes on without pauses. To do this, we changed the format from MP3 to HLS: with this format, the audio file is not in its entirety, but in small pieces that are easier to send and receive.
 
-«Вас мы выбрали, потому что вы, во-первых, готовы были писать на современном технологическом стэке --- использовать React Native для разработки, у вас были под это специалисты. Что для нас было суперважно, вы были открыты к тому, чтобы провести собеседование с вашими разработчиками, у нас была возможность, определить, кого из вашей команды подключить к проекту. И вы обеспечили нам максимально сжатые сроки и все необходимое, чтобы мы могли принять решение.
+We loved this application and it was very important to us that it worked correctly so that the customer and users were satisfied. Therefore, we have always been in touch with technical support, personally advised, delved into every appeal, found a solution and helped to communicate with users, although this is not included in the work on the project.
 
-Что мне нравится в работе с вами --- это открытый к коммуникации менеджмент: постоянно на связи, мы не чувствуем себя в информационном вакууме, мы не чувствуем себя даже в рамках режима дня. У нас команда распределенная, мы работаем со всех концов света и при этом в любой момент времени мы держим связь, максимально оперативно получаем любой фидбек.
+Also on the release, we faced a lot of hype. The application was the first in the list of the most downloaded in the store for several days, the audience grew in gigantic volumes, and on the first day 33 thousand people became users of the application.
 
-С точки зрения того, как команда выполнила работу, мы делали код-ревью, мы следили за тем, как работает сервис на старте, мы тестировали нашу выбранную архитектуру, все прошло отлично. Основной KPI для нас был – это запуск без проблем, для нас было важно, чтобы пользователи не столкнулись ни с какими техническими проблемами на старте, когда из-за наплыва посетителей могут перегружаться сервера, либо отваливаться, не работать сервисы. И все прошло замечательно. Мы на этапах тестирования выбрали правильную архитектуру, правильных партнеров, у которых размещали свое программное обеспечение, выбрали правильный сервис, который отвечал за рассылку СМС, подстраховались, подключив несколько сервисов. Все это было сделано и оперативно, и максимально комфортно.
+## Customer feedback
 
-И сейчас после запуска приложения мы с вашей стороны получаем замечательную поддержку, оперативную реакцию и чувствуем себя технически в безопасности, понимаем, что работаем с экспертами.
+### Dmitry Provotorov, Product Manager, Customer Representative
 
-Для нас самое важное --- это техническая стабильность и функционирование того решения, которое мы разрабатываем, и с этой точки зрения вы большие молодцы. И наша главная победа, что на старте, когда за первые несколько дней мы получили десятки тысяч регистраций, десятки тысяч пользователей начали медитировать вместе с нами, что каждый из них получил отличный сервис и не столкнулся ни с какими проблемами. Это наша самая главная победа. Вас всем рекомендую.»
+«We chose you because, firstly, you were ready to write on a modern technological stack --- to use React Native for development, you had specialists for it. What was super important for us was that you were open to interviewing your developers, we had the opportunity to determine who from your team to connect to the project. And you provided us with the shortest possible time and everything necessary so that we could make a decision.
+
+What I like about working with you is management that is open to communication: we are constantly in touch, we do not feel in an information vacuum, we do not feel even within the daily routine. We have a distributed team, we work from all over the world and at the same time we keep in touch at any time, we receive any feedback as quickly as possible.
+
+From the point of view of how the team did the work, we did a code review, we monitored how the service works at the start, we tested our chosen architecture, everything went fine. The main KPI for us was the launch without problems, it was important for us that users did not encounter any technical problems at the start, when servers may overload or fall off, services may not work due to the influx of visitors. And everything went great. At the testing stages, we chose the right architecture, the right partners with whom we hosted our software, chose the right service that was responsible for sending SMS, insured ourselves by connecting several services. All this was done both promptly and as comfortably as possible.
+
+And now, after launching the application, we receive wonderful support from your side, prompt response and feel technically safe, we understand that we are working with experts.
+
+The most important thing for us is the technical stability and functioning of the solution that we are developing, and from this point of view you are great fellows. And our main victory is that at the start, when in the first few days we received tens of thousands of registrations, tens of thousands of users began to meditate with us, that each of them received excellent service and did not encounter any problems. This is our most important victory. I recommend you to everyone.»

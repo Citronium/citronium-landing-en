@@ -1,20 +1,20 @@
-# Геолокационная игра «Sber QR» en
+# Sber QR
 
-Играйте и изучайте новые возможности для оплаты.
+Play and explore new payment options.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/sber-qr/sber-qr-1-overview.png" alt="Sber QR Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/sber-qr/sber-qr-1-overview.png" alt="Sber QR: overview image"/>
 </figure>
 
-## Цели и задачи
-1. Рассказать о новой возможности оплаты при помощи QR-кодов.
-2. Через игру научить людей совершать платежи с помощью QR-кодов.
-3. Увеличить популярность безналичных платежей.
+## Goals and objectives
+1. Tell us about the new possibility of payment using QR codes.
+2. Through the game, teach people to make payments using QR codes.
+3. Increase the popularity of non-cash payments.
 
-## Решение
+## Solution
 
-Виртуальная игра соединяется с реальностью при помощи геолокации и использовании настоящих объектов от компаний-партнеров Сбербанка. Похожий подход был реализован в играх типа «Ingress» и «Pokemon Go».
+The virtual game connects with reality using geolocation and the use of real objects from Sberbank partner companies. A similar approach was implemented in games like "Ingress" and "Pokemon Go".
 
-Игрок видит компании, участвующие в игре, на карте рядом с собой. Он может получить всю информацию об организации, купить ее виртуальные акции или арендовать площадь.
+The player sees the companies participating in the game on the map next to him. He can get all the information about the organization, buy its virtual shares or rent an area.
 
-С акций можно получить дивиденды и вложить их в дело. Чем больше опыта у игрока, тем выше уровень в игре и финансовые возможности.
+You can get dividends from shares and invest them in a business. The more experience a player has, the higher the level in the game and the financial possibilities.

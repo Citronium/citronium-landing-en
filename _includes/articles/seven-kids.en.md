@@ -1,85 +1,86 @@
-# Центр детского развития Seven Kids en
+# Seven Kids
 
-Здесь дети занимаются по четырем программам.
+Here children are engaged in four programs.
 
-Одна из них –-- ментальная арифметика, которая гармонично развивает умственные и творческие способности детей и подростков при помощи арифметических вычислений на специальных счетах --- абакус.
+One of them is mental arithmetic, which harmoniously develops the mental and creative abilities of children and adolescents with the help of arithmetic calculations on special accounts --- abacus.
 
-Также есть программа по правописанию, курс по развитию памяти, скорости чтения и дошкольная подготовка.
+There is also a spelling program, a course on memory development, reading speed and preschool preparation.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/seven-kids/seven-kids-1-welcome.png" alt="Seven Kids Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/seven-kids/seven-kids-1-welcome.png" alt="Seven Kids: overview image"/>
 </figure>
 
-## Цели
+## Goals
 
-1. Разработать платформу для обучения детей ментальной арифметике.
-2. Сделать административный модуль, для управления школами, в том числе --- персоналом.
+1. Develop a platform for teaching children mental arithmetic.
+2. Make an administrative module for managing schools, including --- staff.
 
-## Решение
+## Solution
 
-Seven Kids состоит из web-приложения для администраторов, учителей и мобильного приложения для учеников.
-Через панель администратора можно взаимодействовать с партнёрами проекта и управлять персоналом.
+Seven Kids consists of a web application for administrators, teachers and a mobile application for students.
+Through the admin panel, you can interact with project partners and manage staff.
 
-С помощью мобильного приложения для iOS и Android дети выполняют домашнее задание. 
+With the help of a mobile app for iOS and Android, children do their homework.
 
-По каждому ребенку собирается статистика: время в игре, очки за правильные ответы и так далее. Доступ к данным учителя получают через web-приложение.
+Statistics are collected for each child: time in the game, points for correct answers, and so on. Teachers get access to the data through a web application.
 
-### Дизайн
+### Design
 
-Начиная играть, ребенок попадает на остров. Причем здесь, как и в реальной жизни, происходит смена времен года.
-В зависимости от этого меняется и дизайн интерфейса.
+Starting to play, the child gets to the island. And here, as in real life, there is a change of seasons.
+Depending on this, the interface design also changes.
 
-Последний, самый сложный уровень выполнен в космической стилистике. Игроки попадают на новую планету и там выполнят задания. 
+The last, most difficult level is made in the space style. Players get to a new planet and complete tasks there.
 
-Дружелюбные персонажи делают визуальную часть более живой.
-Мальчик Севен и его друг робот Руби подобраны так, что их хорошо воспринимают дети разных возрастов.
+Friendly characters make the visual part more lively.
+The boy Seven and his robot friend Ruby are chosen so that they are well perceived by children of different ages.
 
-Они создавались с учетом канонов педагогики: персонаж в игровом обучающем материале это то, с чем ребёнок ассоциирует себя, он как бы ставит себя на место героя, либо воспринимает его как друга, товарища, на которого хочет быть похожим.
+They were created taking into account the canons of pedagogy: a character in a game training material is something with which a child associates himself, he seems to put himself in the place of a hero, or perceives him as a friend, a comrade, whom he wants to be like.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/seven-kids/seven-kids-2-overview.png" alt="Seven Kids Обзорная картинка"/>
 </figure>
 
-### Нюансы
+### Nuances
 
-От команды потребовалось полное погружение в специфику проекта. Для понимания логики работы приложения, ориентированного на устный ментальный счёт, ребятам из Citronium пришлось самим научиться считать на абакусе.
+The team was required to fully immerse themselves in the specifics of the project. To understand the logic of the application focused on oral mental counting, the guys from Citronium had to learn to count on the abacus themselves.
 
-Главную трудность представляла синхронизация сложных алгоритмов приложения с используемой в ментальной арифметике системой обучения счёту. Научить человека считать по методу ментальной арифметики намного проще, чем приложение.
+The main difficulty was the synchronization of complex algorithms of the application with the numeracy training system used in mental arithmetic. Teaching a person to count by the method of mental arithmetic is much easier than an application.
 
-В проекте есть несколько уровней математических примеров и на каждом уровне существуют определенные условия сложения, вычитания и других математических действий. Разработчикам пришлось прописывать много дополнительных условий, чтобы добиться правильной работы алгоритмов.
+There are several levels of mathematical examples in the project and at each level there are certain conditions for addition, subtraction and other mathematical actions. The developers had to prescribe a lot of additional conditions in order to achieve the correct operation of the algorithms.
 
-### Звук
+### Sound
 
-Еще одной задачей стало озвучивание. Ввести реалистичный голос в приложение оказалось непросто. Русский язык очень сложный: склонения, спряжения, исключения и так далее.
+Another task was voicing. It was not easy to introduce a realistic voice into the application. The Russian language is very complex: declensions, conjugations, exceptions, and so on.
 
-Из-за подвижности ударения в производных числительных просто цифровизации слов было недостаточно. Изначально использовался голосовой процессор операционных систем, но при этом голос получался роботизированным, «металлическим».
+Because of the mobility of stress in the derivatives of numerals, simply digitizing words was not enough. Initially, the voice processor of operating systems was used, but at the same time the voice turned out to be robotic, "metallic".
 
-С помощью услуг профессионального диктора пришлось буквально научить приложение говорить по-русски правильно.
+With the help of the services of a professional speaker, I had to literally teach the application to speak Russian correctly.
 
-### Дальнейшее развитие
+### Further development
 
-Для разнообразия игрового процесс в дальнейшем, мы реализовали ещё шесть игровых режимов, направленных на развитие концентрации и памяти:
+For a variety of gameplay in the future, we have implemented six more game modes aimed at developing concentration and memory:
 
-1. «Реши пример».
-1. «Запомни по порядку».
-1. «Прочти текст».
-1. «Найди zo-zo».
-1. «Собери слово».
-1. «Найди предмет».
+1. Solve an example. 
+1. Remember in order.
+1. Read the text.
+1. Find zo-zo.
+1. Collect the word.
+1. Find the object.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/seven-kids/seven-kids-3-game.png" alt="Seven Kids Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/seven-kids/seven-kids-3-game.png" alt="Seven Kids: overview image"/>
 </figure>
 
-## В итоге
+## In the end
 
-Наша разработка помогла создать и развить франшизу на быстро растущем рынке востребованных услуг. Данный продукт стал одним из первых в своей сфере.
+Our development has helped to create and develop a franchise in the fast-growing market of in-demand services. This product has become one of the first in its field.
 
-## Отзыв
+## Review
 
-### Елена Рогачёва
-#### Основатель сети Seven Kids, Магистр гуманитарных наук Манчестерского университета Великобритании
+### Elena Rogacheva
 
-«Мы начали работу с компанией Citronium весной 2017 года. Наша задачей было создание онлайн-программы для всех устройств. И команда Citronium справилась с этим по-настоящему профессионально.
+#### Founder of the Seven Kids Network, Master of Arts from the University of Manchester in the UK
 
-Я хотела бы выразить им огромную благодарность. Они подошли к проекту действительно творчески: каждый раз мы получали множество различных вариантов решения поставленной задачи. Теперь мы готовы постоянно работать с этой компанией. Спасибо за профессионализм!»
+«We started working with Citronium in the spring of 2017. Our task was to create an online program for all devices. And the Citronium team handled it really professionally.
+
+I would like to express my great gratitude to them. They approached the project really creatively: each time we received many different solutions to the task. Now we are ready to constantly work with this company. Thank you for your professionalism!»

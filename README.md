@@ -129,3 +129,8 @@ JEKYLL_ENV=production bundle exec jekyll build
 ## FAQ
 
 - [Установка Jekyll](https://jekyllrb.com/docs/installation/)
+
+Переведены тексты: aspyre, lukoil, stroycontrol, isup
+Главная, шапка, страница проекты(app)
+
+Остальное через переводчик

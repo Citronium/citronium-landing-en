@@ -6,7 +6,7 @@ postTitle:
     en: RemoteAssistant
 postDescription:
     ru: Программное решение для автомобилей поставщика KIA Motors в Италии. Оно передает важнейшие технические параметры автомобиля в реальном времени
-    en: англ
+    en: Software solution for cars of KIA Motors supplier in Italy. It transmits the most important technical parameters of the car in real time
 prevImage: "/assets/img/projects/prev/remote-assistant-prev.png"
 prevPosition: center
 spheres: ["geolocation", "marketing"]
