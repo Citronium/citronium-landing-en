@@ -52,7 +52,7 @@ for (let i = 0; i < formInputs.length; i++) {
 }
 
 function validateForm() {
-    if (nameEl.value !== "" && phoneEl.value !== "") {
+    if (nameEl.value !== "" && phoneEl.value.length > 8) {
         feedbackFormBtn.disabled = false;
     } else {
         feedbackFormBtn.disabled = true;
@@ -62,29 +62,6 @@ function validateForm() {
 //on submit form
 feedbackForm.addEventListener("submit", async function (e) {
     e.preventDefault();
-
-    let isFormError;
-
-    if (nameEl.value.length === 0) {
-        nameEl.classList.add("error");
-        nameErrorEl.innerText = "Введите имя";
-        isFormError = true;
-    } else {
-        nameEl.classList.remove("error");
-        nameErrorEl.innerText = "";
-    }
-
-    if (phoneEl.value.length === 0) {
-        phoneEl.classList.add("error");
-        phoneErrorEl.innerText = "Введите номер телефона";
-        isFormError = true;
-    } else {
-        phoneEl.classList.remove("error");
-        phoneErrorEl.innerText = "";
-    }
-    if (isFormError) {
-        return;
-    }
 
     const payload = {
         name: nameEl.value,
@@ -102,23 +79,9 @@ feedbackForm.addEventListener("submit", async function (e) {
     feedbackFormBtn.disabled = false;
     feedbackSpinner.classList.remove("show");
     feedbackBtnText.classList.remove("hide");
-
-    if (res.statusCode === 400) {
-        if (res.message.name) {
-            nameEl.classList.add("error");
-            nameErrorEl.innerText = res.message.name;
-        }
-        if (res.message.phone) {
-            phoneEl.classList.add("error");
-            phoneErrorEl.innerText = res.message.phone;
-        }
-
-        return;
-    }
-
     formContainerEl.style.display = "none";
 
-    if (res.statusCode === 200) {
+    if (res.status === 200) {
         formMessageTextEl.innerText = "Спасибо за заявку! \n Ваши данные успешно отправлены";
     } else {
         formMessageTextEl.innerText = "Не получилось отправить заявку. \n Попробуйте еще раз.";
@@ -128,20 +91,28 @@ feedbackForm.addEventListener("submit", async function (e) {
 });
 
 function sendMail(payload) {
-    const api = "https://citronium-landing-api.psrv5.citronium.com/user/send-email";
+    const api = "https://api.emailjs.com/api/v1.0/email/send";
+
+    var data = {
+        service_id: 'service_1cwzvc1',
+        template_id: 'template_snv0pnb',
+        user_id: 'cRrnrzHf6J14p4n1m',
+        template_params: payload
+    };
 
     return fetch(api, {
         method: "POST",
-        body: JSON.stringify(payload),
+        body: JSON.stringify(data),
         headers: {
             "Content-Type": "application/json",
         },
     })
-        .then((res) => res.json())
+        // .then((res) => res.json())
         .then((data) => {
             return data;
         })
         .catch((error) => {
+            console.log(error);
             return error;
         });
 }
