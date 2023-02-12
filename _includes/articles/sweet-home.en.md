@@ -1,50 +1,49 @@
 # Sweet Home
 
-**Service for recording the working hours of employees of medical organizations in the USA**
+**Service for employees’ time tracking in US medical organizations**
 
-Sweet Home Healthcare --- agency for the provision of services in the healthcare system, in particular for the hiring of medical staff for people in need --- hourly or round-the-clock provision of patient care.
+Sweet Home Healthcare is an agency providing services in the health system, in particular, the recruitment of medical personnel for people in need (hourly or round-the-clock care).
 
-The agency was founded in 2012 with the aim of improving the quality of life of the sick and disabled in Pennsylvania.
-Today, Sweet Home Healthcare works with more than 2,000 clients and caregivers.
+The agency was founded in 2012 to improve the quality of life for the sick and disabled in Pennsylvania. Today, Sweet Home Healthcare works with more than 2000 clients and care providers.
 
-The agency serves more than 15 counties with offices in Philadelphia, Scranton and Harrisburg.
+The agency works in more than 15 counties with offices in Philadelphia, Scranton, and Harrisburg.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/sweet-home/sweet-home-1-overview.png" alt="Sweet Home: overview image"/>
 </figure>
 
+## Goals and Objectives
 
-## Goals and objectives
-
-1. Digitalization: switch to electronic accounting of working hours of medical personnel and reduce the amount of work for accountants.
-2. Select 4 user roles with different access rights.
-3. Provide for the possibility of receiving prompt feedback from customers.
+1. Digitization: switch to electronic timekeeping for medical staff and reduce the amount of accountants’ work.
+2. Create 4 user roles with different access rights.
+3. Provide the ability to receive prompt feedback from customers
 
 ## Solution
 
-A system for recording the working hours of medical personnel and types of services for the patient. The data obtained is checked against the weekly plan, according to several parameters. Systematization and analysis is underway.
+Our solution is a system tracking the working hours of the medical staff and the types of services provided to the patient. The data are checked against a weekly plan and several parameters.
+They are systematized and analyzed.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/sweet-home/sweet-home-2-time-sheet.png" alt="Sweet Home: overview image"/>
-    <figcaption>Patient TimeSheet</figcaption>
+    <img src="{{ site.baseurl }}/assets/img/projects/sweet-home/sweet-home-2-time-sheet.png" alt="Sweet Home: Time Sheet"/>
+    <figcaption>Patient’s Time Sheet</figcaption>
 </figure>
 
-Taking into account the business logic, access to information is provided both to the medical organization and to the insurer with whom the patient has a contract. Our proposed time tracking system for the customer's task is available in the browser and in mobile applications on iOS and Android devices.
+Taking into account the business logic, access to the information is provided to both the medical organization and the patient’s insurance company. The time tracking system is available in the browser and mobile applications on iOS and Android devices.
 
-### Difficulties
+### Challenge
 
-Faced with difficulties in developing business logic. The Russian and American healthcare systems are different, and it was not easy to dive into the logic of providing services in this area in the United States.
+The main challenge was the development of the business logic. Russian and American healthcare systems are different, and it was not easy to immerse oneself in the logic of these services provided in the USA.
 
-We conducted a study and described in detail the entire process of providing services and quality control. We have allocated 4 user roles with different access rights.
+The team did research and made a detailed description of the whole process of service provision and quality control. The system has 4 user roles with different access rights.
 
 ### Result
 
-We have created mobile and web versions of the application so that it is convenient to use them from smartphones, tablets and computers.
+We have created both mobile and web versions of the app so that it can be easily worked with on smartphones, tables, and PC.
 
-The developed system allows you to thoroughly monitor the process of providing services to patients at all stages: from assessing the quality and compliance of the volume of work with the weekly plan of the employee and to collecting general information throughout the company.
+The developed system can be used for thorough control of the process of providing services to patients at all stages: from the quality assessment and compliance of the employee’s work to the weekly plan, to the collection of general information throughout the company.
 
-The received data is imported into Google tables, in which the analysis takes place according to the parameters required by the customer.
+All the data are imported into Google tables, where the data are analyzed by customers using different parameters.
 
-Employees in the application can record the service time spent by orderlies or medics while caring for patients in an electronic form. The patient can sign the form with the specified time. With the help of the application, these forms are sent to the management.
+In the application, the employees can use an electronic form to register the time spent by nurses or other medical staff on patient care. The form is then signed by the patients. The application sends these forms to the managers.
 
-The administrative staff in the application checks the correctness of filling out the forms, exports to the summary table, assigns patients to doctors to provide services, manages staff and work with patients, exports and prints completed forms and summary tables, if necessary.
+The administrative staff use the app to check if the forms are filled in correctly, export them to the summary table, assign medical staff to the patients, manage the staff and work with patients, export and print the completed forms and summary tables if necessary, etc.

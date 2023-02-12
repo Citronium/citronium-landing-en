@@ -1,8 +1,8 @@
 # Mobisat Greenbox
 
-MOBISAT has developed a geolocation device that allows you to determine the location of the car and transmit all the main transport indicators.
+MOBISAT company has developed a geolocation device that helps determine the location of the vehicle and transmit all the key transport indicators.
 
-Our task was to write software for this device.
+Our task was to develop the software for this device.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/mobisat-greenbox/mobisat-greenbox-1-overview.png" alt="Mobisat Greenbox: overview image"/>
@@ -11,9 +11,9 @@ Our task was to write software for this device.
 ## Goals
 
 1. Develop an application with a functional design.
-1. Ensure high security of customers' personal data.
-1. Create the possibility of using multiple devices by one user.
-1. Providing information to users, both technical and related to driving styles.
+2. Ensure high security of the customers' personal data.
+3. Implement the feature of using multiple devices by one user.
+4. Provide users the information on technical characteristics and driving style.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/mobisat-greenbox/mobisat-greenbox-2-profile.png" alt="Mobisat Greenbox: overview image"/>
@@ -21,32 +21,32 @@ Our task was to write software for this device.
 
 ## Solution
 
-1. The "Find my transport" function.
-1. Tracking of a car, water vessels, etc.
-1. Integration of OSM maps.
-1. Remote tracking of one or more objects.
-1. Trip history (start and stop times).
-1. Generating and viewing reports, movement history.
+1. Find My Transport feature.
+2. Tracking of cars, watercraft, etc.
+3. OSM integration (OpenStreetMaps).
+4. Remote tracking of one or more objects.
+5. Trip history (time when the trip begins and when stops).
+6. Generating and viewing reports and trip history.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/mobisat-greenbox/mobisat-greenbox-3-map.png" alt="Mobisat Greenbox: overview image"/>
 </figure>
 
-## How it works
+## How it Works
 
-**Parental control**: warning when exceeding the speed limit or manually set and informing about dangerous driving --- sudden acceleration, braking, turns, etc.
+**Parental control**: speed warning, when the traffic rules are violated or manually set speed limit is exceeded, and notifications on dangerous driving - sudden acceleration, braking, turns, etc.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/mobisat-greenbox/mobisat-greenbox-4-speed-violations.png" alt="Mobisat Greenbox: overview image"/>
 </figure>
 
-**Virtual Dashboard**: reproduces the dashboard of the car --- speed, engine speed, fuel, diagnostic trouble codes, throttle pressure and so on.
+**Virtual vehicle dashboard**: shows the dashboard of the car - speed, engine rpm, fuel, diagnostic error status codes, throttle pressure, and so on.
 
-**Remote diagnostics**: information about errors in the operation of the car.
+**Remote diagnostics**: information about errors in the vehicle's operation.
 
-**Advanced Reporting**: Creates detailed reports on the performance of your car --- mileage reports, detailed analysis of each trip, travel time, fuel consumption and so on.
+**Advanced reporting**: it creates detailed reports on the vehicle's performance - mileage reports, detailed analysis of each trip, travel time, fuel consumption, and so on.
 
-**Alarm Management**: The app can alert you in case of danger by sending notifications to your smartphone. Notifications are configurable.
+**Alarm management**: the app can alert in case of danger by sending notifications to the smartphone. Notifications are customizable.
 
 **Two mapping services are available to choose from**: Google Maps and Open Street Maps.
 
@@ -56,6 +56,6 @@ Our task was to write software for this device.
 
 ## Result
 
-Our development made it possible to scale the client's business, designed to manage several hundred devices.
+Our solution was the key to the scaling of the customer's business, aimed at managing several hundreds of devices.
 
-Now, with our software, the customer is actively developing business and working with five major auto and moto brands.
+Now using the software created by Citronium, the customer is actively developing his business and works with five big car and motorcycle brands.

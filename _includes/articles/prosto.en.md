@@ -1,69 +1,67 @@
-# Prosto: meditation and sleep
+# Prosto: Meditation and Sleep
 
-An application from Irena Ponaroshku. She is actively engaged in meditation herself and wants to help people learn how to do it correctly.
+Irena Ponaroshku’s application. She has daily meditation practice and wants to help people to do it in the right way.
 
-The creator of the app wants to make meditation clear and simple. Irena is convinced that meditation helps to become more sincere with yourself, to understand your goals and priorities, to prepare for change and development.
+The application creator wants to make meditation clear and easy. Irena is sure that meditation helps one become more sincere with oneself, understand goals and priorities, get ready for changes and development.
 
-According to the idea of the author of the idea, the art of meditation should become accessible to everyone, regardless of experience, so that beginners can gradually get involved in the process and advance in a new skill.
+The app author believes that the art of meditation should be available to everyone, regardless of their experience. So that even newcomers can gradually get involved and improve their new skills.
 
-And it can be implemented simply --- using the application in the phone.
+It can be easily done using the mobile app.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/prosto/prosto-1-overview.png" alt="Prosto: overview image"/>
 </figure>
 
-## Functional
+## Features
 
-1. Listening to meditation.
-2. Publication of affirmations on social networks --- pictures with inspiring text.
+1. Meditation listening.
+2. Posting affirmations (pictures with inspiring text) on Instagram.
 3. Meditation reminder.
-4. View your listening statistics.
-5. Recording progress --- number of days of continuous listening.
-6. Free access to content for a week.
-7. Manage your subscription in your personal account.
+4. Listening statistics.
+5. Progress tracking (days of continuous listening).
+6. Free access for a week.
+7. Subscription management in the account.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/prosto/prosto-2-app.png" alt="Prosto: overview image"/>
 </figure>
 
-## How does it work?
+## How it Works
 
-Just put on your headphones, turn on one of the classes and follow the step-by-step audio instructions.
-After downloading the application, a 7-day trial period is provided.
-More than 60 lessons are divided into courses.
+Just put on your headphones, press Play the Lesson, and follow the step-by-step audio instructions. After downloading the application, you get a 7-day free period. Over 60 lessons are grouped into courses.
 
-1. Basics --- working with the breath and body.
-2. Sleep --- practice simple rituals for a serene, resource-based sleep.
-3. Stress --- getting rid of tension in the body and mind.
-4. Work --- improving concentration and productivity.
-5. Happiness --- study of the nature of inner happiness.
+1. Basics - work with breathing and body.
+1. Sleep - practice easy rituals for a quiet resourceful sleep.
+1. Stress - get rid of tension in the body and consciousness.
+1. Work - improve concentration and productivity.
+1. Happiness - study the nature of inner happiness.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/prosto/prosto-3-healthy-dreaming.png" alt="Prosto: overview image"/>
 </figure>
 
-## Project features
+## Project Peculiarities
 
-During the development of the project, we did not experience any special difficulties. The real challenges began after the release. Together with technical support, we had to actively engage in the process of training users, some of whom did not know basic things, for example, how to subscribe.
+There were no major difficulties in the project development. The real challenges started after the release. Together with technical support, we had to get actively engaged in the process of teaching users: some of them did not know basic things, e.g. how to make a subscription.
 
-Another task was related to the player, with which all the content is launched. High-quality operation of the player was one of the main requirements.
+Another challenge was related to the player used for listening to the content. The player's quality was one of the main requirements.
 
-The player starts meditations online, and we need to receive an audio stream in real time, process it so that playback goes on without pauses. To do this, we changed the format from MP3 to HLS: with this format, the audio file is not in its entirety, but in small pieces that are easier to send and receive.
+The meditations are played online, and the app is to receive and process the audio stream in real-time to get good sound without any pauses. To do this, we changed the format from MP3 to HLS. In this case, the audio file is divided into small pieces that are easier to send and receive.
 
-We loved this application and it was very important to us that it worked correctly so that the customer and users were satisfied. Therefore, we have always been in touch with technical support, personally advised, delved into every appeal, found a solution and helped to communicate with users, although this is not included in the work on the project.
+We fell in love with this application and it was very important to make it work right so that the customer and especially the users were satisfied. This is why we have always been in touch with technical support, provided consultations, analyzed every request, solved problems, and helped to communicate with users, although this was not a part of the project work.
+We also encountered users’ huge excitement at the release. For several days the application was the first in the top list of the most downloadable applications in the store. The audience grew enormously, and during the first day, 33,000 people became users of the application.
 
-Also on the release, we faced a lot of hype. The application was the first in the list of the most downloaded in the store for several days, the audience grew in gigantic volumes, and on the first day 33 thousand people became users of the application.
 
-## Customer feedback
+## Customer Feedback
 
-### Dmitry Provotorov, Product Manager, Customer Representative
+### Dmitry Provotorov, product manager, customer representative
 
-«We chose you because, firstly, you were ready to write on a modern technological stack --- to use React Native for development, you had specialists for it. What was super important for us was that you were open to interviewing your developers, we had the opportunity to determine who from your team to connect to the project. And you provided us with the shortest possible time and everything necessary so that we could make a decision.
+«Why did we choose Citronium? First of all,  they were ready to develop using a modern technology stack - React Native, they had specialists in it. It was of high importance for us that the company and the developers were open to being interviewed. So we had the opportunity to choose team members for the project. Citronium provided us with everything so that we were able to make the decision in the shortest possible time.
 
-What I like about working with you is management that is open to communication: we are constantly in touch, we do not feel in an information vacuum, we do not feel even within the daily routine. We have a distributed team, we work from all over the world and at the same time we keep in touch at any time, we receive any feedback as quickly as possible.
+What do I like about working with Citronium? It is the management’s openness to communication: we were constantly in touch, we never felt an information vacuum, we didn’t feel limitations to working hours. We have a global team and work from all over the world and at any time we kept in touch and promptly got feedback.
 
-From the point of view of how the team did the work, we did a code review, we monitored how the service works at the start, we tested our chosen architecture, everything went fine. The main KPI for us was the launch without problems, it was important for us that users did not encounter any technical problems at the start, when servers may overload or fall off, services may not work due to the influx of visitors. And everything went great. At the testing stages, we chose the right architecture, the right partners with whom we hosted our software, chose the right service that was responsible for sending SMS, insured ourselves by connecting several services. All this was done both promptly and as comfortably as possible.
+How did the Citronium team work? We performed a code review, we watched the service at the start, we tested the chosen architecture, and everything went perfectly well. For us, the main KPI was a flawless launch. It was important for us that users should not face any technical problems at the start when due to the visitors inflow the servers might be overloaded or fall off, or services might not work. And everything went perfectly well. During the testing stage, we chose the right architecture, the right partners to place our software with, the right service to be responsible for sending texts, and we also used several services to be on the safe side. All was done quickly and conveniently.
 
-And now, after launching the application, we receive wonderful support from your side, prompt response and feel technically safe, we understand that we are working with experts.
+And now, after the application launch, we enjoy Citronium’s excellent support, prompt reaction and feel technically safe. We understand that we work with experts.
 
-The most important thing for us is the technical stability and functioning of the solution that we are developing, and from this point of view you are great fellows. And our main victory is that at the start, when in the first few days we received tens of thousands of registrations, tens of thousands of users began to meditate with us, that each of them received excellent service and did not encounter any problems. This is our most important victory. I recommend you to everyone.»
+For us, the most important thing is the technical stability and functioning of the developed solution. From this point of view, Citronium does a great job. Our main victory is that at the start, when thousands of users registered during the first few days, and thousands of users began to meditate with us, each of them received excellent service and did not face any problems. This is our greatest victory. I recommend Citronium to everybody.»

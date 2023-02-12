@@ -6,7 +6,7 @@ postTitle:
     en: Mobisat Greenbox
 postDescription: 
     ru: Спутниковый мониторинг транспорта и удаленная оценка безопасности вождения с мобильных устройств и личных компьютеров
-    en: Satellite monitoring of transport and remote assessment of driving safety from mobile devices and personal computers
+    en: Satellite vehicle monitoring and remote assessment of driving safety from mobile devices and personal computers
 prevImage: "/assets/img/projects/prev/mobisat-greenbox-prev.png"
 prevPosition: right
 spheres: ['logistics', 'data-analysis']

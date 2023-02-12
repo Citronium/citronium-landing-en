@@ -1,10 +1,10 @@
-# Seven Kids
+# Seven Kids Children’s Centre
 
-Here children are engaged in four programs.
+There are four study programs for children.
 
-One of them is mental arithmetic, which harmoniously develops the mental and creative abilities of children and adolescents with the help of arithmetic calculations on special accounts --- abacus.
+One of them is mental arithmetic, which harmoniously develops the mental and creative abilities of children and adolescents through arithmetic calculations on a special counting frame - an abacus.
 
-There is also a spelling program, a course on memory development, reading speed and preschool preparation.
+There is also a spelling program, a course on memory development, reading speed development, and preschool training.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/seven-kids/seven-kids-1-welcome.png" alt="Seven Kids: overview image"/>
@@ -13,74 +13,71 @@ There is also a spelling program, a course on memory development, reading speed 
 ## Goals
 
 1. Develop a platform for teaching children mental arithmetic.
-2. Make an administrative module for managing schools, including --- staff.
+2. Create an administrator module to manage schools and staff.
 
 ## Solution
 
-Seven Kids consists of a web application for administrators, teachers and a mobile application for students.
-Through the admin panel, you can interact with project partners and manage staff.
+The Seven Kids solution includes an administrator web application and a mobile app for students. The admin panel allows interaction with the project partners and staff management.
 
-With the help of a mobile app for iOS and Android, children do their homework.
+The mobile application for iOS and Android helps children do their homework.
 
-Statistics are collected for each child: time in the game, points for correct answers, and so on. Teachers get access to the data through a web application.
+For each child, the player statistics are collected: time spent in the game, scores for correct answers, etc. Teachers have access to the data via the web application.
 
 ### Design
 
-Starting to play, the child gets to the island. And here, as in real life, there is a change of seasons.
-Depending on this, the interface design also changes.
+The game starts on the island. Like in real life, seasons change there. It results in the respective changes to interface design.
 
-The last, most difficult level is made in the space style. Players get to a new planet and complete tasks there.
+The last and most difficult level is made in space style. Players get to a new planet, where they do tasks.
 
-Friendly characters make the visual part more lively.
-The boy Seven and his robot friend Ruby are chosen so that they are well perceived by children of different ages.
+Friendly characters make the visuals brighter. Seven, the boy, and his friend Ruby, the robot, are designed so that children of different ages like them.
 
-They were created taking into account the canons of pedagogy: a character in a game training material is something with which a child associates himself, he seems to put himself in the place of a hero, or perceives him as a friend, a comrade, whom he wants to be like.
+They were created with the canons of pedagogy in mind: the education game character is someone who players associate themselves with. It is as if a child puts themself in the hero's shoes, or perceives the character as a friend, whom he wants to be like.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/projects/seven-kids/seven-kids-2-overview.png" alt="Seven Kids Обзорная картинка"/>
+    <img src="{{ site.baseurl }}/assets/img/projects/seven-kids/seven-kids-2-overview.png" alt="Seven Kids: overview image"/>
 </figure>
 
-### Nuances
+### Peculiarities
 
-The team was required to fully immerse themselves in the specifics of the project. To understand the logic of the application focused on oral mental counting, the guys from Citronium had to learn to count on the abacus themselves.
+The team had to immerse themselves in the project. To understand the logic of the application for mental arithmetic, the Citronium team had to learn how to count on an abacus.
 
-The main difficulty was the synchronization of complex algorithms of the application with the numeracy training system used in mental arithmetic. Teaching a person to count by the method of mental arithmetic is much easier than an application.
+The main difficulty was the synchronization of the app’s complex algorithms with the education system used for teaching mental arithmetic. It is much easier to teach a person how to count using the mental arithmetic method than to teach an app to do it.
 
-There are several levels of mathematical examples in the project and at each level there are certain conditions for addition, subtraction and other mathematical actions. The developers had to prescribe a lot of additional conditions in order to achieve the correct operation of the algorithms.
+There are several levels of sums in the project and on each level, there are certain rules for adding, subtracting, and other mathematical operations. The developers had to write numerous additional conditions to make the algorithms work properly.
 
-### Sound
+### Sound Recording
 
-Another task was voicing. It was not easy to introduce a realistic voice into the application. The Russian language is very complex: declensions, conjugations, exceptions, and so on.
+Another interesting task was sound recording. Adding a realistic voice to the application was not easy at all. The Russian language is very complicated with numerous grammar forms for different parts of speech, many exceptions, etc.
 
-Because of the mobility of stress in the derivatives of numerals, simply digitizing words was not enough. Initially, the voice processor of operating systems was used, but at the same time the voice turned out to be robotic, "metallic".
+Due to the mobile stress in the numerals and their derivatives, standard digitizing of words was not enough. Initially, the OS voice processor was used, but it sounded too robotic and metallic.
 
-With the help of the services of a professional speaker, I had to literally teach the application to speak Russian correctly.
+We literally taught the application to speak Russian correctly with the help of a professional announcer.
 
-### Further development
+### Further Development
 
-For a variety of gameplay in the future, we have implemented six more game modes aimed at developing concentration and memory:
+To diversify the gameplay, we have implemented six more game modes aimed at developing concentration and memory:
 
-1. Solve an example. 
-1. Remember in order.
-1. Read the text.
-1. Find zo-zo.
-1. Collect the word.
-1. Find the object.
+1. «Do the sum».
+1. «Remember in the right order».
+1. «Read the text».
+1. «Find the zo-zo».
+1. «Make the word».
+1. «Find the item».
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/seven-kids/seven-kids-3-game.png" alt="Seven Kids: overview image"/>
 </figure>
 
-## In the end
+## As the Result
 
-Our development has helped to create and develop a franchise in the fast-growing market of in-demand services. This product has become one of the first in its field.
+Our solution helped create and develop a franchise in the fast-growing market of demanded services. This product was one of the first in its field.
 
-## Review
+## Feedback
 
 ### Elena Rogacheva
 
-#### Founder of the Seven Kids Network, Master of Arts from the University of Manchester in the UK
+#### Founder of the Seven Kids chain, M.A. (Manchester University, UK)
 
-«We started working with Citronium in the spring of 2017. Our task was to create an online program for all devices. And the Citronium team handled it really professionally.
+«We started working with Citronium in spring, 2017. Our task was to create an online program for all devices. And the Citronium team coped with it in a truly professional way.
 
-I would like to express my great gratitude to them. They approached the project really creatively: each time we received many different solutions to the task. Now we are ready to constantly work with this company. Thank you for your professionalism!»
+I would like to thank them very much. They dealt with the project in a really creative way: each time we got a lot of different variants of solving the task. Now we are ready to work with this IT company on a regular basis. Thank you for your professionalism!»
