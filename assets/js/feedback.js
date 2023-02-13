@@ -105,9 +105,9 @@ function sendMail(payload) {
     const api = "https://api.emailjs.com/api/v1.0/email/send";
 
     var data = {
-        service_id: "service_1cwzvc1",
-        template_id: "template_snv0pnb",
-        user_id: "cRrnrzHf6J14p4n1m",
+        service_id: "service_gfdeifl",
+        template_id: "template_iobrs5k",
+        user_id: "fVnk-3KfRnBTNLY6n",
         template_params: payload,
     };
 
