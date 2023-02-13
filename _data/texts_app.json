@@ -91,17 +91,17 @@
             },
             "description": {
                 "ru": "После 15-минутной консультации мы составим коммерческое предложение с ориентиром по стоимости и срокам, пришлем его через 2 дня.",
-                "en": "After a 15-minute consultation, we will draw up a commercial offer with a guideline on cost and timing, we will send it in 2 days."
+                "en": "After a 15-minute consultation, within two days you will get a commercial offer with costs and a time frame."
             },
             "btnText": {
                 "ru": "Начать проект",
-                "en": "Start a project"
+                "en": "Start Project"
             }
         },
         "right": {
             "address": {
                 "ru": "Йошкар-Ола, Карла Маркса <nobr>109-б</nobr>",
-                "en": "Yoshkar-Ola, Karl Marx <nobr>109-b</nobr>"
+                "en": "Karla Marksa <nobr>109-b</nobr>, Yoshkar-Ola, Russia "
             },
             "phone": {
                 "ru": "+7 (499) 350-55-75",

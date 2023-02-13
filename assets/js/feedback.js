@@ -81,10 +81,21 @@ feedbackForm.addEventListener("submit", async function (e) {
     feedbackBtnText.classList.remove("hide");
     formContainerEl.style.display = "none";
 
-    if (res.status === 200) {
-        formMessageTextEl.innerText = "Спасибо за заявку! \n Ваши данные успешно отправлены";
+    let textSuccess = "";
+    let textError = "";
+
+    if (document.documentElement.lang === "ru") {
+        textSuccess = "Спасибо за заявку! \n Ваши данные успешно отправлены";
+        textError = "Не получилось отправить заявку. \n Попробуйте еще раз.";
     } else {
-        formMessageTextEl.innerText = "Не получилось отправить заявку. \n Попробуйте еще раз.";
+        textSuccess = "Thank you for the application! \n Your data has been sent successfully";
+        textError = "It was not possible to send the application. \n Try again.";
+    }
+
+    if (res.status === 200) {
+        formMessageTextEl.innerText = textSuccess;
+    } else {
+        formMessageTextEl.innerText = textError;
     }
 
     formMessageEl.style.display = "flex";
@@ -94,25 +105,27 @@ function sendMail(payload) {
     const api = "https://api.emailjs.com/api/v1.0/email/send";
 
     var data = {
-        service_id: 'service_1cwzvc1',
-        template_id: 'template_snv0pnb',
-        user_id: 'cRrnrzHf6J14p4n1m',
-        template_params: payload
+        service_id: "service_1cwzvc1",
+        template_id: "template_snv0pnb",
+        user_id: "cRrnrzHf6J14p4n1m",
+        template_params: payload,
     };
 
-    return fetch(api, {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: {
-            "Content-Type": "application/json",
-        },
-    })
-        // .then((res) => res.json())
-        .then((data) => {
-            return data;
+    return (
+        fetch(api, {
+            method: "POST",
+            body: JSON.stringify(data),
+            headers: {
+                "Content-Type": "application/json",
+            },
         })
-        .catch((error) => {
-            console.log(error);
-            return error;
-        });
+            // .then((res) => res.json())
+            .then((data) => {
+                return data;
+            })
+            .catch((error) => {
+                console.log(error);
+                return error;
+            })
+    );
 }
