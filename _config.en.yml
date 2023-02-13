@@ -1,0 +1,15 @@
+title: Web and mobile development, high-load systems | Citronium
+description: We develop web services, highload systems, iOS and Android mobile apps for business. Full cycle development from interface design to deployment.
+baseurl: "/citronium-landing-en" # the subpath of your site, e.g. /blog
+url: "https://citronium.com" # the base hostname & protocol for your site, e.g. http://example.com
+lang: en
+
+# Build settings
+theme: minima
+
+autoprefixer:
+    only_production: true
+
+plugins:
+    - jekyll-feed
+    - jekyll-autoprefixer
