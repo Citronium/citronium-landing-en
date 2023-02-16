@@ -48,7 +48,7 @@
     "feedbackForm": {
         "title": {
             "ru": "Запись на консультацию",
-            "en": "Make an appointment for a consultation"
+            "en": "Get a Consultation"
         },
         "name": {
             "label": {
@@ -71,8 +71,8 @@
             }
         },
         "btnSubmit": {
-            "ru": "Начать проект",
-            "en": "Start a project"
+            "ru": "Записаться",
+            "en": "Contact me"
         },
         "link": {
             "ru": "Нажимая на кнопку вы даёте согласие <u>на обработку персональных данных</u>",
@@ -95,7 +95,7 @@
             },
             "btnText": {
                 "ru": "Начать проект",
-                "en": "Start Project"
+                "en": "Start a Project"
             }
         },
         "right": {

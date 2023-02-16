@@ -94,7 +94,7 @@
                 "en": "You have a ready technical specification or your project concept. We will carefully examine the scope of work, divide it into stages, agree on time limits and costs and provide the result."
             },
             "btnText": {
-                "ru": "Расчитать смету по ТЗ",
+                "ru": "Расcчитать смету по ТЗ",
                 "en": "Calculate the Costs based on Specifications"
             }
         },
@@ -109,7 +109,7 @@
             },
             "btnText": {
                 "ru": "Написать нам",
-                "en": "Write to us"
+                "en": "Contact us"
             }
         }
     },
@@ -139,7 +139,7 @@
             },
             "btnText": {
                 "ru": "Начать проект",
-                "en": "Start your Project"
+                "en": "Start a Project"
             }
         }
     },

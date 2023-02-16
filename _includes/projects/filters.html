@@ -118,7 +118,13 @@
             }
         })
 
-        const text = declOfNum(spheres.length, ['сфера', 'сферы', 'сфер'])
+        let text = ''
+        if (document.documentElement.lang === "ru") {
+            text = declOfNum(spheres.length, ['сфера', 'сферы', 'сфер'])
+        } else {
+            text = declOfNumEn(spheres.length, ['sphere', 'spheres'])
+        }
+
         spheresInput.innerHTML = text
     }
 
@@ -146,8 +152,12 @@
                 element.classList.add("active");
             }
         })
-
-        const text = declOfNum(technologies.length, ['технология', 'технологии', 'технологий'])
+        let text = ''
+        if (document.documentElement.lang === "ru") {
+            text = declOfNum(technologies.length, ['технология', 'технологии', 'технологий'])
+        } else {
+            text = declOfNumEn(technologies.length, ['technology', 'technologies'])
+        }
         technologiesInput.innerHTML = text
     }
 
@@ -216,4 +226,18 @@
         }
         return num + " " + texts[2];
     };
+
+    function declOfNumEn(num, texts) {
+        num = Math.abs(num) % 100;
+        var num1 = num % 10;
+
+        if (num === 0) {
+            return "All " + texts[1];
+        }
+
+        if (num1 === 1) {
+            return num + " " + texts[0];
+        }
+        return num + " " + texts[1];
+    }
 </script>

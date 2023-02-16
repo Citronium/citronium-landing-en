@@ -29,7 +29,7 @@ To do this, we had to involve more developers, which resulted in a heavy workloa
 
 ### Further Development
 
-In 2014 the project was implemented in Bristol, the success of the application also led to the positioning of Wriggle in two more UK cities: Bristol and Cardiff.
+In 2014 the project was implemented in Bristol, the success of the application also led to the positioning of Wriggle in two more UK cities.
 
 <figure>
     <img src="{{ site.baseurl }}/assets/img/projects/wriggle/wriggle-2-filtration.png" alt="Wriggle: overview image"/>
