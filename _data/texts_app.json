@@ -33,8 +33,8 @@
             "en": "Schedule the Consultation"
         },
         "company": {
-            "ru": "© 2022 ООО «Цитрониум»",
-            "en": "© 2022 Citronium Ltd."
+            "ru": "© 2023 ООО «Цитрониум»",
+            "en": "© 2023 Citronium Technologies LLP."
         },
         "personal": {
             "ru": "Политика обработки персональных данных",
@@ -99,14 +99,27 @@
             }
         },
         "right": {
+            "company": {
+                "ru": "",
+                "en": "Citronium Technologies LLP"
+            },
             "address": {
                 "ru": "Йошкар-Ола, Карла Маркса <nobr>109-б</nobr>",
-                "en": "Karla Marksa <nobr>109-b</nobr>, Yoshkar-Ola, Russia "
+                "en": "Legal address:  Ulitsa Ye 652 8-13, Yesil district, Astana, 020000, Kazakhstan"
             },
             "phone": {
                 "ru": "+7 (499) 350-55-75",
-                "en": "+7 (499) 350-55-75"
+                "en": ""
+            },
+            "bin": {
+                "ru": "",
+                "en": "BIN/IIN: 221040051212"
+            },
+            "email": {
+                "ru": "",
+                "en": "accounting@citronium.com"
             }
+
         }
     },
     "projects": {
