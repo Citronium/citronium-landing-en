@@ -13,9 +13,17 @@ layout: contact
                     <p class="contacts__left-descr">{{ text.left.description[site.lang] }}</p>
                     <button id="open-btn-footer" class="btn btn--dark contacts__left-btn modal-btn">{{ text.left.btnText[site.lang] }}</button>
                 </div>
-                <div class="contacts__right">
-                    <h3 class="h3 contacts__adress">{{ text.right.address[site.lang] }}</h3>
-                    <h3 class="h3 contacts__phone">{{ text.right.phone[site.lang] }}</p>
+                <div class="contacts__right">  
+                    {% if site.lang == "ru" %}
+                        <h3 class="h3 contacts__adress">{{ text.right.address[site.lang] }}</h3>
+                        <h3 class="h3 contacts__phone">{{ text.right.phone[site.lang] }}</p>
+                    {% else %}
+                        <h3 class="h3 contacts__text">{{ text.right.company[site.lang] }}</h3>
+                        <p class="contacts__text">{{ text.right.address[site.lang] }}</p>
+                        <p class="contacts__text">{{ text.right.bin[site.lang] }}</p>
+                        <a class="contacts__text" href="mailto: {{ text.right.email[site.lang] }}">{{ text.right.email[site.lang] }}</a>
+                    {% endif %}
+                    
                 </div>
             </div>
         </div>
